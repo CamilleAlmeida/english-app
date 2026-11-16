@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* ============================================
+   BRIGHT BLUES DESIGN SYSTEM — Tokens
+   ============================================ */
+
+:root {
+  /* ---- Palette ---- */
+  --blue-900: #0000FF;
+  --blue-700: #0044FF;
+  --blue-600: #0066FF;
+  --blue-500: #3388FF;
+  --blue-400: #55AAFF;
+  --blue-300: #77CCFF;
+
+  /* ---- Surfaces ---- */
+  --color-bg: #F4F7FF;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #EDF1FA;
+  --color-border: #D0D9EB;
+
+  /* ---- Text ---- */
+  --color-text: #0F1730;
+  --color-text-muted: #5A6785;
+  --color-text-brand: #0066FF;
+
+  /* ---- Primary ---- */
+  --color-primary: #0066FF;
+  --color-primary-hover: #0044FF;
+  --color-primary-soft: #D6E9FF;
+  --color-primary-fg: #FFFFFF;
+
+  /* ---- Header gradient ---- */
+  --gradient-header: linear-gradient(135deg, #0000FF 0%, #0066FF 60%, #3388FF 100%);
+  --gradient-splash: linear-gradient(180deg, #0044FF 0%, #0000FF 100%);
+
+  /* ---- Card pastels ---- */
+  --color-card-1: #D6E9FF;
+  --color-card-2: #DCE6FF;
+  --color-card-3: #E3F4FF;
+  --color-card-4: #CCDCFF;
+  --color-card-strong: #0066FF;
+
+  /* ---- Status / semantic ---- */
+  --color-success: #12A66A;
+  --color-success-soft: #D4F5E4;
+  --color-info: #3388FF;
+  --color-info-soft: #D6E9FF;
+  --color-danger: #E5484D;
+  --color-danger-soft: #FFE0E0;
+  --color-warning: #E8A20C;
+  --color-warning-soft: #FFF4D6;
+
+  /* ---- Typography ---- */
+  --font-display: 'Exo 2', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.25rem;
+  --fs-2xl: 1.5rem;
+
+  /* ---- Border Radius ---- */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+
+  /* ---- Shadows (blue tint for light) ---- */
+  --shadow-sm: 0 1px 3px rgba(0, 68, 255, 0.06);
+  --shadow-md: 0 4px 12px rgba(0, 68, 255, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 68, 255, 0.12);
+}
+
+/* ---- Dark mode via attribute ---- */
+:root[data-theme="dark"] {
+  --color-bg: #070C1C;
+  --color-surface: #0F1730;
+  --color-surface-2: #182040;
+  --color-border: #243060;
+
+  --color-text: #E8ECF4;
+  --color-text-muted: #8899BB;
+  --color-text-brand: #55AAFF;
+
+  --color-primary: #3388FF;
+  --color-primary-hover: #55AAFF;
+  --color-primary-soft: #0F1730;
+  --color-primary-fg: #FFFFFF;
+
+  --color-card-1: #101E3A;
+  --color-card-2: #121F3C;
+  --color-card-3: #0E1C36;
+  --color-card-4: #0F1A34;
+  --color-card-strong: #3388FF;
+
+  --color-success: #12A66A;
+  --color-success-soft: #0B2E1E;
+  --color-info: #3388FF;
+  --color-info-soft: #0F1730;
+  --color-danger: #E5484D;
+  --color-danger-soft: #3B1113;
+  --color-warning: #E8A20C;
+  --color-warning-soft: #2E2208;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* ---- Dark mode via system preference (fallback) ---- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #070C1C;
+    --color-surface: #0F1730;
+    --color-surface-2: #182040;
+    --color-border: #243060;
+
+    --color-text: #E8ECF4;
+    --color-text-muted: #8899BB;
+    --color-text-brand: #55AAFF;
+
+    --color-primary: #3388FF;
+    --color-primary-hover: #55AAFF;
+    --color-primary-soft: #0F1730;
+    --color-primary-fg: #FFFFFF;
+
+    --color-card-1: #101E3A;
+    --color-card-2: #121F3C;
+    --color-card-3: #0E1C36;
+    --color-card-4: #0F1A34;
+    --color-card-strong: #3388FF;
+
+    --color-success: #12A66A;
+    --color-success-soft: #0B2E1E;
+    --color-info: #3388FF;
+    --color-info-soft: #0F1730;
+    --color-danger: #E5484D;
+    --color-danger-soft: #3B1113;
+    --color-warning: #E8A20C;
+    --color-warning-soft: #2E2208;
+
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* ============================================
+   Tailwind v4 — @theme inline mapping
+   ============================================ */
+
+@theme inline {
+  /* Colors mapped from CSS variables */
+  --color-bg: var(--color-bg);
+  --color-surface: var(--color-surface);
+  --color-surface-2: var(--color-surface-2);
+  --color-border: var(--color-border);
+
+  --color-fg: var(--color-text);
+  --color-fg-muted: var(--color-text-muted);
+  --color-fg-brand: var(--color-text-brand);
+
+  --color-primary: var(--color-primary);
+  --color-primary-hover: var(--color-primary-hover);
+  --color-primary-soft: var(--color-primary-soft);
+  --color-primary-fg: var(--color-primary-fg);
+
+  --color-card-1: var(--color-card-1);
+  --color-card-2: var(--color-card-2);
+  --color-card-3: var(--color-card-3);
+  --color-card-4: var(--color-card-4);
+  --color-card-strong: var(--color-card-strong);
+
+  --color-success: var(--color-success);
+  --color-success-soft: var(--color-success-soft);
+  --color-info: var(--color-info);
+  --color-info-soft: var(--color-info-soft);
+  --color-danger: var(--color-danger);
+  --color-danger-soft: var(--color-danger-soft);
+  --color-warning: var(--color-warning);
+  --color-warning-soft: var(--color-warning-soft);
+
+  /* Font families */
+  --font-display: 'Exo 2', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+  --font-sans: 'Poppins', sans-serif;
+
+  /* Shadows */
+  --shadow-ds-sm: var(--shadow-sm);
+  --shadow-ds-md: var(--shadow-md);
+  --shadow-ds-lg: var(--shadow-lg);
+}
+
+/* ============================================
+   Base styles
+   ============================================ */
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* Utility classes for gradients */
+.bg-gradient-header {
+  background: var(--gradient-header);
+}
+
+.bg-gradient-splash {
+  background: var(--gradient-splash);
+}

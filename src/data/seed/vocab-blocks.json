@@ -1,0 +1,3884 @@
+[
+  {
+    "name": "Bathroom",
+    "type": "VOCAB",
+    "order": 1,
+    "intro_card": null,
+    "unlock_after": null,
+    "items": [
+      {
+        "type": "WORD",
+        "content_pt": "torneira",
+        "content_en": "faucet",
+        "hint": "Não confunda com fountain (fonte) ou drain (ralo)",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "faucet",
+              "shower",
+              "drain",
+              "sink"
+            ],
+            "correct_answer": "faucet"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "faucet"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "chuveiro",
+        "content_en": "shower",
+        "hint": "Shower também pode significar 'chuva leve'",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "shower",
+              "bathtub",
+              "faucet",
+              "towel"
+            ],
+            "correct_answer": "shower"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "shower"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "toalha",
+        "content_en": "towel",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "towel",
+              "tissue",
+              "cloth",
+              "rag"
+            ],
+            "correct_answer": "towel"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "towel"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "pia",
+        "content_en": "sink",
+        "hint": "Sink também significa 'afundar'",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "sink",
+              "tub",
+              "basin",
+              "drain"
+            ],
+            "correct_answer": "sink"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "sink"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "espelho",
+        "content_en": "mirror",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "mirror",
+              "window",
+              "glass",
+              "screen"
+            ],
+            "correct_answer": "mirror"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "mirror"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "sabonete",
+        "content_en": "soap",
+        "hint": "Bar of soap = barra de sabonete",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "soap",
+              "shampoo",
+              "lotion",
+              "cream"
+            ],
+            "correct_answer": "soap"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "soap"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "banheira",
+        "content_en": "bathtub",
+        "hint": "Bath = banho, tub = bacia → bathtub",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "bathtub",
+              "shower",
+              "pool",
+              "bucket"
+            ],
+            "correct_answer": "bathtub"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "bathtub"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "escova de dentes",
+        "content_en": "toothbrush",
+        "hint": "Tooth (dente) + brush (escova)",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "toothbrush",
+              "toothpaste",
+              "hairbrush",
+              "comb"
+            ],
+            "correct_answer": "toothbrush"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "toothbrush"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "O chuveiro está quebrado",
+        "content_en": "The shower is broken",
+        "hint": "broken = quebrado/estragado",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The shower is broken"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "The",
+              "shower",
+              "is",
+              "broken"
+            ],
+            "correct_answer": "The shower is broken"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Passe a toalha, por favor",
+        "content_en": "Pass me the towel, please",
+        "hint": "Pass me = me passe",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Pass me the towel, please"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "towel",
+            "options": [
+              "towel",
+              "soap",
+              "mirror",
+              "brush"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "A água está quente demais",
+        "content_en": "The water is too hot",
+        "hint": "too = demais (excessivo)",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The water is too hot"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "The",
+              "water",
+              "is",
+              "too",
+              "hot"
+            ],
+            "correct_answer": "The water is too hot"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Onde está a pasta de dentes?",
+        "content_en": "Where is the toothpaste?",
+        "hint": "toothpaste = tooth (dente) + paste (pasta)",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Where is the toothpaste?"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "toothpaste",
+            "options": [
+              "toothpaste",
+              "toothbrush",
+              "soap",
+              "shampoo"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu preciso de uma toalha limpa",
+        "content_en": "I need a clean towel",
+        "hint": "clean = limpo/limpa",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I need a clean towel"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "I",
+              "need",
+              "a",
+              "clean",
+              "towel"
+            ],
+            "correct_answer": "I need a clean towel"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "O ralo está entupido",
+        "content_en": "The drain is clogged",
+        "hint": "clogged = entupido",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The drain is clogged"
+          },
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "The drain is clogged",
+              "The drain is broken",
+              "The drain is open",
+              "The drain is clean"
+            ],
+            "correct_answer": "The drain is clogged"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Tem alguém no banheiro?",
+        "content_en": "Is anyone in the bathroom?",
+        "hint": "anyone = alguém (em perguntas)",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Is anyone in the bathroom?"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Is",
+              "anyone",
+              "in",
+              "the",
+              "bathroom"
+            ],
+            "correct_answer": "Is anyone in the bathroom?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Kitchen",
+    "type": "VOCAB",
+    "order": 2,
+    "intro_card": null,
+    "unlock_after": "Bathroom",
+    "items": [
+      {
+        "type": "WORD",
+        "content_pt": "geladeira",
+        "content_en": "fridge",
+        "hint": "Forma curta de refrigerator",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "fridge",
+              "oven",
+              "freezer",
+              "microwave"
+            ],
+            "correct_answer": "fridge"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "fridge"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "fogão",
+        "content_en": "stove",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "stove",
+              "oven",
+              "grill",
+              "toaster"
+            ],
+            "correct_answer": "stove"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "stove"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "panela",
+        "content_en": "pot",
+        "hint": "Pot = panela grande; Pan = frigideira",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "pot",
+              "pan",
+              "bowl",
+              "plate"
+            ],
+            "correct_answer": "pot"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "pot"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "frigideira",
+        "content_en": "frying pan",
+        "hint": "Frying = fritando; Pan = panela rasa",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "frying pan",
+              "pot",
+              "saucepan",
+              "wok"
+            ],
+            "correct_answer": "frying pan"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "frying pan"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "faca",
+        "content_en": "knife",
+        "hint": "O K é mudo: pronuncia-se 'naif'",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "knife",
+              "fork",
+              "spoon",
+              "blade"
+            ],
+            "correct_answer": "knife"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "knife"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "garfo",
+        "content_en": "fork",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "fork",
+              "knife",
+              "spoon",
+              "chopstick"
+            ],
+            "correct_answer": "fork"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "fork"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "colher",
+        "content_en": "spoon",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "spoon",
+              "fork",
+              "ladle",
+              "scoop"
+            ],
+            "correct_answer": "spoon"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "spoon"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "prato",
+        "content_en": "plate",
+        "hint": "Plate = prato (objeto); dish = prato (comida ou para lavar)",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "plate",
+              "dish",
+              "bowl",
+              "tray"
+            ],
+            "correct_answer": "plate"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "plate"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Posso usar o micro-ondas?",
+        "content_en": "Can I use the microwave?",
+        "hint": "Can I = Posso/Eu posso",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Can I use the microwave?"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Can",
+              "I",
+              "use",
+              "the",
+              "microwave"
+            ],
+            "correct_answer": "Can I use the microwave?"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "A comida está no fogão",
+        "content_en": "The food is on the stove",
+        "hint": "on = em cima de (superfície)",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The food is on the stove"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "on",
+            "options": [
+              "on",
+              "in",
+              "at",
+              "under"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Não tem mais leite na geladeira",
+        "content_en": "There is no more milk in the fridge",
+        "hint": "no more = não tem mais",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "There is no more milk in the fridge"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "There",
+              "is",
+              "no",
+              "more",
+              "milk",
+              "in",
+              "the",
+              "fridge"
+            ],
+            "correct_answer": "There is no more milk in the fridge"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu preciso lavar os pratos",
+        "content_en": "I need to wash the dishes",
+        "hint": "wash the dishes = lavar a louça",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I need to wash the dishes"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "dishes",
+            "options": [
+              "dishes",
+              "plates",
+              "cups",
+              "pots"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Cuidado, a panela está quente",
+        "content_en": "Be careful, the pot is hot",
+        "hint": "Be careful = tome cuidado",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Be careful, the pot is hot"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Be",
+              "careful",
+              "the",
+              "pot",
+              "is",
+              "hot"
+            ],
+            "correct_answer": "Be careful, the pot is hot"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Você sabe cozinhar arroz?",
+        "content_en": "Do you know how to cook rice?",
+        "hint": "know how to = saber como (habilidade)",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Do you know how to cook rice?"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Do",
+              "you",
+              "know",
+              "how",
+              "to",
+              "cook",
+              "rice"
+            ],
+            "correct_answer": "Do you know how to cook rice?"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "A cozinha precisa de uma limpeza",
+        "content_en": "The kitchen needs a cleaning",
+        "hint": "needs a cleaning = precisa de uma limpeza",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The kitchen needs a cleaning"
+          },
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "The kitchen needs a cleaning",
+              "The kitchen needs a cooking",
+              "The kitchen needs a washing",
+              "The kitchen needs a fixing"
+            ],
+            "correct_answer": "The kitchen needs a cleaning"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Workplace",
+    "type": "VOCAB",
+    "order": 3,
+    "intro_card": null,
+    "unlock_after": "Kitchen",
+    "items": [
+      {
+        "type": "WORD",
+        "content_pt": "reunião",
+        "content_en": "meeting",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "meeting",
+              "deadline",
+              "report",
+              "schedule"
+            ],
+            "correct_answer": "meeting"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "meeting"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "prazo",
+        "content_en": "deadline",
+        "hint": "Dead (morto) + line (linha) = limite final",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "deadline",
+              "timeline",
+              "schedule",
+              "target"
+            ],
+            "correct_answer": "deadline"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "deadline"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "relatório",
+        "content_en": "report",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "report",
+              "receipt",
+              "record",
+              "review"
+            ],
+            "correct_answer": "report"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "report"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "chefe",
+        "content_en": "boss",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "boss",
+              "employee",
+              "manager",
+              "partner"
+            ],
+            "correct_answer": "boss"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "boss"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "funcionário",
+        "content_en": "employee",
+        "hint": "Employee = quem trabalha; Employer = quem contrata",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "employee",
+              "employer",
+              "manager",
+              "intern"
+            ],
+            "correct_answer": "employee"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "employee"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "salário",
+        "content_en": "salary",
+        "hint": "Salary = mensal; Wage = por hora",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "salary",
+              "wage",
+              "bonus",
+              "income"
+            ],
+            "correct_answer": "salary"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "salary"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "tarefa",
+        "content_en": "task",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "task",
+              "job",
+              "project",
+              "goal"
+            ],
+            "correct_answer": "task"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "task"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "A reunião é às três horas",
+        "content_en": "The meeting is at three o'clock",
+        "hint": "at = para horários específicos",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The meeting is at three o'clock"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "at",
+            "options": [
+              "at",
+              "in",
+              "on",
+              "by"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Posso trabalhar de casa hoje?",
+        "content_en": "Can I work from home today?",
+        "hint": "work from home = trabalhar de casa (home office)",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Can I work from home today?"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Can",
+              "I",
+              "work",
+              "from",
+              "home",
+              "today"
+            ],
+            "correct_answer": "Can I work from home today?"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "O prazo é sexta-feira",
+        "content_en": "The deadline is on Friday",
+        "hint": "on = para dias da semana",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The deadline is on Friday"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "on",
+            "options": [
+              "on",
+              "in",
+              "at",
+              "by"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu preciso terminar esse relatório",
+        "content_en": "I need to finish this report",
+        "hint": "finish = terminar",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I need to finish this report"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "I",
+              "need",
+              "to",
+              "finish",
+              "this",
+              "report"
+            ],
+            "correct_answer": "I need to finish this report"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Meu chefe pediu uma atualização",
+        "content_en": "My boss asked for an update",
+        "hint": "asked for = pediu",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "My boss asked for an update"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "asked for",
+            "options": [
+              "asked for",
+              "told to",
+              "said to",
+              "wanted to"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Estamos contratando novos funcionários",
+        "content_en": "We are hiring new employees",
+        "hint": "hiring = contratando",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "We are hiring new employees"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "We",
+              "are",
+              "hiring",
+              "new",
+              "employees"
+            ],
+            "correct_answer": "We are hiring new employees"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ela foi promovida mês passado",
+        "content_en": "She was promoted last month",
+        "hint": "was promoted = foi promovida (voz passiva)",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "She was promoted last month"
+          },
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "She was promoted last month",
+              "She promoted last month",
+              "She is promoted last month",
+              "She has promoted last month"
+            ],
+            "correct_answer": "She was promoted last month"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Qual é o seu cargo na empresa?",
+        "content_en": "What is your position at the company?",
+        "hint": "position = cargo/posição",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "What is your position at the company?"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "What",
+              "is",
+              "your",
+              "position",
+              "at",
+              "the",
+              "company"
+            ],
+            "correct_answer": "What is your position at the company?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Daily Routine",
+    "type": "VOCAB",
+    "order": 4,
+    "intro_card": null,
+    "unlock_after": "Workplace",
+    "items": [
+      {
+        "type": "WORD",
+        "content_pt": "despertador",
+        "content_en": "alarm clock",
+        "hint": "Alarm = alarme; Clock = relógio",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "alarm clock",
+              "watch",
+              "timer",
+              "bell"
+            ],
+            "correct_answer": "alarm clock"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "alarm clock"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "café da manhã",
+        "content_en": "breakfast",
+        "hint": "Break (parar) + fast (jejum) = quebrar o jejum",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "breakfast",
+              "lunch",
+              "dinner",
+              "snack"
+            ],
+            "correct_answer": "breakfast"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "breakfast"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "almoço",
+        "content_en": "lunch",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "lunch",
+              "dinner",
+              "breakfast",
+              "brunch"
+            ],
+            "correct_answer": "lunch"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "lunch"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "jantar",
+        "content_en": "dinner",
+        "hint": "Dinner = refeição principal da noite",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "dinner",
+              "lunch",
+              "supper",
+              "snack"
+            ],
+            "correct_answer": "dinner"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "dinner"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "horário",
+        "content_en": "schedule",
+        "hint": "Schedule também pode ser 'agenda' ou 'programação'",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "schedule",
+              "calendar",
+              "timetable",
+              "deadline"
+            ],
+            "correct_answer": "schedule"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "schedule"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "rotina",
+        "content_en": "routine",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "routine",
+              "habit",
+              "custom",
+              "pattern"
+            ],
+            "correct_answer": "routine"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "routine"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "exercício",
+        "content_en": "exercise",
+        "hint": "Pode ser físico ou escolar",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "exercise",
+              "practice",
+              "training",
+              "workout"
+            ],
+            "correct_answer": "exercise"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "exercise"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "descansar",
+        "content_en": "to rest",
+        "hint": "Rest = descanso/descansar",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "to rest",
+              "to sleep",
+              "to nap",
+              "to relax"
+            ],
+            "correct_answer": "to rest"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "to rest"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu acordo às seis da manhã",
+        "content_en": "I wake up at six in the morning",
+        "hint": "wake up = acordar",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I wake up at six in the morning"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "I",
+              "wake",
+              "up",
+              "at",
+              "six",
+              "in",
+              "the",
+              "morning"
+            ],
+            "correct_answer": "I wake up at six in the morning"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Depois do trabalho, eu vou para a academia",
+        "content_en": "After work, I go to the gym",
+        "hint": "gym = academia",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "After work, I go to the gym"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "gym",
+            "options": [
+              "gym",
+              "park",
+              "store",
+              "home"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu tomo banho antes de dormir",
+        "content_en": "I take a shower before bed",
+        "hint": "take a shower = tomar banho",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I take a shower before bed"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "I",
+              "take",
+              "a",
+              "shower",
+              "before",
+              "bed"
+            ],
+            "correct_answer": "I take a shower before bed"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Que horas você costuma almoçar?",
+        "content_en": "What time do you usually have lunch?",
+        "hint": "usually = geralmente/costuma",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "What time do you usually have lunch?"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "usually",
+            "options": [
+              "usually",
+              "always",
+              "never",
+              "sometimes"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu sempre escovo os dentes depois de comer",
+        "content_en": "I always brush my teeth after eating",
+        "hint": "brush my teeth = escovar os dentes",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I always brush my teeth after eating"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "I",
+              "always",
+              "brush",
+              "my",
+              "teeth",
+              "after",
+              "eating"
+            ],
+            "correct_answer": "I always brush my teeth after eating"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Minha rotina é bem corrida durante a semana",
+        "content_en": "My routine is really busy during the week",
+        "hint": "busy = ocupado/corrido",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "My routine is really busy during the week"
+          },
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "My routine is really busy during the week",
+              "My routine is really easy during the week",
+              "My routine is really slow during the week",
+              "My routine is really free during the week"
+            ],
+            "correct_answer": "My routine is really busy during the week"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Nos fins de semana eu durmo até mais tarde",
+        "content_en": "On weekends I sleep in",
+        "hint": "sleep in = dormir até mais tarde",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "On weekends I sleep in"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "On",
+              "weekends",
+              "I",
+              "sleep",
+              "in"
+            ],
+            "correct_answer": "On weekends I sleep in"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Shopping",
+    "type": "VOCAB",
+    "order": 5,
+    "intro_card": null,
+    "unlock_after": "Daily Routine",
+    "items": [
+      {
+        "type": "WORD",
+        "content_pt": "preço",
+        "content_en": "price",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "price",
+              "cost",
+              "value",
+              "rate"
+            ],
+            "correct_answer": "price"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "price"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "desconto",
+        "content_en": "discount",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "discount",
+              "coupon",
+              "sale",
+              "offer"
+            ],
+            "correct_answer": "discount"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "discount"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "troco",
+        "content_en": "change",
+        "hint": "Change = troco ou mudança, depende do contexto",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "change",
+              "cash",
+              "coin",
+              "bill"
+            ],
+            "correct_answer": "change"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "change"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "sacola",
+        "content_en": "bag",
+        "hint": "Bag = sacola, bolsa ou mala, depende do contexto",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "bag",
+              "box",
+              "cart",
+              "basket"
+            ],
+            "correct_answer": "bag"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "bag"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "caixa (pessoa)",
+        "content_en": "cashier",
+        "hint": "Cash (dinheiro) + ier = pessoa do caixa",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "cashier",
+              "seller",
+              "clerk",
+              "manager"
+            ],
+            "correct_answer": "cashier"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "cashier"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "tamanho",
+        "content_en": "size",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "size",
+              "length",
+              "width",
+              "weight"
+            ],
+            "correct_answer": "size"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "size"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "promoção",
+        "content_en": "sale",
+        "hint": "On sale = em promoção",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "sale",
+              "deal",
+              "offer",
+              "bargain"
+            ],
+            "correct_answer": "sale"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "sale"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "recibo",
+        "content_en": "receipt",
+        "hint": "O P é mudo: pronuncia-se 'ri-SIIT'",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "receipt",
+              "invoice",
+              "bill",
+              "ticket"
+            ],
+            "correct_answer": "receipt"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "receipt"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Quanto custa isso?",
+        "content_en": "How much does this cost?",
+        "hint": "How much = quanto (preço)",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "How much does this cost?"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "How",
+              "much",
+              "does",
+              "this",
+              "cost"
+            ],
+            "correct_answer": "How much does this cost?"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Vocês aceitam cartão de crédito?",
+        "content_en": "Do you accept credit cards?",
+        "hint": "accept = aceitar",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Do you accept credit cards?"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "accept",
+            "options": [
+              "accept",
+              "receive",
+              "take",
+              "get"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Posso experimentar essa roupa?",
+        "content_en": "Can I try this on?",
+        "hint": "try on = experimentar (roupa)",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Can I try this on?"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Can",
+              "I",
+              "try",
+              "this",
+              "on"
+            ],
+            "correct_answer": "Can I try this on?"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Tem um tamanho maior?",
+        "content_en": "Do you have a bigger size?",
+        "hint": "bigger = maior (comparativo de big)",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Do you have a bigger size?"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "bigger",
+            "options": [
+              "bigger",
+              "smaller",
+              "longer",
+              "shorter"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Isso está em promoção?",
+        "content_en": "Is this on sale?",
+        "hint": "on sale = em promoção",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Is this on sale?"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Is",
+              "this",
+              "on",
+              "sale"
+            ],
+            "correct_answer": "Is this on sale?"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu gostaria de devolver esse produto",
+        "content_en": "I would like to return this product",
+        "hint": "would like to = gostaria de",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I would like to return this product"
+          },
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "I would like to return this product",
+              "I would like to buy this product",
+              "I would like to exchange this product",
+              "I would like to keep this product"
+            ],
+            "correct_answer": "I would like to return this product"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Pode me dar o recibo, por favor?",
+        "content_en": "Can you give me the receipt, please?",
+        "hint": "receipt = recibo/nota fiscal",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Can you give me the receipt, please?"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Can",
+              "you",
+              "give",
+              "me",
+              "the",
+              "receipt",
+              "please"
+            ],
+            "correct_answer": "Can you give me the receipt, please?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Health & Body",
+    "type": "VOCAB",
+    "order": 6,
+    "intro_card": null,
+    "unlock_after": "Shopping",
+    "items": [
+      {
+        "type": "WORD",
+        "content_pt": "cabeça",
+        "content_en": "head",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "head",
+              "hair",
+              "hat",
+              "hand"
+            ],
+            "correct_answer": "head"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "head"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "estômago",
+        "content_en": "stomach",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "stomach",
+              "chest",
+              "back",
+              "belly"
+            ],
+            "correct_answer": "stomach"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "stomach"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "remédio",
+        "content_en": "medicine",
+        "hint": "Também chamado de 'medication'",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "medicine",
+              "doctor",
+              "pharmacy",
+              "pill"
+            ],
+            "correct_answer": "medicine"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "medicine"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "dor",
+        "content_en": "pain",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "pain",
+              "ache",
+              "hurt",
+              "sore"
+            ],
+            "correct_answer": "pain"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "pain"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "febre",
+        "content_en": "fever",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "fever",
+              "flu",
+              "cold",
+              "cough"
+            ],
+            "correct_answer": "fever"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "fever"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "consulta médica",
+        "content_en": "doctor's appointment",
+        "hint": "appointment = compromisso agendado",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "doctor's appointment",
+              "doctor's office",
+              "doctor's visit",
+              "doctor's order"
+            ],
+            "correct_answer": "doctor's appointment"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "doctor's appointment"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "receita médica",
+        "content_en": "prescription",
+        "hint": null,
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "prescription",
+              "recipe",
+              "receipt",
+              "description"
+            ],
+            "correct_answer": "prescription"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "prescription"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "gripe",
+        "content_en": "flu",
+        "hint": "Abreviação de 'influenza'",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "flu",
+              "cold",
+              "fever",
+              "allergy"
+            ],
+            "correct_answer": "flu"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "flu"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Estou me sentindo mal.",
+        "content_en": "I'm feeling sick.",
+        "hint": "sick = doente / mal",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I'm feeling sick"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "I'm",
+              "feeling",
+              "sick"
+            ],
+            "correct_answer": "I'm feeling sick"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Preciso ir ao médico.",
+        "content_en": "I need to go to the doctor.",
+        "hint": "need to = precisar",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I need to go to the doctor"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "I",
+              "need",
+              "to",
+              "go",
+              "to",
+              "the",
+              "doctor"
+            ],
+            "correct_answer": "I need to go to the doctor"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Minha cabeça está doendo.",
+        "content_en": "My head is hurting.",
+        "hint": "hurting = doendo (verbo hurt)",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "My head is hurting"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "hurting"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Você deveria descansar.",
+        "content_en": "You should rest.",
+        "hint": "should = deveria (conselho)",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "You should rest"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "You",
+              "should",
+              "rest"
+            ],
+            "correct_answer": "You should rest"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Tome este remédio duas vezes ao dia.",
+        "content_en": "Take this medicine twice a day.",
+        "hint": "twice = duas vezes",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Take this medicine twice a day"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Take",
+              "this",
+              "medicine",
+              "twice",
+              "a",
+              "day"
+            ],
+            "correct_answer": "Take this medicine twice a day"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Faz quanto tempo que você está doente?",
+        "content_en": "How long have you been sick?",
+        "hint": "How long = há quanto tempo",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "How long have you been sick"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "long"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "O médico disse que é só um resfriado.",
+        "content_en": "The doctor said it's just a cold.",
+        "hint": "cold = resfriado (como substantivo)",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The doctor said it's just a cold"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "The",
+              "doctor",
+              "said",
+              "it's",
+              "just",
+              "a",
+              "cold"
+            ],
+            "correct_answer": "The doctor said it's just a cold"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Getting Around",
+    "type": "VOCAB",
+    "order": 7,
+    "intro_card": null,
+    "unlock_after": "Health & Body",
+    "items": [
+      {
+        "type": "WORD",
+        "content_pt": "rua",
+        "content_en": "street",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "street",
+              "road",
+              "avenue",
+              "lane"
+            ],
+            "correct_answer": "street"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "street"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "ônibus",
+        "content_en": "bus",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "bus",
+              "van",
+              "cab",
+              "train"
+            ],
+            "correct_answer": "bus"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "bus"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "metrô",
+        "content_en": "subway",
+        "hint": "Em UK dizem 'underground' ou 'tube'",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "subway",
+              "railway",
+              "highway",
+              "freeway"
+            ],
+            "correct_answer": "subway"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "subway"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "passagem",
+        "content_en": "ticket",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "ticket",
+              "pass",
+              "token",
+              "card"
+            ],
+            "correct_answer": "ticket"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "ticket"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "esquina",
+        "content_en": "corner",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "corner",
+              "curve",
+              "crossing",
+              "sidewalk"
+            ],
+            "correct_answer": "corner"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "corner"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "semáforo",
+        "content_en": "traffic light",
+        "hint": null,
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "traffic light",
+              "street light",
+              "spotlight",
+              "flashlight"
+            ],
+            "correct_answer": "traffic light"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "traffic light"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "calçada",
+        "content_en": "sidewalk",
+        "hint": "Em UK dizem 'pavement'",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "sidewalk",
+              "crosswalk",
+              "walkway",
+              "pathway"
+            ],
+            "correct_answer": "sidewalk"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "sidewalk"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "engarrafamento",
+        "content_en": "traffic jam",
+        "hint": "jam = congestionamento / geleia",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "traffic jam",
+              "traffic light",
+              "traffic sign",
+              "traffic lane"
+            ],
+            "correct_answer": "traffic jam"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "traffic jam"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Com licença, onde fica a estação?",
+        "content_en": "Excuse me, where is the station?",
+        "hint": "Excuse me = com licença (para pedir informação)",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Excuse me, where is the station"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Excuse",
+              "me",
+              "where",
+              "is",
+              "the",
+              "station"
+            ],
+            "correct_answer": "Excuse me where is the station"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Vire à esquerda no semáforo.",
+        "content_en": "Turn left at the traffic light.",
+        "hint": "turn left/right = vire à esquerda/direita",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Turn left at the traffic light"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Turn",
+              "left",
+              "at",
+              "the",
+              "traffic",
+              "light"
+            ],
+            "correct_answer": "Turn left at the traffic light"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Siga em frente por duas quadras.",
+        "content_en": "Go straight for two blocks.",
+        "hint": "go straight = siga em frente; block = quadra",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Go straight for two blocks"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Go",
+              "straight",
+              "for",
+              "two",
+              "blocks"
+            ],
+            "correct_answer": "Go straight for two blocks"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Quanto tempo leva de ônibus?",
+        "content_en": "How long does it take by bus?",
+        "hint": "How long does it take = quanto tempo leva",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "How long does it take by bus"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "take"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Posso ir a pé daqui?",
+        "content_en": "Can I walk there from here?",
+        "hint": "walk = ir a pé / caminhar",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Can I walk there from here"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Can",
+              "I",
+              "walk",
+              "there",
+              "from",
+              "here"
+            ],
+            "correct_answer": "Can I walk there from here"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "O trânsito está muito ruim hoje.",
+        "content_en": "The traffic is really bad today.",
+        "hint": "traffic = trânsito / tráfego",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The traffic is really bad today"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "traffic"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Peguei o ônibus errado.",
+        "content_en": "I took the wrong bus.",
+        "hint": "took = passado de take; wrong = errado",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I took the wrong bus"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "I",
+              "took",
+              "the",
+              "wrong",
+              "bus"
+            ],
+            "correct_answer": "I took the wrong bus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Food & Eating Out",
+    "type": "VOCAB",
+    "order": 8,
+    "intro_card": null,
+    "unlock_after": "Getting Around",
+    "items": [
+      {
+        "type": "WORD",
+        "content_pt": "cardápio",
+        "content_en": "menu",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "menu",
+              "bill",
+              "plate",
+              "order"
+            ],
+            "correct_answer": "menu"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "menu"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "conta",
+        "content_en": "bill",
+        "hint": "Também chamada de 'check' nos EUA",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "bill",
+              "tip",
+              "receipt",
+              "change"
+            ],
+            "correct_answer": "bill"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "bill"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "garçom",
+        "content_en": "waiter",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "waiter",
+              "chef",
+              "host",
+              "bartender"
+            ],
+            "correct_answer": "waiter"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "waiter"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "gorjeta",
+        "content_en": "tip",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "tip",
+              "tax",
+              "bill",
+              "fee"
+            ],
+            "correct_answer": "tip"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "tip"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "sobremesa",
+        "content_en": "dessert",
+        "hint": "Não confunda com 'desert' (deserto)",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "dessert",
+              "desert",
+              "dinner",
+              "dish"
+            ],
+            "correct_answer": "dessert"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "dessert"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "prato principal",
+        "content_en": "main course",
+        "hint": "course = etapa da refeição",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "main course",
+              "side dish",
+              "appetizer",
+              "starter"
+            ],
+            "correct_answer": "main course"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "main course"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "entrada",
+        "content_en": "appetizer",
+        "hint": "Em UK dizem 'starter'",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "appetizer",
+              "main course",
+              "snack",
+              "beverage"
+            ],
+            "correct_answer": "appetizer"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "appetizer"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "reserva",
+        "content_en": "reservation",
+        "hint": null,
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "reservation",
+              "invitation",
+              "confirmation",
+              "registration"
+            ],
+            "correct_answer": "reservation"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "reservation"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Mesa para dois, por favor.",
+        "content_en": "Table for two, please.",
+        "hint": "table for + número",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Table for two, please"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Table",
+              "for",
+              "two",
+              "please"
+            ],
+            "correct_answer": "Table for two please"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "O que você recomenda?",
+        "content_en": "What do you recommend?",
+        "hint": "recommend = recomendar",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "What do you recommend"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "What",
+              "do",
+              "you",
+              "recommend"
+            ],
+            "correct_answer": "What do you recommend"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu gostaria de pedir o frango.",
+        "content_en": "I'd like to order the chicken.",
+        "hint": "I'd like = eu gostaria (polido)",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I'd like to order the chicken"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "order"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Pode trazer a conta, por favor?",
+        "content_en": "Can I have the bill, please?",
+        "hint": "Can I have = Pode me trazer",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Can I have the bill, please"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Can",
+              "I",
+              "have",
+              "the",
+              "bill",
+              "please"
+            ],
+            "correct_answer": "Can I have the bill please"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu sou alérgico a amendoim.",
+        "content_en": "I'm allergic to peanuts.",
+        "hint": "allergic to = alérgico a",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I'm allergic to peanuts"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "allergic"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "A comida estava deliciosa.",
+        "content_en": "The food was delicious.",
+        "hint": "was = estava (passado de is)",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The food was delicious"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "The",
+              "food",
+              "was",
+              "delicious"
+            ],
+            "correct_answer": "The food was delicious"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Vocês aceitam cartão de crédito?",
+        "content_en": "Do you accept credit cards?",
+        "hint": "accept = aceitar",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Do you accept credit cards"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "accept"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Feelings & Opinions",
+    "type": "VOCAB",
+    "order": 9,
+    "intro_card": null,
+    "unlock_after": "Food & Eating Out",
+    "items": [
+      {
+        "type": "WORD",
+        "content_pt": "feliz",
+        "content_en": "happy",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "happy",
+              "hungry",
+              "heavy",
+              "hasty"
+            ],
+            "correct_answer": "happy"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "happy"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "triste",
+        "content_en": "sad",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "sad",
+              "mad",
+              "bad",
+              "glad"
+            ],
+            "correct_answer": "sad"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "sad"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "cansado",
+        "content_en": "tired",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "tired",
+              "bored",
+              "lazy",
+              "sleepy"
+            ],
+            "correct_answer": "tired"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "tired"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "preocupado",
+        "content_en": "worried",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "worried",
+              "angry",
+              "scared",
+              "nervous"
+            ],
+            "correct_answer": "worried"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "worried"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "animado",
+        "content_en": "excited",
+        "hint": "excited = empolgado/animado",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "excited",
+              "exhausted",
+              "expected",
+              "extended"
+            ],
+            "correct_answer": "excited"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "excited"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "entediado",
+        "content_en": "bored",
+        "hint": "bored = entediado (a pessoa); boring = entediante (a coisa)",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "bored",
+              "boring",
+              "board",
+              "bore"
+            ],
+            "correct_answer": "bored"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "bored"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "orgulhoso",
+        "content_en": "proud",
+        "hint": "proud of = orgulhoso de",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "proud",
+              "loud",
+              "cloud",
+              "crowd"
+            ],
+            "correct_answer": "proud"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "proud"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "decepcionado",
+        "content_en": "disappointed",
+        "hint": null,
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "disappointed",
+              "disapproved",
+              "disconnected",
+              "discouraged"
+            ],
+            "correct_answer": "disappointed"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "disappointed"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu acho que sim.",
+        "content_en": "I think so.",
+        "hint": "I think so = eu acho que sim",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I think so"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "I",
+              "think",
+              "so"
+            ],
+            "correct_answer": "I think so"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Na minha opinião, é muito caro.",
+        "content_en": "In my opinion, it's too expensive.",
+        "hint": "In my opinion = na minha opinião",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "In my opinion, it's too expensive"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "opinion"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu concordo com você.",
+        "content_en": "I agree with you.",
+        "hint": "agree with = concordar com",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I agree with you"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "I",
+              "agree",
+              "with",
+              "you"
+            ],
+            "correct_answer": "I agree with you"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu discordo totalmente.",
+        "content_en": "I totally disagree.",
+        "hint": "disagree = discordar",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I totally disagree"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "I",
+              "totally",
+              "disagree"
+            ],
+            "correct_answer": "I totally disagree"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Estou muito orgulhosa de você.",
+        "content_en": "I'm very proud of you.",
+        "hint": "proud of = orgulhoso de (alguém)",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I'm very proud of you"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "proud"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Não tenho certeza se é uma boa ideia.",
+        "content_en": "I'm not sure it's a good idea.",
+        "hint": "I'm not sure = não tenho certeza",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I'm not sure it's a good idea"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "I'm",
+              "not",
+              "sure",
+              "it's",
+              "a",
+              "good",
+              "idea"
+            ],
+            "correct_answer": "I'm not sure it's a good idea"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Isso me deixa frustrado.",
+        "content_en": "That makes me frustrated.",
+        "hint": "makes me + adjetivo = me deixa",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "That makes me frustrated"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "frustrated"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tech & Online",
+    "type": "VOCAB",
+    "order": 10,
+    "intro_card": null,
+    "unlock_after": "Feelings & Opinions",
+    "items": [
+      {
+        "type": "WORD",
+        "content_pt": "senha",
+        "content_en": "password",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "password",
+              "username",
+              "keyword",
+              "passcode"
+            ],
+            "correct_answer": "password"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "password"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "tela",
+        "content_en": "screen",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "screen",
+              "scene",
+              "scan",
+              "scroll"
+            ],
+            "correct_answer": "screen"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "screen"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "atualização",
+        "content_en": "update",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "update",
+              "upload",
+              "upgrade",
+              "uptime"
+            ],
+            "correct_answer": "update"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "update"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "pesquisar",
+        "content_en": "search",
+        "hint": null,
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "search",
+              "research",
+              "reach",
+              "teach"
+            ],
+            "correct_answer": "search"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "search"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "baixar",
+        "content_en": "download",
+        "hint": "download = baixar; upload = enviar",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "download",
+              "upload",
+              "load",
+              "reload"
+            ],
+            "correct_answer": "download"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "download"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "aplicativo",
+        "content_en": "app",
+        "hint": "Abreviação de 'application'",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "app",
+              "tap",
+              "map",
+              "gap"
+            ],
+            "correct_answer": "app"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "app"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "armazenamento",
+        "content_en": "storage",
+        "hint": "cloud storage = armazenamento na nuvem",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "storage",
+              "store",
+              "story",
+              "stage"
+            ],
+            "correct_answer": "storage"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "storage"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "compartilhar",
+        "content_en": "share",
+        "hint": null,
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "share",
+              "show",
+              "ship",
+              "shape"
+            ],
+            "correct_answer": "share"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "share"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Meu celular está sem bateria.",
+        "content_en": "My phone is out of battery.",
+        "hint": "out of battery = sem bateria",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "My phone is out of battery"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "battery"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "A internet está muito lenta.",
+        "content_en": "The internet is really slow.",
+        "hint": "slow = lento",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The internet is really slow"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "The",
+              "internet",
+              "is",
+              "really",
+              "slow"
+            ],
+            "correct_answer": "The internet is really slow"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Você pode me mandar o link?",
+        "content_en": "Can you send me the link?",
+        "hint": "send me = me mandar/enviar",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Can you send me the link"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Can",
+              "you",
+              "send",
+              "me",
+              "the",
+              "link"
+            ],
+            "correct_answer": "Can you send me the link"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Esqueci minha senha.",
+        "content_en": "I forgot my password.",
+        "hint": "forgot = passado de forget",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I forgot my password"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "I",
+              "forgot",
+              "my",
+              "password"
+            ],
+            "correct_answer": "I forgot my password"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Preciso atualizar o aplicativo.",
+        "content_en": "I need to update the app.",
+        "hint": "update = atualizar",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I need to update the app"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "I",
+              "need",
+              "to",
+              "update",
+              "the",
+              "app"
+            ],
+            "correct_answer": "I need to update the app"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "O site saiu do ar.",
+        "content_en": "The website went down.",
+        "hint": "went down = saiu do ar / caiu",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The website went down"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "down"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Você já tentou reiniciar?",
+        "content_en": "Have you tried restarting?",
+        "hint": "Have you tried = você já tentou (present perfect)",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Have you tried restarting"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "restarting"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Slang & Idioms",
+    "type": "VOCAB",
+    "order": 11,
+    "intro_card": {
+      "title": "Gírias e Expressões Idiomáticas",
+      "explanation": "Neste bloco você vai aprender gírias modernas, contrações informais e expressões idiomáticas (idioms) usadas no dia a dia em inglês. Essas expressões são essenciais para entender filmes, músicas e conversas reais!",
+      "examples": [
+        "gonna = going to → I'm gonna eat. (Vou comer.)",
+        "chill = relaxar → Let's just chill tonight. (Vamos só relaxar hoje.)",
+        "piece of cake = muito fácil → The test was a piece of cake."
+      ]
+    },
+    "unlock_after": null,
+    "items": [
+      {
+        "type": "PHRASE",
+        "content_pt": "vou / vou fazer (contração informal de going to)",
+        "content_en": "gonna",
+        "hint": "Usado na fala e textos informais, nunca em escrita formal",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "gonna",
+              "wanna",
+              "gotta",
+              "kinda"
+            ],
+            "correct_answer": "gonna"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "gonna"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "quero / querer (contração informal de want to)",
+        "content_en": "wanna",
+        "hint": "I wanna go = I want to go",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "wanna",
+              "gonna",
+              "lemme",
+              "dunno"
+            ],
+            "correct_answer": "wanna"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "wanna"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "tenho que / preciso (contração informal de got to)",
+        "content_en": "gotta",
+        "hint": "I gotta go = I have to go (tenho que ir)",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "gotta",
+              "wanna",
+              "gonna",
+              "kinda"
+            ],
+            "correct_answer": "gotta"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "gotta"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "relaxar, curtir de boa",
+        "content_en": "chill",
+        "hint": "Pode ser verbo (let's chill) ou adjetivo (he's chill = ele é tranquilo)",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "chill",
+              "vibe",
+              "lit",
+              "ghost"
+            ],
+            "correct_answer": "chill"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "chill"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "energia, clima, vibração",
+        "content_en": "vibe",
+        "hint": "This place has a good vibe = Esse lugar tem uma boa energia",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "vibe",
+              "chill",
+              "salty",
+              "lit"
+            ],
+            "correct_answer": "vibe"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "vibe"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "muito bom, incrível (gíria)",
+        "content_en": "lit",
+        "hint": "The party was lit! = A festa foi incrível!",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "lit",
+              "chill",
+              "lowkey",
+              "salty"
+            ],
+            "correct_answer": "lit"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "lit"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "sumir, dar um gelo em alguém",
+        "content_en": "ghost",
+        "hint": "She ghosted me = Ela sumiu / deu um gelo em mim",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "ghost",
+              "chill",
+              "vibe",
+              "lowkey"
+            ],
+            "correct_answer": "ghost"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "ghost"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "sem mentira, de verdade",
+        "content_en": "no cap",
+        "hint": "No cap, this is the best = Sem mentira, é o melhor",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "no cap",
+              "lowkey",
+              "lit",
+              "GOAT"
+            ],
+            "correct_answer": "no cap"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "no cap"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "secretamente, meio que",
+        "content_en": "lowkey",
+        "hint": "I lowkey want pizza = Meio que eu quero pizza",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "lowkey",
+              "no cap",
+              "salty",
+              "ghost"
+            ],
+            "correct_answer": "lowkey"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "lowkey"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "irritado, amargo",
+        "content_en": "salty",
+        "hint": "Why are you so salty? = Por que você tá tão irritado?",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "salty",
+              "chill",
+              "lit",
+              "ghost"
+            ],
+            "correct_answer": "salty"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "salty"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "boa sorte (expressão idiomática)",
+        "content_en": "break a leg",
+        "hint": "Literalmente \"quebre a perna\" — mas significa boa sorte!",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "break a leg",
+              "hit the road",
+              "spill the beans",
+              "piece of cake"
+            ],
+            "correct_answer": "break a leg"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "break a leg"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "muito fácil (expressão idiomática)",
+        "content_en": "piece of cake",
+        "hint": "The test was a piece of cake = A prova foi muito fácil",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "piece of cake",
+              "break a leg",
+              "under the weather",
+              "hit the road"
+            ],
+            "correct_answer": "piece of cake"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "piece of cake"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "ir embora, pegar a estrada",
+        "content_en": "hit the road",
+        "hint": "We need to hit the road = Precisamos ir embora",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "hit the road",
+              "break a leg",
+              "spill the beans",
+              "piece of cake"
+            ],
+            "correct_answer": "hit the road"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "hit the road"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "contar o segredo, abrir o bico",
+        "content_en": "spill the beans",
+        "hint": "Come on, spill the beans! = Conta o segredo!",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "spill the beans",
+              "hit the road",
+              "break a leg",
+              "under the weather"
+            ],
+            "correct_answer": "spill the beans"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "spill the beans"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "sentindo-se mal, doente",
+        "content_en": "under the weather",
+        "hint": "I'm feeling under the weather = Estou me sentindo mal",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "under the weather",
+              "piece of cake",
+              "break a leg",
+              "spill the beans"
+            ],
+            "correct_answer": "under the weather"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "under the weather"
+          }
+        ]
+      }
+    ]
+  }
+]

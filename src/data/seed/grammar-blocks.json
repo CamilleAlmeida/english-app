@@ -1,0 +1,2650 @@
+[
+  {
+    "name": "Foundations",
+    "type": "GRAMMAR",
+    "order": 11,
+    "intro_card": {
+      "title": "Fundações do Inglês",
+      "explanation": "Neste bloco você vai praticar a ordem básica das frases em inglês (Sujeito + Verbo + Objeto), os pronomes pessoais (I, you, he, she, it, we, they), o verbo TO BE (am, is, are) e os artigos (a, an, the). Tudo dentro de frases do dia a dia!",
+      "examples": [
+        "I am a student. (Eu sou um estudante.)",
+        "She is an engineer. (Ela é uma engenheira.)",
+        "They are at the office. (Eles estão no escritório.)"
+      ]
+    },
+    "unlock_after": null,
+    "items": [
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu sou estudante",
+        "content_en": "I am a student",
+        "hint": "am = sou/estou (usado com I)",
+        "difficulty": 1,
+        "grammar_rule": "Verbo TO BE: I am, you are, he/she/it is, we/they are",
+        "exercises": [
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "I",
+              "am",
+              "a",
+              "student"
+            ],
+            "correct_answer": "I am a student"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I am a student"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ela é médica",
+        "content_en": "She is a doctor",
+        "hint": "is = é/está (usado com he, she, it)",
+        "difficulty": 1,
+        "grammar_rule": "Verbo TO BE: I am, you are, he/she/it is, we/they are",
+        "exercises": [
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "is",
+            "options": [
+              "is",
+              "am",
+              "are",
+              "be"
+            ]
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "She is a doctor"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Nós somos brasileiros",
+        "content_en": "We are Brazilian",
+        "hint": "are = somos/estamos (usado com we, you, they)",
+        "difficulty": 1,
+        "grammar_rule": "Verbo TO BE: I am, you are, he/she/it is, we/they are",
+        "exercises": [
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "are",
+            "options": [
+              "are",
+              "is",
+              "am",
+              "be"
+            ]
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "We are Brazilian"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ele é um engenheiro",
+        "content_en": "He is an engineer",
+        "hint": "an = um/uma (antes de vogal: a, e, i, o, u)",
+        "difficulty": 1,
+        "grammar_rule": "Artigos: a (antes de consoante), an (antes de vogal)",
+        "exercises": [
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "an",
+            "options": [
+              "an",
+              "a",
+              "the",
+              "one"
+            ]
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "He",
+              "is",
+              "an",
+              "engineer"
+            ],
+            "correct_answer": "He is an engineer"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "O gato está na mesa",
+        "content_en": "The cat is on the table",
+        "hint": "the = o/a/os/as (artigo definido, único em inglês)",
+        "difficulty": 1,
+        "grammar_rule": "Artigos: the (definido) = o/a/os/as; a/an (indefinido) = um/uma",
+        "exercises": [
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "The",
+              "cat",
+              "is",
+              "on",
+              "the",
+              "table"
+            ],
+            "correct_answer": "The cat is on the table"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The cat is on the table"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eles são meus amigos",
+        "content_en": "They are my friends",
+        "hint": "They = eles/elas (para pessoas e coisas)",
+        "difficulty": 1,
+        "grammar_rule": "Pronomes: I, you, he, she, it, we, they",
+        "exercises": [
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "They",
+            "options": [
+              "They",
+              "We",
+              "He",
+              "It"
+            ]
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "They are my friends"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu não estou cansado",
+        "content_en": "I am not tired",
+        "hint": "am not = não estou/não sou (negativa do TO BE)",
+        "difficulty": 2,
+        "grammar_rule": "Negativa do TO BE: sujeito + am/is/are + not",
+        "exercises": [
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "I",
+              "am",
+              "not",
+              "tired"
+            ],
+            "correct_answer": "I am not tired"
+          },
+          {
+            "type": "CORRECT_ERROR",
+            "incorrect_sentence": "I not am tired",
+            "correct_answer": "I am not tired"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ela não está em casa",
+        "content_en": "She is not at home",
+        "hint": "is not = isn't (forma contraída)",
+        "difficulty": 2,
+        "grammar_rule": "Negativa do TO BE: sujeito + am/is/are + not",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "She is not at home"
+          },
+          {
+            "type": "CORRECT_ERROR",
+            "incorrect_sentence": "She not is at home",
+            "correct_answer": "She is not at home"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Você está pronto?",
+        "content_en": "Are you ready?",
+        "hint": "Perguntas com TO BE: inverte a ordem → Are you...?",
+        "difficulty": 2,
+        "grammar_rule": "Pergunta com TO BE: am/is/are + sujeito + ...?",
+        "exercises": [
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Are",
+              "you",
+              "ready"
+            ],
+            "correct_answer": "Are you ready?"
+          },
+          {
+            "type": "CORRECT_ERROR",
+            "incorrect_sentence": "You are ready?",
+            "correct_answer": "Are you ready?"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Isso é uma boa ideia",
+        "content_en": "It is a good idea",
+        "hint": "It = isso/ele/ela (para coisas e ideias)",
+        "difficulty": 2,
+        "grammar_rule": "Pronomes: It é usado para coisas, animais, tempo, clima",
+        "exercises": [
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "It",
+            "options": [
+              "It",
+              "He",
+              "She",
+              "This"
+            ]
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "It is a good idea"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "O livro está na mochila",
+        "content_en": "The book is in the backpack",
+        "hint": "in = dentro de (espaço fechado)",
+        "difficulty": 2,
+        "grammar_rule": "Ordem SVO: The book (S) + is (V) + in the backpack (complemento)",
+        "exercises": [
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "The",
+              "book",
+              "is",
+              "in",
+              "the",
+              "backpack"
+            ],
+            "correct_answer": "The book is in the backpack"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The book is in the backpack"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Nós não somos de São Paulo",
+        "content_en": "We are not from São Paulo",
+        "hint": "from = de (origem)",
+        "difficulty": 2,
+        "grammar_rule": "Negativa do TO BE: sujeito + am/is/are + not",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "We are not from São Paulo"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "are not",
+            "options": [
+              "are not",
+              "is not",
+              "am not",
+              "not are"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Onde está o banheiro?",
+        "content_en": "Where is the bathroom?",
+        "hint": "Where = onde (pergunta de lugar)",
+        "difficulty": 3,
+        "grammar_rule": "Perguntas com WH + TO BE: Where/What/Who + is/are + ...?",
+        "exercises": [
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Where",
+              "is",
+              "the",
+              "bathroom"
+            ],
+            "correct_answer": "Where is the bathroom?"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Where is the bathroom?"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Quem é aquela mulher?",
+        "content_en": "Who is that woman?",
+        "hint": "Who = quem; that = aquele/aquela",
+        "difficulty": 3,
+        "grammar_rule": "Perguntas com WH + TO BE: Where/What/Who + is/are + ...?",
+        "exercises": [
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Who",
+              "is",
+              "that",
+              "woman"
+            ],
+            "correct_answer": "Who is that woman?"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Who is that woman?"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ele não é o professor, ele é um aluno",
+        "content_en": "He is not the teacher, he is a student",
+        "hint": "the teacher (definido) vs a student (indefinido)",
+        "difficulty": 3,
+        "grammar_rule": "Artigos: the (específico/conhecido) vs a/an (genérico/novo)",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "He is not the teacher, he is a student"
+          },
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "He is not the teacher, he is a student",
+              "He not is the teacher, he is a student",
+              "He is not a teacher, he is the student",
+              "He is not teacher, he is student"
+            ],
+            "correct_answer": "He is not the teacher, he is a student"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Daily Habits",
+    "type": "GRAMMAR",
+    "order": 12,
+    "intro_card": {
+      "title": "Hábitos do Dia a Dia",
+      "explanation": "Aqui você vai praticar o Simple Present — o tempo verbal para falar de rotinas, hábitos e verdades gerais. Vai aprender quando usar DO/DOES para perguntas e negativas, e os advérbios de frequência (always, usually, often, sometimes, never). Tudo com frases sobre a vida real!",
+      "examples": [
+        "I wake up at 7 every day. (Eu acordo às 7 todos os dias.)",
+        "She doesn't drink coffee. (Ela não bebe café.)",
+        "Do you always take the bus? (Você sempre pega o ônibus?)"
+      ]
+    },
+    "unlock_after": "Foundations",
+    "items": [
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu acordo às sete horas",
+        "content_en": "I wake up at seven o'clock",
+        "hint": "wake up = acordar (phrasal verb)",
+        "difficulty": 1,
+        "grammar_rule": "Simple Present: sujeito + verbo base (I/you/we/they) para hábitos e rotinas",
+        "exercises": [
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "I",
+              "wake",
+              "up",
+              "at",
+              "seven",
+              "o'clock"
+            ],
+            "correct_answer": "I wake up at seven o'clock"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I wake up at seven o'clock"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ela trabalha de segunda a sexta",
+        "content_en": "She works from Monday to Friday",
+        "hint": "works (com S) = ele/ela trabalha",
+        "difficulty": 1,
+        "grammar_rule": "Simple Present: he/she/it + verbo com S (works, eats, goes)",
+        "exercises": [
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "works",
+            "options": [
+              "works",
+              "work",
+              "working",
+              "worked"
+            ]
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "She works from Monday to Friday"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Nós almoçamos ao meio-dia",
+        "content_en": "We have lunch at noon",
+        "hint": "have lunch = almoçar (não usa eat lunch normalmente)",
+        "difficulty": 1,
+        "grammar_rule": "Simple Present: sujeito + verbo base (I/you/we/they) para hábitos e rotinas",
+        "exercises": [
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "We",
+              "have",
+              "lunch",
+              "at",
+              "noon"
+            ],
+            "correct_answer": "We have lunch at noon"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "We have lunch at noon"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ele sempre chega cedo",
+        "content_en": "He always arrives early",
+        "hint": "always = sempre (vai ANTES do verbo principal)",
+        "difficulty": 1,
+        "grammar_rule": "Advérbios de frequência: always/usually/often/sometimes/never vêm ANTES do verbo",
+        "exercises": [
+          {
+            "type": "CORRECT_ERROR",
+            "incorrect_sentence": "He arrives always early",
+            "correct_answer": "He always arrives early"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "He",
+              "always",
+              "arrives",
+              "early"
+            ],
+            "correct_answer": "He always arrives early"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu nunca como fast food",
+        "content_en": "I never eat fast food",
+        "hint": "never = nunca (já é negativo, não precisa de don't)",
+        "difficulty": 1,
+        "grammar_rule": "Advérbios de frequência: always/usually/often/sometimes/never vêm ANTES do verbo",
+        "exercises": [
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "never",
+            "options": [
+              "never",
+              "always",
+              "often",
+              "sometimes"
+            ]
+          },
+          {
+            "type": "CORRECT_ERROR",
+            "incorrect_sentence": "I don't never eat fast food",
+            "correct_answer": "I never eat fast food"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ela não bebe café",
+        "content_en": "She doesn't drink coffee",
+        "hint": "doesn't = does not (negativa para he/she/it)",
+        "difficulty": 2,
+        "grammar_rule": "Negativa no Simple Present: he/she/it + doesn't + verbo BASE (sem S!)",
+        "exercises": [
+          {
+            "type": "CORRECT_ERROR",
+            "incorrect_sentence": "She doesn't drinks coffee",
+            "correct_answer": "She doesn't drink coffee"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "She doesn't drink coffee"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu não dirijo para o trabalho",
+        "content_en": "I don't drive to work",
+        "hint": "don't = do not (negativa para I/you/we/they)",
+        "difficulty": 2,
+        "grammar_rule": "Negativa no Simple Present: I/you/we/they + don't + verbo base",
+        "exercises": [
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "don't",
+            "options": [
+              "don't",
+              "doesn't",
+              "isn't",
+              "not"
+            ]
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I don't drive to work"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Você faz exercício de manhã?",
+        "content_en": "Do you exercise in the morning?",
+        "hint": "Do you...? = Você...? (pergunta para I/you/we/they)",
+        "difficulty": 2,
+        "grammar_rule": "Pergunta no Simple Present: Do + I/you/we/they + verbo base?",
+        "exercises": [
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Do",
+              "you",
+              "exercise",
+              "in",
+              "the",
+              "morning"
+            ],
+            "correct_answer": "Do you exercise in the morning?"
+          },
+          {
+            "type": "CORRECT_ERROR",
+            "incorrect_sentence": "You exercise in the morning?",
+            "correct_answer": "Do you exercise in the morning?"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ele toma banho à noite?",
+        "content_en": "Does he take a shower at night?",
+        "hint": "Does he...? = Ele...? (pergunta para he/she/it)",
+        "difficulty": 2,
+        "grammar_rule": "Pergunta no Simple Present: Does + he/she/it + verbo BASE (sem S!)?",
+        "exercises": [
+          {
+            "type": "CORRECT_ERROR",
+            "incorrect_sentence": "Does he takes a shower at night?",
+            "correct_answer": "Does he take a shower at night?"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Does he take a shower at night?"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Às vezes eu fico até tarde no trabalho",
+        "content_en": "Sometimes I stay late at work",
+        "hint": "sometimes pode ir no início ou antes do verbo",
+        "difficulty": 2,
+        "grammar_rule": "Advérbios de frequência: sometimes é mais flexível na posição",
+        "exercises": [
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Sometimes",
+              "I",
+              "stay",
+              "late",
+              "at",
+              "work"
+            ],
+            "correct_answer": "Sometimes I stay late at work"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Sometimes I stay late at work"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ela geralmente cozinha no domingo",
+        "content_en": "She usually cooks on Sundays",
+        "hint": "usually = geralmente; on Sundays (com S) = aos domingos",
+        "difficulty": 2,
+        "grammar_rule": "Advérbios de frequência: always/usually/often/sometimes/never vêm ANTES do verbo",
+        "exercises": [
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "usually",
+            "options": [
+              "usually",
+              "always",
+              "never",
+              "often"
+            ]
+          },
+          {
+            "type": "CORRECT_ERROR",
+            "incorrect_sentence": "She cooks usually on Sundays",
+            "correct_answer": "She usually cooks on Sundays"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "O que você faz depois do trabalho?",
+        "content_en": "What do you do after work?",
+        "hint": "What do you do = O que você faz (rotina)",
+        "difficulty": 3,
+        "grammar_rule": "Perguntas WH no Simple Present: What/Where/When + do/does + sujeito + verbo?",
+        "exercises": [
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "What",
+              "do",
+              "you",
+              "do",
+              "after",
+              "work"
+            ],
+            "correct_answer": "What do you do after work?"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "What do you do after work?"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Onde ela mora?",
+        "content_en": "Where does she live?",
+        "hint": "Where does she...? (does para he/she/it, verbo sem S)",
+        "difficulty": 3,
+        "grammar_rule": "Perguntas WH no Simple Present: What/Where/When + do/does + sujeito + verbo?",
+        "exercises": [
+          {
+            "type": "CORRECT_ERROR",
+            "incorrect_sentence": "Where does she lives?",
+            "correct_answer": "Where does she live?"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Where does she live?"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Meu irmão não come carne, ele é vegetariano",
+        "content_en": "My brother doesn't eat meat, he is vegetarian",
+        "hint": "doesn't eat (hábito) + is (estado permanente)",
+        "difficulty": 3,
+        "grammar_rule": "Simple Present para estados permanentes e hábitos regulares",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "My brother doesn't eat meat, he is vegetarian"
+          },
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "My brother doesn't eat meat, he is vegetarian",
+              "My brother don't eat meat, he is vegetarian",
+              "My brother doesn't eats meat, he is vegetarian",
+              "My brother not eat meat, he is vegetarian"
+            ],
+            "correct_answer": "My brother doesn't eat meat, he is vegetarian"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Com que frequência você vai ao cinema?",
+        "content_en": "How often do you go to the cinema?",
+        "hint": "How often = com que frequência",
+        "difficulty": 3,
+        "grammar_rule": "How often + do/does + sujeito + verbo? (pergunta sobre frequência)",
+        "exercises": [
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "How",
+              "often",
+              "do",
+              "you",
+              "go",
+              "to",
+              "the",
+              "cinema"
+            ],
+            "correct_answer": "How often do you go to the cinema?"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "How often do you go to the cinema?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Right Now",
+    "type": "GRAMMAR",
+    "order": 13,
+    "intro_card": {
+      "title": "Agora Mesmo — Present Continuous",
+      "explanation": "O Present Continuous (am/is/are + verbo-ing) é usado para falar sobre o que está acontecendo AGORA, neste momento. Também usamos para planos futuros já combinados. A estrutura é: Sujeito + am/is/are + verbo-ING.",
+      "examples": [
+        "I am studying English. (Eu estou estudando inglês.)",
+        "She is cooking dinner. (Ela está cozinhando o jantar.)",
+        "They are not working today. (Eles não estão trabalhando hoje.)"
+      ]
+    },
+    "unlock_after": "Daily Habits",
+    "items": [
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu estou estudando inglês",
+        "content_en": "I am studying English",
+        "hint": "am + verbo-ing = estou fazendo algo agora",
+        "difficulty": 1,
+        "grammar_rule": "Present Continuous: Sujeito + am/is/are + verbo-ING",
+        "exercises": [
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "I",
+              "am",
+              "studying",
+              "English"
+            ],
+            "correct_answer": "I am studying English"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I am studying English"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ela está cozinhando o jantar",
+        "content_en": "She is cooking dinner",
+        "hint": "is + cooking = está cozinhando",
+        "difficulty": 1,
+        "grammar_rule": "Present Continuous: he/she/it + is + verbo-ING",
+        "exercises": [
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "is cooking",
+            "options": [
+              "is cooking",
+              "cooks",
+              "cooked",
+              "are cooking"
+            ]
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "She is cooking dinner"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Nós estamos esperando o ônibus",
+        "content_en": "We are waiting for the bus",
+        "hint": "are + waiting = estamos esperando",
+        "difficulty": 1,
+        "grammar_rule": "Present Continuous: we/they + are + verbo-ING",
+        "exercises": [
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "We",
+              "are",
+              "waiting",
+              "for",
+              "the",
+              "bus"
+            ],
+            "correct_answer": "We are waiting for the bus"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "We are waiting for the bus"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "O que você está fazendo?",
+        "content_en": "What are you doing?",
+        "hint": "What are you doing = O que você está fazendo",
+        "difficulty": 1,
+        "grammar_rule": "Pergunta no Present Continuous: What + am/is/are + sujeito + verbo-ING",
+        "exercises": [
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "What",
+              "are",
+              "you",
+              "doing"
+            ],
+            "correct_answer": "What are you doing?"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "What are you doing?"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ele não está trabalhando hoje",
+        "content_en": "He is not working today",
+        "hint": "is not = isn't (negação)",
+        "difficulty": 2,
+        "grammar_rule": "Negação: Sujeito + am/is/are + NOT + verbo-ING",
+        "exercises": [
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "is not working",
+            "options": [
+              "is not working",
+              "not is working",
+              "does not work",
+              "are not working"
+            ]
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "He is not working today"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "As crianças estão brincando no parque",
+        "content_en": "The children are playing in the park",
+        "hint": "are playing = estão brincando",
+        "difficulty": 2,
+        "grammar_rule": "Present Continuous: they/the children + are + verbo-ING",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The children are playing in the park"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "The",
+              "children",
+              "are",
+              "playing",
+              "in",
+              "the",
+              "park"
+            ],
+            "correct_answer": "The children are playing in the park"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Está chovendo agora",
+        "content_en": "It is raining right now",
+        "hint": "It is raining = Está chovendo (clima usa IT)",
+        "difficulty": 2,
+        "grammar_rule": "Clima no Present Continuous: It + is + verbo-ING",
+        "exercises": [
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "is raining",
+            "options": [
+              "is raining",
+              "rains",
+              "rained",
+              "are raining"
+            ]
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "It is raining right now"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu estou lendo um livro muito bom",
+        "content_en": "I am reading a really good book",
+        "hint": "reading = lendo; really = muito/realmente",
+        "difficulty": 2,
+        "grammar_rule": "Present Continuous: I + am + verbo-ING",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I am reading a really good book"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "I",
+              "am",
+              "reading",
+              "a",
+              "really",
+              "good",
+              "book"
+            ],
+            "correct_answer": "I am reading a really good book"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Você está ouvindo música?",
+        "content_en": "Are you listening to music?",
+        "hint": "listening to = ouvindo (sempre com TO)",
+        "difficulty": 2,
+        "grammar_rule": "Pergunta: Am/Is/Are + sujeito + verbo-ING",
+        "exercises": [
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Are",
+              "you",
+              "listening",
+              "to",
+              "music"
+            ],
+            "correct_answer": "Are you listening to music?"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Are you listening to music?"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Meu irmão está dormindo",
+        "content_en": "My brother is sleeping",
+        "hint": "sleeping = dormindo",
+        "difficulty": 1,
+        "grammar_rule": "Present Continuous: he/she + is + verbo-ING",
+        "exercises": [
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "is sleeping",
+            "options": [
+              "is sleeping",
+              "sleeps",
+              "slept",
+              "are sleeping"
+            ]
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "My brother is sleeping"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eles estão se mudando para uma casa nova",
+        "content_en": "They are moving to a new house",
+        "hint": "moving = mudando/se mudando",
+        "difficulty": 3,
+        "grammar_rule": "Present Continuous: they + are + verbo-ING",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "They are moving to a new house"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "They",
+              "are",
+              "moving",
+              "to",
+              "a",
+              "new",
+              "house"
+            ],
+            "correct_answer": "They are moving to a new house"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu não estou me sentindo bem",
+        "content_en": "I am not feeling well",
+        "hint": "not feeling well = não me sentindo bem",
+        "difficulty": 3,
+        "grammar_rule": "Negação: I + am + NOT + verbo-ING",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I am not feeling well"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "am not feeling",
+            "options": [
+              "am not feeling",
+              "do not feel",
+              "not am feeling",
+              "is not feeling"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ela está aprendendo a dirigir",
+        "content_en": "She is learning to drive",
+        "hint": "learning to = aprendendo a",
+        "difficulty": 3,
+        "grammar_rule": "Present Continuous + to + infinitivo",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "She is learning to drive"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "She",
+              "is",
+              "learning",
+              "to",
+              "drive"
+            ],
+            "correct_answer": "She is learning to drive"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Por que você está rindo?",
+        "content_en": "Why are you laughing?",
+        "hint": "laughing = rindo",
+        "difficulty": 2,
+        "grammar_rule": "Pergunta: Why + am/is/are + sujeito + verbo-ING",
+        "exercises": [
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Why",
+              "are",
+              "you",
+              "laughing"
+            ],
+            "correct_answer": "Why are you laughing?"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Why are you laughing?"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Nós estamos planejando uma viagem",
+        "content_en": "We are planning a trip",
+        "hint": "planning = planejando (dobra o N: plan → planning)",
+        "difficulty": 3,
+        "grammar_rule": "Present Continuous para planos futuros",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "We are planning a trip"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "are planning",
+            "options": [
+              "are planning",
+              "plan",
+              "planned",
+              "is planning"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Looking Back",
+    "type": "GRAMMAR",
+    "order": 14,
+    "intro_card": {
+      "title": "Olhando Para Trás — Simple Past",
+      "explanation": "O Simple Past é usado para ações que começaram e terminaram no passado. Verbos regulares ganham -ED no final (work → worked). Verbos irregulares mudam de forma (go → went, eat → ate). Na negação e pergunta usamos DID + verbo na forma base.",
+      "examples": [
+        "I worked yesterday. (Eu trabalhei ontem.)",
+        "She went to the store. (Ela foi à loja.)",
+        "Did you eat breakfast? (Você tomou café da manhã?)"
+      ]
+    },
+    "unlock_after": "Right Now",
+    "items": [
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu trabalhei ontem",
+        "content_en": "I worked yesterday",
+        "hint": "worked = trabalhei (regular: work + ed)",
+        "difficulty": 1,
+        "grammar_rule": "Simple Past regular: verbo + ED",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I worked yesterday"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "worked",
+            "options": [
+              "worked",
+              "work",
+              "working",
+              "works"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ela foi à loja",
+        "content_en": "She went to the store",
+        "hint": "went = foi/foi (passado irregular de GO)",
+        "difficulty": 1,
+        "grammar_rule": "Simple Past irregular: go → went",
+        "exercises": [
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "She",
+              "went",
+              "to",
+              "the",
+              "store"
+            ],
+            "correct_answer": "She went to the store"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "She went to the store"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Nós comemos pizza ontem à noite",
+        "content_en": "We ate pizza last night",
+        "hint": "ate = comemos (passado irregular de EAT)",
+        "difficulty": 1,
+        "grammar_rule": "Simple Past irregular: eat → ate",
+        "exercises": [
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "ate",
+            "options": [
+              "ate",
+              "eat",
+              "eaten",
+              "eating"
+            ]
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "We ate pizza last night"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu não entendi",
+        "content_en": "I did not understand",
+        "hint": "did not + verbo base = negação no passado",
+        "difficulty": 2,
+        "grammar_rule": "Negação no Simple Past: did not (didn't) + verbo base",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I did not understand"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "did not understand",
+            "options": [
+              "did not understand",
+              "not understood",
+              "was not understand",
+              "do not understood"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Você viu meu celular?",
+        "content_en": "Did you see my phone?",
+        "hint": "Did you = você ... ? (pergunta no passado)",
+        "difficulty": 2,
+        "grammar_rule": "Pergunta no Simple Past: Did + sujeito + verbo base",
+        "exercises": [
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Did",
+              "you",
+              "see",
+              "my",
+              "phone"
+            ],
+            "correct_answer": "Did you see my phone?"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Did you see my phone?"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ele comprou um carro novo",
+        "content_en": "He bought a new car",
+        "hint": "bought = comprou (passado irregular de BUY)",
+        "difficulty": 2,
+        "grammar_rule": "Simple Past irregular: buy → bought",
+        "exercises": [
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "bought",
+            "options": [
+              "bought",
+              "buyed",
+              "buy",
+              "buying"
+            ]
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "He bought a new car"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Nós assistimos um filme ótimo",
+        "content_en": "We watched a great movie",
+        "hint": "watched = assistimos (regular: watch + ed)",
+        "difficulty": 1,
+        "grammar_rule": "Simple Past regular: verbo + ED",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "We watched a great movie"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "We",
+              "watched",
+              "a",
+              "great",
+              "movie"
+            ],
+            "correct_answer": "We watched a great movie"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ela me disse a verdade",
+        "content_en": "She told me the truth",
+        "hint": "told = disse (passado irregular de TELL)",
+        "difficulty": 2,
+        "grammar_rule": "Simple Past irregular: tell → told",
+        "exercises": [
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "told",
+            "options": [
+              "told",
+              "telled",
+              "tell",
+              "telling"
+            ]
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "She told me the truth"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu acordei tarde hoje",
+        "content_en": "I woke up late today",
+        "hint": "woke up = acordei (passado irregular de WAKE UP)",
+        "difficulty": 2,
+        "grammar_rule": "Simple Past irregular: wake → woke",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I woke up late today"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "I",
+              "woke",
+              "up",
+              "late",
+              "today"
+            ],
+            "correct_answer": "I woke up late today"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Quanto custou isso?",
+        "content_en": "How much did this cost?",
+        "hint": "did this cost = custou isso (pergunta com DID)",
+        "difficulty": 2,
+        "grammar_rule": "Pergunta: How much + did + sujeito + verbo base",
+        "exercises": [
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "How",
+              "much",
+              "did",
+              "this",
+              "cost"
+            ],
+            "correct_answer": "How much did this cost?"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "How much did this cost?"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eles chegaram atrasados",
+        "content_en": "They arrived late",
+        "hint": "arrived = chegaram (regular: arrive + d)",
+        "difficulty": 1,
+        "grammar_rule": "Simple Past regular: verbos terminados em E ganham só D",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "They arrived late"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "arrived",
+            "options": [
+              "arrived",
+              "arrive",
+              "arriving",
+              "arrives"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu esqueci minha senha",
+        "content_en": "I forgot my password",
+        "hint": "forgot = esqueci (passado irregular de FORGET)",
+        "difficulty": 2,
+        "grammar_rule": "Simple Past irregular: forget → forgot",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I forgot my password"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "I",
+              "forgot",
+              "my",
+              "password"
+            ],
+            "correct_answer": "I forgot my password"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "O que aconteceu?",
+        "content_en": "What happened?",
+        "hint": "happened = aconteceu (regular: happen + ed)",
+        "difficulty": 2,
+        "grammar_rule": "Pergunta com What: What + verbo no passado (sem DID quando What é sujeito)",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "What happened?"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "happened",
+            "options": [
+              "happened",
+              "happen",
+              "did happen",
+              "was happen"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Nós não fomos à festa",
+        "content_en": "We did not go to the party",
+        "hint": "did not go = não fomos (negação com DID)",
+        "difficulty": 3,
+        "grammar_rule": "Negação: did not + verbo base (não usar went com did)",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "We did not go to the party"
+          },
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "We did not go to the party",
+              "We did not went to the party",
+              "We not go to the party",
+              "We was not go to the party"
+            ],
+            "correct_answer": "We did not go to the party"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ela nasceu em São Paulo",
+        "content_en": "She was born in São Paulo",
+        "hint": "was born = nasceu (expressão fixa com BE + born)",
+        "difficulty": 3,
+        "grammar_rule": "Expressão fixa: was/were + born (nascer)",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "She was born in São Paulo"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "She",
+              "was",
+              "born",
+              "in",
+              "São",
+              "Paulo"
+            ],
+            "correct_answer": "She was born in São Paulo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "What's Next",
+    "type": "GRAMMAR",
+    "order": 15,
+    "intro_card": null,
+    "unlock_after": "Looking Back",
+    "items": [
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu vou viajar amanhã.",
+        "content_en": "I'm going to travel tomorrow.",
+        "hint": "going to = vai (plano futuro)",
+        "difficulty": 1,
+        "grammar_rule": "Going to: am/is/are + going to + verbo base",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I'm going to travel tomorrow"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "going to",
+            "options": [
+              "going to",
+              "will",
+              "go to",
+              "gonna"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ela vai estudar inglês.",
+        "content_en": "She is going to study English.",
+        "hint": "is going to = vai (ela)",
+        "difficulty": 1,
+        "grammar_rule": "Going to: sujeito + is/are + going to + verbo",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "She is going to study English"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "is going to",
+            "options": [
+              "is going to",
+              "will",
+              "are going to",
+              "was going to"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Nós vamos nos mudar mês que vem.",
+        "content_en": "We are going to move next month.",
+        "hint": "move = mudar (de casa)",
+        "difficulty": 1,
+        "grammar_rule": "Going to para planos definidos",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "We are going to move next month"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "We",
+              "are",
+              "going",
+              "to",
+              "move",
+              "next",
+              "month"
+            ],
+            "correct_answer": "We are going to move next month"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu vou te ajudar.",
+        "content_en": "I will help you.",
+        "hint": "will = vou (decisão espontânea)",
+        "difficulty": 1,
+        "grammar_rule": "Will: decisões no momento, promessas, ofertas",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I will help you"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "will",
+            "options": [
+              "will",
+              "going to",
+              "am",
+              "would"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Acho que vai chover.",
+        "content_en": "I think it will rain.",
+        "hint": "will = previsão/opinião sobre o futuro",
+        "difficulty": 1,
+        "grammar_rule": "Will: previsões e opiniões",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I think it will rain"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "will",
+            "options": [
+              "will",
+              "is going to",
+              "does",
+              "would"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eles não vão vir à festa.",
+        "content_en": "They are not going to come to the party.",
+        "hint": "not going to = não vão (negativa)",
+        "difficulty": 2,
+        "grammar_rule": "Going to negativa: sujeito + am/is/are + not + going to",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "They are not going to come to the party"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "not going to",
+            "options": [
+              "not going to",
+              "won't",
+              "not will",
+              "don't going to"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu não vou esquecer.",
+        "content_en": "I won't forget.",
+        "hint": "won't = will not (contração)",
+        "difficulty": 2,
+        "grammar_rule": "Will negativa: sujeito + will not (won't) + verbo",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I won't forget"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "won't",
+            "options": [
+              "won't",
+              "don't",
+              "not will",
+              "willn't"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Você vai aceitar o emprego?",
+        "content_en": "Are you going to accept the job?",
+        "hint": "Pergunta com going to: Am/Is/Are + sujeito + going to",
+        "difficulty": 2,
+        "grammar_rule": "Going to interrogativa: inversão do verbo to be",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Are you going to accept the job"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Are",
+              "you",
+              "going",
+              "to",
+              "accept",
+              "the",
+              "job"
+            ],
+            "correct_answer": "Are you going to accept the job"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "O que você vai fazer no fim de semana?",
+        "content_en": "What are you going to do on the weekend?",
+        "hint": "What + are you going to = O que você vai",
+        "difficulty": 2,
+        "grammar_rule": "Pergunta WH + going to",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "What are you going to do on the weekend"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "going to do",
+            "options": [
+              "going to do",
+              "will doing",
+              "do going to",
+              "gonna doing"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ela vai ser uma ótima médica.",
+        "content_en": "She will be a great doctor.",
+        "hint": "will be = vai ser/estar",
+        "difficulty": 2,
+        "grammar_rule": "Will + be: futuro do verbo to be",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "She will be a great doctor"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "will be",
+            "options": [
+              "will be",
+              "is going to",
+              "will is",
+              "going be"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu prometo que vou ligar.",
+        "content_en": "I promise I will call.",
+        "hint": "promise + will = promessa (decisão no momento)",
+        "difficulty": 2,
+        "grammar_rule": "Will para promessas",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I promise I will call"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "I",
+              "promise",
+              "I",
+              "will",
+              "call"
+            ],
+            "correct_answer": "I promise I will call"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Quando você vai começar o curso?",
+        "content_en": "When are you going to start the course?",
+        "hint": "When + are you going to = Quando você vai",
+        "difficulty": 3,
+        "grammar_rule": "Perguntas WH + going to para planos específicos",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "When are you going to start the course"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "When",
+              "are",
+              "you",
+              "going",
+              "to",
+              "start",
+              "the",
+              "course"
+            ],
+            "correct_answer": "When are you going to start the course"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Provavelmente não vai funcionar.",
+        "content_en": "It probably won't work.",
+        "hint": "probably = provavelmente; won't = will not",
+        "difficulty": 3,
+        "grammar_rule": "Will + advérbios: posição do advérbio antes do verbo principal",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "It probably won't work"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "won't",
+            "options": [
+              "won't",
+              "don't",
+              "isn't going",
+              "not will"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Eu ia te contar, mas esqueci.",
+        "content_en": "I was going to tell you, but I forgot.",
+        "hint": "was going to = ia (plano que não aconteceu)",
+        "difficulty": 3,
+        "grammar_rule": "Was/were going to: planos passados não realizados",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I was going to tell you, but I forgot"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "was going to",
+            "options": [
+              "was going to",
+              "will",
+              "am going to",
+              "would going"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Não se preocupe, tudo vai ficar bem.",
+        "content_en": "Don't worry, everything will be fine.",
+        "hint": "Don't worry = não se preocupe; will be fine = vai ficar bem",
+        "difficulty": 3,
+        "grammar_rule": "Will para previsões confiantes e encorajamento",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Don't worry, everything will be fine"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Don't",
+              "worry",
+              "everything",
+              "will",
+              "be",
+              "fine"
+            ],
+            "correct_answer": "Don't worry everything will be fine"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Describing Things",
+    "type": "GRAMMAR",
+    "order": 16,
+    "intro_card": null,
+    "unlock_after": "What's Next",
+    "items": [
+      {
+        "type": "PHRASE",
+        "content_pt": "Ela é alta.",
+        "content_en": "She is tall.",
+        "hint": "tall = alto(a) (para pessoas)",
+        "difficulty": 1,
+        "grammar_rule": "Adjetivo após verbo to be: sujeito + is/are + adjetivo",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "She is tall"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "tall",
+            "options": [
+              "tall",
+              "taller",
+              "tallest",
+              "talling"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "A casa é grande.",
+        "content_en": "The house is big.",
+        "hint": "big = grande",
+        "difficulty": 1,
+        "grammar_rule": "Adjetivos em inglês não mudam com gênero/número",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The house is big"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "big",
+            "options": [
+              "big",
+              "bigger",
+              "biggest",
+              "bigging"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ele é mais alto que eu.",
+        "content_en": "He is taller than me.",
+        "hint": "taller = mais alto (-er para adjetivos curtos)",
+        "difficulty": 1,
+        "grammar_rule": "Comparativo curto: adjetivo + ER + than",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "He is taller than me"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "taller",
+            "options": [
+              "taller",
+              "more tall",
+              "tallest",
+              "tall"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Este livro é mais interessante.",
+        "content_en": "This book is more interesting.",
+        "hint": "more + adjetivo longo = comparativo",
+        "difficulty": 1,
+        "grammar_rule": "Comparativo longo: more + adjetivo (3+ sílabas)",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "This book is more interesting"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "more interesting",
+            "options": [
+              "more interesting",
+              "interestinger",
+              "most interesting",
+              "more interest"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ela é a mais inteligente da turma.",
+        "content_en": "She is the smartest in the class.",
+        "hint": "the + -est = superlativo (a mais)",
+        "difficulty": 2,
+        "grammar_rule": "Superlativo curto: the + adjetivo + EST",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "She is the smartest in the class"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "smartest",
+            "options": [
+              "smartest",
+              "smarter",
+              "most smart",
+              "more smart"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "É o filme mais bonito que eu já vi.",
+        "content_en": "It's the most beautiful movie I've ever seen.",
+        "hint": "the most + adjetivo longo = superlativo",
+        "difficulty": 2,
+        "grammar_rule": "Superlativo longo: the most + adjetivo",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "It's the most beautiful movie I've ever seen"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "most beautiful",
+            "options": [
+              "most beautiful",
+              "beautifulest",
+              "more beautiful",
+              "most beauty"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Meu café está frio.",
+        "content_en": "My coffee is cold.",
+        "hint": "cold = frio",
+        "difficulty": 1,
+        "grammar_rule": "Adjetivo descreve estado: sujeito + is + adjetivo",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "My coffee is cold"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "cold",
+            "options": [
+              "cold",
+              "colder",
+              "coldly",
+              "coldest"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Hoje está mais quente que ontem.",
+        "content_en": "Today is hotter than yesterday.",
+        "hint": "hot → hotter (dobra a consoante final + er)",
+        "difficulty": 2,
+        "grammar_rule": "Comparativo: consoante curta dobra (big→bigger, hot→hotter)",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Today is hotter than yesterday"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "hotter",
+            "options": [
+              "hotter",
+              "more hot",
+              "hoter",
+              "hottest"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ele é tão rápido quanto ela.",
+        "content_en": "He is as fast as her.",
+        "hint": "as...as = tão...quanto (igualdade)",
+        "difficulty": 2,
+        "grammar_rule": "Comparativo de igualdade: as + adjetivo + as",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "He is as fast as her"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "as fast as",
+            "options": [
+              "as fast as",
+              "faster than",
+              "so fast as",
+              "fast like"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ela não é tão alta quanto o irmão.",
+        "content_en": "She isn't as tall as her brother.",
+        "hint": "not as...as = não é tão...quanto (negativa)",
+        "difficulty": 2,
+        "grammar_rule": "Igualdade negativa: not as + adjetivo + as",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "She isn't as tall as her brother"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "She",
+              "isn't",
+              "as",
+              "tall",
+              "as",
+              "her",
+              "brother"
+            ],
+            "correct_answer": "She isn't as tall as her brother"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Este é o melhor restaurante da cidade.",
+        "content_en": "This is the best restaurant in the city.",
+        "hint": "best = melhor (superlativo irregular de good)",
+        "difficulty": 3,
+        "grammar_rule": "Superlativo irregular: good → better → best",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "This is the best restaurant in the city"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "best",
+            "options": [
+              "best",
+              "better",
+              "goodest",
+              "most good"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "A situação está pior agora.",
+        "content_en": "The situation is worse now.",
+        "hint": "worse = pior (comparativo irregular de bad)",
+        "difficulty": 3,
+        "grammar_rule": "Comparativo irregular: bad → worse → worst",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The situation is worse now"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "worse",
+            "options": [
+              "worse",
+              "badder",
+              "worst",
+              "more bad"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Quanto mais eu estudo, melhor eu fico.",
+        "content_en": "The more I study, the better I get.",
+        "hint": "The more...the better = quanto mais...melhor",
+        "difficulty": 3,
+        "grammar_rule": "Comparativo duplo: the + comparativo, the + comparativo",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The more I study, the better I get"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "better",
+            "options": [
+              "better",
+              "best",
+              "good",
+              "more good"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Ele é muito mais velho que parece.",
+        "content_en": "He is much older than he looks.",
+        "hint": "much + comparativo = muito mais (intensificador)",
+        "difficulty": 3,
+        "grammar_rule": "Intensificadores: much/far/a lot + comparativo",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "He is much older than he looks"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "much older",
+            "options": [
+              "much older",
+              "more older",
+              "much old",
+              "very older"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Essa foi a pior decisão que eu já tomei.",
+        "content_en": "That was the worst decision I've ever made.",
+        "hint": "worst = a pior (superlativo de bad)",
+        "difficulty": 3,
+        "grammar_rule": "Superlativo irregular: bad → worse → worst",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "That was the worst decision I've ever made"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "worst",
+            "options": [
+              "worst",
+              "worse",
+              "baddest",
+              "most bad"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "People & Possession",
+    "type": "GRAMMAR",
+    "order": 17,
+    "intro_card": null,
+    "unlock_after": "Describing Things",
+    "items": [
+      {
+        "type": "PHRASE",
+        "content_pt": "Este é o meu livro.",
+        "content_en": "This is my book.",
+        "hint": "my = meu/minha",
+        "difficulty": 1,
+        "grammar_rule": "Possessive adjectives: my, your, his, her, its, our, their",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "This is my book"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "my",
+            "options": [
+              "my",
+              "mine",
+              "me",
+              "I"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Esse carro é dela.",
+        "content_en": "That car is hers.",
+        "hint": "hers = dela (pronome possessivo)",
+        "difficulty": 1,
+        "grammar_rule": "Possessive pronouns: mine, yours, his, hers, ours, theirs",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "That car is hers"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "hers",
+            "options": [
+              "hers",
+              "her",
+              "she",
+              "his"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "O cachorro dele é grande.",
+        "content_en": "His dog is big.",
+        "hint": "his = dele",
+        "difficulty": 1,
+        "grammar_rule": "His = dele (adjetivo possessivo masculino)",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "His dog is big"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "His",
+            "options": [
+              "His",
+              "He",
+              "Him",
+              "Her"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "O nosso time venceu.",
+        "content_en": "Our team won.",
+        "hint": "our = nosso(a)",
+        "difficulty": 1,
+        "grammar_rule": "Our = nosso/nossa (adjetivo possessivo)",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Our team won"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "Our",
+            "options": [
+              "Our",
+              "Ours",
+              "We",
+              "Us"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Esse celular é meu.",
+        "content_en": "That phone is mine.",
+        "hint": "mine = meu (sem substantivo depois)",
+        "difficulty": 1,
+        "grammar_rule": "Mine vs my: mine substitui 'my + substantivo'",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "That phone is mine"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "mine",
+            "options": [
+              "mine",
+              "my",
+              "me",
+              "I"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "A casa do João é bonita.",
+        "content_en": "João's house is beautiful.",
+        "hint": "'s = posse (apóstrofo s)",
+        "difficulty": 2,
+        "grammar_rule": "Possessive 's: nome + 's + substantivo",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "João's house is beautiful"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "João's"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Os brinquedos das crianças.",
+        "content_en": "The children's toys.",
+        "hint": "children's = das crianças (plural irregular + 's)",
+        "difficulty": 2,
+        "grammar_rule": "Plurais irregulares: children's, people's, men's",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The children's toys"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "children's",
+            "options": [
+              "children's",
+              "childrens'",
+              "childrens",
+              "children"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "De quem é essa mochila?",
+        "content_en": "Whose backpack is this?",
+        "hint": "whose = de quem (posse)",
+        "difficulty": 2,
+        "grammar_rule": "Whose: pergunta sobre posse (não confundir com who's = who is)",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Whose backpack is this"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "Whose",
+            "options": [
+              "Whose",
+              "Who's",
+              "Who",
+              "Whom"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Esses são os seus, não os meus.",
+        "content_en": "These are yours, not mine.",
+        "hint": "yours = seus; mine = meus",
+        "difficulty": 2,
+        "grammar_rule": "Pronomes possessivos em contraste: yours vs mine",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "These are yours, not mine"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "These",
+              "are",
+              "yours",
+              "not",
+              "mine"
+            ],
+            "correct_answer": "These are yours not mine"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "A ideia dela era melhor que a nossa.",
+        "content_en": "Her idea was better than ours.",
+        "hint": "ours = a nossa (pronome possessivo)",
+        "difficulty": 2,
+        "grammar_rule": "Ours = o nosso/a nossa (substitui our + substantivo)",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Her idea was better than ours"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "ours",
+            "options": [
+              "ours",
+              "our",
+              "us",
+              "we"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "O escritório do meu pai fica longe.",
+        "content_en": "My father's office is far away.",
+        "hint": "father's = do meu pai",
+        "difficulty": 3,
+        "grammar_rule": "Possessive 's com relação familiar",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "My father's office is far away"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "father's"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "O carro dos vizinhos é novo.",
+        "content_en": "The neighbors' car is new.",
+        "hint": "neighbors' = dos vizinhos (plural regular: só apóstrofo)",
+        "difficulty": 3,
+        "grammar_rule": "Plural regular + posse: s' (só apóstrofo após o s do plural)",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The neighbors' car is new"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "neighbors'",
+            "options": [
+              "neighbors'",
+              "neighbor's",
+              "neighbors",
+              "neighbor"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Um amigo meu mora em Londres.",
+        "content_en": "A friend of mine lives in London.",
+        "hint": "a friend of mine = um amigo meu (dupla posse)",
+        "difficulty": 3,
+        "grammar_rule": "Double possessive: a/an + noun + of + possessive pronoun",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "A friend of mine lives in London"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "mine",
+            "options": [
+              "mine",
+              "my",
+              "me",
+              "I"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Esse não é o problema deles.",
+        "content_en": "That's not their problem.",
+        "hint": "their = deles/delas (adjetivo possessivo)",
+        "difficulty": 3,
+        "grammar_rule": "Their vs they're vs there: their = possessivo",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "That's not their problem"
+          },
+          {
+            "type": "FILL_GAP",
+            "correct_answer": "their",
+            "options": [
+              "their",
+              "they're",
+              "there",
+              "theirs"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "De quem são essas chaves?",
+        "content_en": "Whose keys are these?",
+        "hint": "Whose + substantivo + are these = de quem são",
+        "difficulty": 3,
+        "grammar_rule": "Whose em perguntas com plural",
+        "exercises": [
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Whose keys are these"
+          },
+          {
+            "type": "ORDER_SENTENCE",
+            "scrambled_words": [
+              "Whose",
+              "keys",
+              "are",
+              "these"
+            ],
+            "correct_answer": "Whose keys are these"
+          }
+        ]
+      }
+    ]
+  }
+]
