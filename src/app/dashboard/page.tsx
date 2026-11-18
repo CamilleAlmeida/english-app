@@ -176,7 +176,7 @@ export default function DashboardPage() {
           <div className="mt-3 flex flex-col gap-2">
             {blockStats.map((bs) => {
               const pct = bs.totalItems > 0 ? Math.round((bs.done / bs.totalItems) * 100) : 0;
-              const isVocab = bs.type === 'VOCABULARY';
+              const isVocab = bs.type === 'VOCAB';
               return (
                 <Link key={bs.id} href={`/study/${bs.id}`} className="rounded-[var(--radius-lg)] bg-surface p-3 shadow-ds-sm block">
                   <div className="flex items-center justify-between">

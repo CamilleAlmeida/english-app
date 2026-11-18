@@ -1,12 +1,17 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { Brain, BookOpen, RefreshCw, Target, Flame, Rocket, type LucideIcon } from 'lucide-react';
+import { Brain, BookOpen, RefreshCw, Target, Flame, Rocket, GraduationCap, type LucideIcon } from 'lucide-react';
 
 export default function WelcomePage() {
   const router = useRouter();
 
   function handleStart() {
+    // Go to placement test first
+    router.push('/placement-test');
+  }
+
+  function handleSkip() {
     try {
       localStorage.setItem('english-app-onboarded', 'true');
     } catch {}
@@ -47,16 +52,23 @@ export default function WelcomePage() {
           />
         </div>
 
-        {/* CTA */}
+        {/* CTA — Placement test */}
         <button
           onClick={handleStart}
           className="flex items-center justify-center gap-2 w-full mt-8 bg-primary text-primary-fg font-semibold py-4 rounded-[var(--radius-pill)] text-lg hover:opacity-90 active:scale-[0.98] transition-all shadow-ds-md"
         >
-          Começar agora <Rocket size={20} />
+          <GraduationCap size={20} /> Fazer teste de nível
         </button>
 
-        <p className="text-xs text-fg-muted mt-4 mb-8">
-          Nível A2/B1 → B2/C1 • 100% gratuito • Funciona offline
+        <button
+          onClick={handleSkip}
+          className="block w-full text-sm text-fg-muted hover:text-fg py-3 mt-2 transition-colors"
+        >
+          Pular e começar como Iniciante <Rocket size={14} className="inline ml-1" />
+        </button>
+
+        <p className="text-xs text-fg-muted mt-2 mb-8">
+          Níveis: Iniciante • Intermediário • Avançado
         </p>
       </div>
     </div>

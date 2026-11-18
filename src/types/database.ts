@@ -4,6 +4,7 @@
 
 export type BlockType = 'VOCAB' | 'GRAMMAR';
 export type ItemType = 'WORD' | 'PHRASE' | 'SENTENCE';
+export type DifficultyLevel = 'beginner' | 'intermediate' | 'advanced';
 export type ReviewState = 'NOVA' | '24H' | '7D' | '21D' | 'DONE';
 export type ErrorType = 'CONTENT' | 'ATTENTION';
 export type SessionType = 'DAILY' | 'SIMULATION';

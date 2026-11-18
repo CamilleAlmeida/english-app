@@ -1,0 +1,728 @@
+[
+  {
+    "name": "Present Perfect",
+    "type": "GRAMMAR",
+    "order": 1,
+    "level": "intermediate",
+    "intro_card": {
+      "title": "Present Perfect (have/has + past participle)",
+      "explanation": "O Present Perfect conecta o passado ao presente. Use para experiências de vida, ações recentes e situações que começaram no passado e continuam agora.",
+      "examples": [
+        "I have visited Paris twice.",
+        "She has never eaten sushi.",
+        "We have lived here since 2020."
+      ]
+    },
+    "unlock_after": null,
+    "items": [
+      {
+        "type": "SENTENCE",
+        "content_pt": "Eu já visitei Paris.",
+        "content_en": "I have already visited Paris.",
+        "hint": "Have + past participle; already vai entre have e o verbo",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "I have already visited Paris.",
+              "I already visited Paris.",
+              "I have visit Paris already.",
+              "I did already visit Paris."
+            ],
+            "correct_answer": "I have already visited Paris."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I have already visited Paris."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Ela nunca comeu sushi.",
+        "content_en": "She has never eaten sushi.",
+        "hint": "Has (3ª pessoa) + never + past participle",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "She has never eaten sushi.",
+              "She never has eaten sushi.",
+              "She have never eaten sushi.",
+              "She has never eat sushi."
+            ],
+            "correct_answer": "She has never eaten sushi."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "She has never eaten sushi."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Nós moramos aqui desde 2020.",
+        "content_en": "We have lived here since 2020.",
+        "hint": "Since = desde (ponto no tempo); for = por (duração)",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "We have lived here since 2020.",
+              "We live here since 2020.",
+              "We are living here since 2020.",
+              "We lived here since 2020."
+            ],
+            "correct_answer": "We have lived here since 2020."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "We have lived here since 2020."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Você já terminou?",
+        "content_en": "Have you finished yet?",
+        "hint": "Yet = já (em perguntas) / ainda (em negativas)",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "Have you finished yet?",
+              "Did you finish yet?",
+              "Have you yet finished?",
+              "You have finished yet?"
+            ],
+            "correct_answer": "Have you finished yet?"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Have you finished yet?"
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Ele trabalha lá há cinco anos.",
+        "content_en": "He has worked there for five years.",
+        "hint": "For + duração (five years); since + ponto no tempo",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "He has worked there for five years.",
+              "He works there for five years.",
+              "He has worked there since five years.",
+              "He is working there for five years."
+            ],
+            "correct_answer": "He has worked there for five years."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "He has worked there for five years."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Eu acabei de chegar.",
+        "content_en": "I have just arrived.",
+        "hint": "Just = acabou de acontecer; vai entre have e o verbo",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "I have just arrived.",
+              "I just arrived.",
+              "I have arrived just.",
+              "I am just arrived."
+            ],
+            "correct_answer": "I have just arrived."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I have just arrived."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Eles ainda não responderam.",
+        "content_en": "They haven't replied yet.",
+        "hint": "Haven't + past participle + yet (ainda não)",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "They haven't replied yet.",
+              "They didn't reply yet.",
+              "They haven't yet reply.",
+              "They not have replied yet."
+            ],
+            "correct_answer": "They haven't replied yet."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "They haven't replied yet."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Você já viajou para fora do país?",
+        "content_en": "Have you ever traveled abroad?",
+        "hint": "Ever = alguma vez (em perguntas sobre experiência de vida)",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "Have you ever traveled abroad?",
+              "Did you ever travel abroad?",
+              "Have you traveled ever abroad?",
+              "You have ever traveled abroad?"
+            ],
+            "correct_answer": "Have you ever traveled abroad?"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Have you ever traveled abroad?"
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "É a melhor comida que eu já comi.",
+        "content_en": "It's the best food I have ever eaten.",
+        "hint": "Superlativo + I have ever + past participle",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "It's the best food I have ever eaten.",
+              "It's the best food I ever ate.",
+              "It's the best food I have ever eat.",
+              "It's the best food I ever eaten."
+            ],
+            "correct_answer": "It's the best food I have ever eaten."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "It's the best food I have ever eaten."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Ela já leu três livros este mês.",
+        "content_en": "She has read three books this month.",
+        "hint": "This month/week/year = período que ainda não acabou → Present Perfect",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "She has read three books this month.",
+              "She read three books this month.",
+              "She has readed three books this month.",
+              "She reads three books this month."
+            ],
+            "correct_answer": "She has read three books this month."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "She has read three books this month."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Quanto tempo você mora aqui?",
+        "content_en": "How long have you lived here?",
+        "hint": "How long + have/has + past participle para perguntar duração",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "How long have you lived here?",
+              "How long you live here?",
+              "How long do you live here?",
+              "How long are you living here?"
+            ],
+            "correct_answer": "How long have you lived here?"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "How long have you lived here?"
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Eu perdi minhas chaves.",
+        "content_en": "I have lost my keys.",
+        "hint": "Present Perfect para resultado presente (ainda estou sem as chaves)",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "I have lost my keys.",
+              "I lost my keys.",
+              "I have lose my keys.",
+              "I am lost my keys."
+            ],
+            "correct_answer": "I have lost my keys."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I have lost my keys."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Nós nos conhecemos há muito tempo.",
+        "content_en": "We have known each other for a long time.",
+        "hint": "Know → known (irregular); for a long time = há muito tempo",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "We have known each other for a long time.",
+              "We know each other for a long time.",
+              "We are knowing each other for a long time.",
+              "We have knew each other for a long time."
+            ],
+            "correct_answer": "We have known each other for a long time."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "We have known each other for a long time."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Ele nunca esteve no Brasil.",
+        "content_en": "He has never been to Brazil.",
+        "hint": "Been to = esteve em (ida e volta); gone to = foi para (ainda está lá)",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "He has never been to Brazil.",
+              "He never has been to Brazil.",
+              "He has never gone to Brazil.",
+              "He never went to Brazil."
+            ],
+            "correct_answer": "He has never been to Brazil."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "He has never been to Brazil."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Eu tenho estudado muito ultimamente.",
+        "content_en": "I have been studying a lot lately.",
+        "hint": "Have been + -ing = Present Perfect Continuous (ação contínua recente)",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "I have been studying a lot lately.",
+              "I am studying a lot lately.",
+              "I have studying a lot lately.",
+              "I study a lot lately."
+            ],
+            "correct_answer": "I have been studying a lot lately."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I have been studying a lot lately."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Conditionals",
+    "type": "GRAMMAR",
+    "order": 2,
+    "level": "intermediate",
+    "intro_card": {
+      "title": "Condicionais (If clauses)",
+      "explanation": "As condicionais expressam situações hipotéticas. Zero conditional para fatos, first para possibilidades reais, second para hipóteses irreais.",
+      "examples": [
+        "If it rains, I will stay home.",
+        "If I had money, I would travel.",
+        "If you heat water, it boils."
+      ]
+    },
+    "unlock_after": null,
+    "items": [
+      {
+        "type": "SENTENCE",
+        "content_pt": "Se chover, eu fico em casa.",
+        "content_en": "If it rains, I will stay home.",
+        "hint": "First conditional: If + present, will + infinitive (possibilidade real)",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "If it rains, I will stay home.",
+              "If it will rain, I stay home.",
+              "If it rained, I will stay home.",
+              "If it rains, I would stay home."
+            ],
+            "correct_answer": "If it rains, I will stay home."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "If it rains, I will stay home."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Se você aquecer água, ela ferve.",
+        "content_en": "If you heat water, it boils.",
+        "hint": "Zero conditional: If + present, present (fatos/verdades)",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "If you heat water, it boils.",
+              "If you heat water, it will boil.",
+              "If you heated water, it boils.",
+              "If you heat water, it boiled."
+            ],
+            "correct_answer": "If you heat water, it boils."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "If you heat water, it boils."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Se eu tivesse dinheiro, viajaria.",
+        "content_en": "If I had money, I would travel.",
+        "hint": "Second conditional: If + past simple, would + infinitive (hipótese irreal)",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "If I had money, I would travel.",
+              "If I have money, I would travel.",
+              "If I had money, I will travel.",
+              "If I would have money, I traveled."
+            ],
+            "correct_answer": "If I had money, I would travel."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "If I had money, I would travel."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Se ela estudar, vai passar na prova.",
+        "content_en": "If she studies, she will pass the exam.",
+        "hint": "First conditional; note: studies (3ª pessoa do presente)",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "If she studies, she will pass the exam.",
+              "If she will study, she passes the exam.",
+              "If she studied, she will pass the exam.",
+              "If she study, she will pass the exam."
+            ],
+            "correct_answer": "If she studies, she will pass the exam."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "If she studies, she will pass the exam."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Se eu fosse você, aceitaria a oferta.",
+        "content_en": "If I were you, I would accept the offer.",
+        "hint": "If I were (não was!) — forma subjuntiva para conselhos",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "If I were you, I would accept the offer.",
+              "If I was you, I will accept the offer.",
+              "If I am you, I would accept the offer.",
+              "If I were you, I accepted the offer."
+            ],
+            "correct_answer": "If I were you, I would accept the offer."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "If I were you, I would accept the offer."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "O que você faria se ganhasse na loteria?",
+        "content_en": "What would you do if you won the lottery?",
+        "hint": "Second conditional com pergunta: What would + subject + do if + past?",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "What would you do if you won the lottery?",
+              "What will you do if you win the lottery?",
+              "What do you do if you won the lottery?",
+              "What would you do if you win the lottery?"
+            ],
+            "correct_answer": "What would you do if you won the lottery?"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "What would you do if you won the lottery?"
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Se não chover amanhã, vamos à praia.",
+        "content_en": "If it doesn't rain tomorrow, we will go to the beach.",
+        "hint": "First conditional negativo: If + doesn't + infinitive",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "If it doesn't rain tomorrow, we will go to the beach.",
+              "If it won't rain tomorrow, we go to the beach.",
+              "If it didn't rain tomorrow, we will go to the beach.",
+              "If it don't rain tomorrow, we will go to the beach."
+            ],
+            "correct_answer": "If it doesn't rain tomorrow, we will go to the beach."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "If it doesn't rain tomorrow, we will go to the beach."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Se eu pudesse voar, iria para qualquer lugar.",
+        "content_en": "If I could fly, I would go anywhere.",
+        "hint": "Could = pudesse (passado de can no condicional)",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "If I could fly, I would go anywhere.",
+              "If I can fly, I would go anywhere.",
+              "If I could fly, I will go anywhere.",
+              "If I could fly, I went anywhere."
+            ],
+            "correct_answer": "If I could fly, I would go anywhere."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "If I could fly, I would go anywhere."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "A menos que você se apresse, vai perder o ônibus.",
+        "content_en": "Unless you hurry, you will miss the bus.",
+        "hint": "Unless = a menos que = if not",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "Unless you hurry, you will miss the bus.",
+              "If you don't hurry, you will miss the bus.",
+              "Unless you hurry, you miss the bus.",
+              "Unless you will hurry, you miss the bus."
+            ],
+            "correct_answer": "Unless you hurry, you will miss the bus."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Unless you hurry, you will miss the bus."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Se eu soubesse a resposta, te contaria.",
+        "content_en": "If I knew the answer, I would tell you.",
+        "hint": "Second conditional: situação irreal no presente",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "If I knew the answer, I would tell you.",
+              "If I know the answer, I would tell you.",
+              "If I knew the answer, I will tell you.",
+              "If I knew the answer, I told you."
+            ],
+            "correct_answer": "If I knew the answer, I would tell you."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "If I knew the answer, I would tell you."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Eu teria ido se tivesse sabido.",
+        "content_en": "I would have gone if I had known.",
+        "hint": "Third conditional: would have + pp, if + had + pp (passado irreal)",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "I would have gone if I had known.",
+              "I would go if I had known.",
+              "I would have gone if I knew.",
+              "I will have gone if I had known."
+            ],
+            "correct_answer": "I would have gone if I had known."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I would have gone if I had known."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Se ela tivesse estudado, teria passado.",
+        "content_en": "If she had studied, she would have passed.",
+        "hint": "Third conditional: lamento sobre o passado",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "If she had studied, she would have passed.",
+              "If she studied, she would have passed.",
+              "If she had studied, she will pass.",
+              "If she would study, she had passed."
+            ],
+            "correct_answer": "If she had studied, she would have passed."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "If she had studied, she would have passed."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Se eu morasse mais perto, iria a pé.",
+        "content_en": "If I lived closer, I would walk.",
+        "hint": "Second conditional: situação irreal/hipotética",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "If I lived closer, I would walk.",
+              "If I live closer, I would walk.",
+              "If I lived closer, I will walk.",
+              "If I lived closer, I walked."
+            ],
+            "correct_answer": "If I lived closer, I would walk."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "If I lived closer, I would walk."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Se você precisar de ajuda, me ligue.",
+        "content_en": "If you need help, call me.",
+        "hint": "Zero conditional com imperativo: If + present, imperativo",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "If you need help, call me.",
+              "If you will need help, call me.",
+              "If you needed help, call me.",
+              "If you need help, you call me."
+            ],
+            "correct_answer": "If you need help, call me."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "If you need help, call me."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Mesmo se chover, vou correr.",
+        "content_en": "Even if it rains, I will run.",
+        "hint": "Even if = mesmo se (reforça que a condição não muda a ação)",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "Even if it rains, I will run.",
+              "Even it rains, I will run.",
+              "Even if it will rain, I run.",
+              "Even if it rained, I will run."
+            ],
+            "correct_answer": "Even if it rains, I will run."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Even if it rains, I will run."
+          }
+        ]
+      }
+    ]
+  }
+]

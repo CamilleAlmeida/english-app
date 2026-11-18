@@ -380,7 +380,8 @@
           }
         ]
       }
-    ]
+    ],
+    "level": "beginner"
   },
   {
     "name": "Daily Habits",
@@ -759,7 +760,8 @@
           }
         ]
       }
-    ]
+    ],
+    "level": "beginner"
   },
   {
     "name": "Right Now",
@@ -1149,7 +1151,8 @@
           }
         ]
       }
-    ]
+    ],
+    "level": "beginner"
   },
   {
     "name": "Looking Back",
@@ -1533,7 +1536,8 @@
           }
         ]
       }
-    ]
+    ],
+    "level": "beginner"
   },
   {
     "name": "What's Next",
@@ -1915,7 +1919,8 @@
           }
         ]
       }
-    ]
+    ],
+    "level": "beginner"
   },
   {
     "name": "Describing Things",
@@ -2287,7 +2292,8 @@
           }
         ]
       }
-    ]
+    ],
+    "level": "beginner"
   },
   {
     "name": "People & Possession",
@@ -2645,6 +2651,7 @@
           }
         ]
       }
-    ]
+    ],
+    "level": "beginner"
   }
 ]

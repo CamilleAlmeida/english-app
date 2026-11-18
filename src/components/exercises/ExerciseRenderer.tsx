@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { ExerciseData } from '@/types/database';
 import { LoadedItem } from '@/lib/seed-loader';
 import { blankOut, shuffle } from '@/lib/answer-check';
+import { Lightbulb } from 'lucide-react';
 
 interface Props {
   item: LoadedItem;
@@ -22,11 +23,36 @@ const LABELS: Record<string, string> = {
 };
 
 export default function ExerciseRenderer({ item, exercise, disabled, onSubmit }: Props) {
+  const [showHint, setShowHint] = useState(false);
+
   return (
     <div>
-      <p className="text-xs font-medium uppercase tracking-wide text-fg-brand">
-        {LABELS[exercise.type]}
-      </p>
+      <div className="flex items-center justify-between">
+        <p className="text-xs font-medium uppercase tracking-wide text-fg-brand">
+          {LABELS[exercise.type]}
+        </p>
+        {item.hint && !disabled && (
+          <button
+            onClick={() => setShowHint(!showHint)}
+            className={`flex items-center gap-1 text-xs px-2.5 py-1 rounded-[var(--radius-pill)] transition-colors ${
+              showHint
+                ? 'bg-amber-100 text-amber-700 border border-amber-300'
+                : 'bg-surface-2 text-fg-muted hover:text-fg border border-transparent'
+            }`}
+          >
+            <Lightbulb size={13} />
+            Dica
+          </button>
+        )}
+      </div>
+
+      {showHint && item.hint && (
+        <div className="mt-2 flex items-start gap-2 rounded-[var(--radius-md)] bg-amber-50 border border-amber-200 px-3 py-2">
+          <Lightbulb size={16} className="text-amber-500 flex-shrink-0 mt-0.5" />
+          <p className="text-sm text-amber-800">{item.hint}</p>
+        </div>
+      )}
+
       <div className="mt-3">
         {exercise.type === 'MULTIPLE_CHOICE' && (
           <MultipleChoice item={item} exercise={exercise} disabled={disabled} onSubmit={onSubmit} />

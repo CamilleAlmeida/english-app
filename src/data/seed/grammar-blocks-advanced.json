@@ -1,0 +1,365 @@
+[
+  {
+    "name": "Passive Voice",
+    "type": "GRAMMAR",
+    "order": 1,
+    "level": "advanced",
+    "intro_card": {
+      "title": "Voz Passiva (Passive Voice)",
+      "explanation": "A voz passiva é usada quando o foco está na ação, não em quem a faz. Muito comum em textos formais, notícias e contextos científicos.",
+      "examples": [
+        "The report was written by the team.",
+        "English is spoken worldwide.",
+        "The building is being renovated."
+      ]
+    },
+    "unlock_after": null,
+    "items": [
+      {
+        "type": "SENTENCE",
+        "content_pt": "O relatório foi escrito pela equipe.",
+        "content_en": "The report was written by the team.",
+        "hint": "Was/were + past participle + by (agente)",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "The report was written by the team.",
+              "The report wrote by the team.",
+              "The report was wrote by the team.",
+              "The report is written by the team."
+            ],
+            "correct_answer": "The report was written by the team."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The report was written by the team."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Inglês é falado no mundo inteiro.",
+        "content_en": "English is spoken worldwide.",
+        "hint": "Is + past participle (passiva no presente)",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "English is spoken worldwide.",
+              "English is speaking worldwide.",
+              "English speaks worldwide.",
+              "English was spoken worldwide."
+            ],
+            "correct_answer": "English is spoken worldwide."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "English is spoken worldwide."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "A reunião foi cancelada.",
+        "content_en": "The meeting was canceled.",
+        "hint": "Was + past participle; sem agente quando não importa quem fez",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "The meeting was canceled.",
+              "The meeting canceled.",
+              "The meeting is cancel.",
+              "The meeting has cancel."
+            ],
+            "correct_answer": "The meeting was canceled."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The meeting was canceled."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "As regras devem ser seguidas.",
+        "content_en": "The rules must be followed.",
+        "hint": "Modal (must/can/should) + be + past participle",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "The rules must be followed.",
+              "The rules must followed.",
+              "The rules must being followed.",
+              "The rules must to be followed."
+            ],
+            "correct_answer": "The rules must be followed."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The rules must be followed."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "O prédio está sendo renovado.",
+        "content_en": "The building is being renovated.",
+        "hint": "Is being + past participle (passiva contínua)",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "The building is being renovated.",
+              "The building is renovating.",
+              "The building is renovated being.",
+              "The building being is renovated."
+            ],
+            "correct_answer": "The building is being renovated."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The building is being renovated."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "O e-mail já foi enviado.",
+        "content_en": "The email has already been sent.",
+        "hint": "Has/have + been + past participle (passiva no present perfect)",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "The email has already been sent.",
+              "The email has already sent.",
+              "The email already has been sent.",
+              "The email was already been sent."
+            ],
+            "correct_answer": "The email has already been sent."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The email has already been sent."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "A decisão será tomada amanhã.",
+        "content_en": "The decision will be made tomorrow.",
+        "hint": "Will + be + past participle (passiva no futuro)",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "The decision will be made tomorrow.",
+              "The decision will made tomorrow.",
+              "The decision will be make tomorrow.",
+              "The decision is made tomorrow."
+            ],
+            "correct_answer": "The decision will be made tomorrow."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The decision will be made tomorrow."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "O problema pode ser resolvido facilmente.",
+        "content_en": "The problem can be solved easily.",
+        "hint": "Can + be + past participle",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "The problem can be solved easily.",
+              "The problem can solved easily.",
+              "The problem can be solve easily.",
+              "The problem can being solved easily."
+            ],
+            "correct_answer": "The problem can be solved easily."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The problem can be solved easily."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Diz-se que ele é muito rico.",
+        "content_en": "He is said to be very rich.",
+        "hint": "Is said to = diz-se que (estrutura impessoal)",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "He is said to be very rich.",
+              "He said to be very rich.",
+              "He is saying to be very rich.",
+              "It says he is very rich."
+            ],
+            "correct_answer": "He is said to be very rich."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "He is said to be very rich."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "O carro precisa ser consertado.",
+        "content_en": "The car needs to be repaired.",
+        "hint": "Needs to be + past participle",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "The car needs to be repaired.",
+              "The car needs repaired.",
+              "The car needs repairing.",
+              "The car need to be repaired."
+            ],
+            "correct_answer": "The car needs to be repaired."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The car needs to be repaired."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "O jantar foi preparado por ela.",
+        "content_en": "Dinner was prepared by her.",
+        "hint": "Was + past participle + by + agente",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "Dinner was prepared by her.",
+              "Dinner prepared by her.",
+              "Dinner was prepare by her.",
+              "Dinner is prepared by her."
+            ],
+            "correct_answer": "Dinner was prepared by her."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Dinner was prepared by her."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Os resultados serão publicados na próxima semana.",
+        "content_en": "The results will be published next week.",
+        "hint": "Will be + past participle (futuro passivo)",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "The results will be published next week.",
+              "The results will publish next week.",
+              "The results are publishing next week.",
+              "The results will be publish next week."
+            ],
+            "correct_answer": "The results will be published next week."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The results will be published next week."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "O projeto deveria ter sido concluído antes.",
+        "content_en": "The project should have been completed earlier.",
+        "hint": "Should have been + pp = deveria ter sido (crítica ao passado)",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "The project should have been completed earlier.",
+              "The project should completed earlier.",
+              "The project should been completed earlier.",
+              "The project should have completed earlier."
+            ],
+            "correct_answer": "The project should have been completed earlier."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The project should have been completed earlier."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "A encomenda está sendo entregue agora.",
+        "content_en": "The package is being delivered right now.",
+        "hint": "Is being + pp = ação passiva acontecendo agora",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "The package is being delivered right now.",
+              "The package is delivering right now.",
+              "The package is delivered right now.",
+              "The package being delivered right now."
+            ],
+            "correct_answer": "The package is being delivered right now."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The package is being delivered right now."
+          }
+        ]
+      },
+      {
+        "type": "SENTENCE",
+        "content_pt": "Espera-se que o projeto seja aprovado.",
+        "content_en": "The project is expected to be approved.",
+        "hint": "Is expected to = espera-se que (passiva impessoal)",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "The project is expected to be approved.",
+              "The project expected to be approved.",
+              "The project is expecting to be approved.",
+              "It expects the project to be approved."
+            ],
+            "correct_answer": "The project is expected to be approved."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "The project is expected to be approved."
+          }
+        ]
+      }
+    ]
+  }
+]

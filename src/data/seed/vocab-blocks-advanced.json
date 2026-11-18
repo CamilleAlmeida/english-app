@@ -1,0 +1,728 @@
+[
+  {
+    "name": "Phrasal Verbs",
+    "type": "VOCAB",
+    "order": 1,
+    "level": "advanced",
+    "intro_card": {
+      "title": "Phrasal Verbs Essenciais",
+      "explanation": "Phrasal verbs são combinações de verbo + preposição/advérbio que mudam completamente o significado. São fundamentais para soar natural em inglês.",
+      "examples": [
+        "I need to figure out this problem.",
+        "She came up with a great idea.",
+        "They called off the meeting."
+      ]
+    },
+    "unlock_after": null,
+    "items": [
+      {
+        "type": "PHRASE",
+        "content_pt": "descobrir / resolver",
+        "content_en": "figure out",
+        "hint": "Figure = imaginar; out = completamente → entender algo",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "figure out",
+              "find out",
+              "work out",
+              "sort out"
+            ],
+            "correct_answer": "figure out"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "figure out"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "inventar / criar (uma ideia)",
+        "content_en": "come up with",
+        "hint": "Come up = surgir; with = com; fazer algo surgir",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "come up with",
+              "think of",
+              "make up",
+              "bring up"
+            ],
+            "correct_answer": "come up with"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "come up with"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "cancelar",
+        "content_en": "call off",
+        "hint": "Call = chamar; off = desligar → cancelar o chamado",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "call off",
+              "put off",
+              "take off",
+              "cut off"
+            ],
+            "correct_answer": "call off"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "call off"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "adiar",
+        "content_en": "put off",
+        "hint": "Put = colocar; off = para longe → empurrar para depois",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "put off",
+              "call off",
+              "hold off",
+              "break off"
+            ],
+            "correct_answer": "put off"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "put off"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "desistir",
+        "content_en": "give up",
+        "hint": "Give = dar; up = embora → abrir mão",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "give up",
+              "give in",
+              "give out",
+              "give away"
+            ],
+            "correct_answer": "give up"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "give up"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "cuidar de",
+        "content_en": "look after",
+        "hint": "Look = olhar; after = depois → olhar por alguém",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "look after",
+              "look for",
+              "look up",
+              "look into"
+            ],
+            "correct_answer": "look after"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "look after"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "investigar",
+        "content_en": "look into",
+        "hint": "Look = olhar; into = dentro → olhar dentro de algo",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "look into",
+              "look for",
+              "look after",
+              "look over"
+            ],
+            "correct_answer": "look into"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "look into"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "superar / se recuperar",
+        "content_en": "get over",
+        "hint": "Get = chegar; over = por cima → passar por cima do problema",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "get over",
+              "get through",
+              "get by",
+              "get along"
+            ],
+            "correct_answer": "get over"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "get over"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "se dar bem com",
+        "content_en": "get along with",
+        "hint": "Get along = caminhar junto → ter boa relação",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "get along with",
+              "get over with",
+              "get through with",
+              "get by with"
+            ],
+            "correct_answer": "get along with"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "get along with"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "acabar (resultado final)",
+        "content_en": "end up",
+        "hint": "End = terminar; up = resultado → terminar em algo inesperado",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "end up",
+              "finish up",
+              "wrap up",
+              "close up"
+            ],
+            "correct_answer": "end up"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "end up"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "recusar",
+        "content_en": "turn down",
+        "hint": "Turn = virar; down = para baixo → rejeitar",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "turn down",
+              "turn off",
+              "turn away",
+              "turn out"
+            ],
+            "correct_answer": "turn down"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "turn down"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "resultar ser",
+        "content_en": "turn out",
+        "hint": "Turn out = no final das contas, acabar sendo",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "turn out",
+              "turn up",
+              "turn in",
+              "turn over"
+            ],
+            "correct_answer": "turn out"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "turn out"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "tolerar / suportar",
+        "content_en": "put up with",
+        "hint": "Put up = aguentar; with = com → suportar algo",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "put up with",
+              "put off with",
+              "put out with",
+              "put down with"
+            ],
+            "correct_answer": "put up with"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "put up with"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "realizar / executar",
+        "content_en": "carry out",
+        "hint": "Carry = carregar; out = até o fim → levar a cabo",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "carry out",
+              "carry on",
+              "carry away",
+              "carry through"
+            ],
+            "correct_answer": "carry out"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "carry out"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "contar com / depender de",
+        "content_en": "count on",
+        "hint": "Count = contar; on = em → contar com alguém",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "count on",
+              "rely on",
+              "depend on",
+              "lean on"
+            ],
+            "correct_answer": "count on"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "count on"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Formal Writing",
+    "type": "VOCAB",
+    "order": 2,
+    "level": "advanced",
+    "intro_card": {
+      "title": "Escrita Formal",
+      "explanation": "Vocabulário para e-mails profissionais, cartas formais e comunicação corporativa. Essencial para trabalho e estudos.",
+      "examples": [
+        "I am writing to inquire about...",
+        "Please find attached...",
+        "I look forward to hearing from you."
+      ]
+    },
+    "unlock_after": null,
+    "items": [
+      {
+        "type": "PHRASE",
+        "content_pt": "Escrevo para informar...",
+        "content_en": "I am writing to inform you...",
+        "hint": "Fórmula padrão para abrir e-mails formais",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "I am writing to inform you...",
+              "I write to tell you...",
+              "I want to say you...",
+              "I am telling you..."
+            ],
+            "correct_answer": "I am writing to inform you..."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I am writing to inform you..."
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Segue em anexo...",
+        "content_en": "Please find attached...",
+        "hint": "Please find = por favor encontre; forma polida de enviar anexos",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "Please find attached...",
+              "I attach here...",
+              "Here is the attach...",
+              "Look at the attachment..."
+            ],
+            "correct_answer": "Please find attached..."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Please find attached..."
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Aguardo seu retorno.",
+        "content_en": "I look forward to hearing from you.",
+        "hint": "Look forward to + gerúndio (-ing) = esperar ansiosamente",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "I look forward to hearing from you.",
+              "I look forward to hear from you.",
+              "I am looking forward hear from you.",
+              "I wait for your answer."
+            ],
+            "correct_answer": "I look forward to hearing from you."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I look forward to hearing from you."
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Com relação a...",
+        "content_en": "With regard to...",
+        "hint": "Regard = consideração; with regard to = no que diz respeito a",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "With regard to...",
+              "About of...",
+              "In relation of...",
+              "Concerning of..."
+            ],
+            "correct_answer": "With regard to..."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "With regard to..."
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Peço desculpas pelo inconveniente.",
+        "content_en": "I apologize for the inconvenience.",
+        "hint": "Apologize = desculpar-se formalmente; inconvenience = transtorno",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "I apologize for the inconvenience.",
+              "Sorry for the trouble.",
+              "I am sorry for the problem.",
+              "Excuse me for the issue."
+            ],
+            "correct_answer": "I apologize for the inconvenience."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I apologize for the inconvenience."
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Conforme combinado...",
+        "content_en": "As agreed upon...",
+        "hint": "As = conforme; agreed upon = acordado; referindo a decisão prévia",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "As agreed upon...",
+              "Like we said...",
+              "As we talked...",
+              "How we decided..."
+            ],
+            "correct_answer": "As agreed upon..."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "As agreed upon..."
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Gostaria de solicitar...",
+        "content_en": "I would like to request...",
+        "hint": "Would like = gostaria (mais polido que want)",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "I would like to request...",
+              "I want to ask...",
+              "I need to have...",
+              "Give me please..."
+            ],
+            "correct_answer": "I would like to request..."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "I would like to request..."
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "no entanto",
+        "content_en": "however",
+        "hint": "However = mas/porém em contexto formal",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "however",
+              "but",
+              "although",
+              "despite"
+            ],
+            "correct_answer": "however"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "however"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "portanto",
+        "content_en": "therefore",
+        "hint": "Therefore = por essa razão; mais formal que \"so\"",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "therefore",
+              "so",
+              "then",
+              "because"
+            ],
+            "correct_answer": "therefore"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "therefore"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "além disso",
+        "content_en": "furthermore",
+        "hint": "Further + more = além do mais; adiciona informação",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "furthermore",
+              "also",
+              "and",
+              "plus"
+            ],
+            "correct_answer": "furthermore"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "furthermore"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Atenciosamente,",
+        "content_en": "Kind regards,",
+        "hint": "Kind regards = fechamento padrão de e-mails profissionais",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "Kind regards,",
+              "With love,",
+              "Bye bye,",
+              "See you,"
+            ],
+            "correct_answer": "Kind regards,"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Kind regards,"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Não hesite em entrar em contato.",
+        "content_en": "Do not hesitate to contact us.",
+        "hint": "Hesitate = hesitar; frase muito usada em e-mails de suporte",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "Do not hesitate to contact us.",
+              "Feel free to call us.",
+              "You can talk to us anytime.",
+              "Just reach us whenever."
+            ],
+            "correct_answer": "Do not hesitate to contact us."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Do not hesitate to contact us."
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Lamentamos informar que...",
+        "content_en": "We regret to inform you that...",
+        "hint": "Regret = lamentar; fórmula para más notícias formais",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "We regret to inform you that...",
+              "We are sorry to say that...",
+              "Unfortunately we tell you...",
+              "Bad news is that..."
+            ],
+            "correct_answer": "We regret to inform you that..."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "We regret to inform you that..."
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Em resposta ao seu e-mail...",
+        "content_en": "In response to your email...",
+        "hint": "In response to = em resposta a; início padrão de reply",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "In response to your email...",
+              "Answering your email...",
+              "About your message...",
+              "For your email..."
+            ],
+            "correct_answer": "In response to your email..."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "In response to your email..."
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "Agradeço antecipadamente.",
+        "content_en": "Thank you in advance.",
+        "hint": "In advance = antecipadamente; agradece antes da ação",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "Thank you in advance.",
+              "Thanks before.",
+              "I thank you earlier.",
+              "Grateful in anticipation."
+            ],
+            "correct_answer": "Thank you in advance."
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Thank you in advance."
+          }
+        ]
+      }
+    ]
+  }
+]

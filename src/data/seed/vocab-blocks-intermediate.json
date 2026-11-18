@@ -1,0 +1,1091 @@
+[
+  {
+    "name": "Business & Meetings",
+    "type": "VOCAB",
+    "order": 1,
+    "level": "intermediate",
+    "intro_card": {
+      "title": "Negócios e Reuniões",
+      "explanation": "Neste bloco você aprenderá vocabulário essencial para o ambiente corporativo: reuniões, apresentações e comunicação profissional.",
+      "examples": [
+        "Let me schedule a meeting.",
+        "The deadline is next Friday.",
+        "Could you send the report?"
+      ]
+    },
+    "unlock_after": null,
+    "items": [
+      {
+        "type": "WORD",
+        "content_pt": "prazo final",
+        "content_en": "deadline",
+        "hint": "Dead + line = limite morto, o último momento",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "deadline",
+              "timeline",
+              "schedule",
+              "due date"
+            ],
+            "correct_answer": "deadline"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "deadline"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "reunião",
+        "content_en": "meeting",
+        "hint": "Meet = encontrar; meeting = encontro formal",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "meeting",
+              "gathering",
+              "party",
+              "conference"
+            ],
+            "correct_answer": "meeting"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "meeting"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "relatório",
+        "content_en": "report",
+        "hint": "Re + port = trazer de volta informações",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "report",
+              "essay",
+              "article",
+              "document"
+            ],
+            "correct_answer": "report"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "report"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "agendar uma reunião",
+        "content_en": "schedule a meeting",
+        "hint": "Schedule = agendar/programar",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "schedule a meeting",
+              "book a party",
+              "plan a trip",
+              "set a date"
+            ],
+            "correct_answer": "schedule a meeting"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "schedule a meeting"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "apresentação",
+        "content_en": "presentation",
+        "hint": "Present + ation = ato de apresentar",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "presentation",
+              "exhibition",
+              "performance",
+              "display"
+            ],
+            "correct_answer": "presentation"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "presentation"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "orçamento",
+        "content_en": "budget",
+        "hint": "Lembra \"bolsa\" em francês antigo — o dinheiro que você tem",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "budget",
+              "salary",
+              "income",
+              "expense"
+            ],
+            "correct_answer": "budget"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "budget"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "tomar uma decisão",
+        "content_en": "make a decision",
+        "hint": "Em inglês usamos MAKE (fazer) e não TAKE para decisões",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "make a decision",
+              "take a decision",
+              "do a decision",
+              "get a decision"
+            ],
+            "correct_answer": "make a decision"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "make a decision"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "lucro",
+        "content_en": "profit",
+        "hint": "Profit = o que sobra depois de pagar os custos",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "profit",
+              "revenue",
+              "income",
+              "salary"
+            ],
+            "correct_answer": "profit"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "profit"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "fornecedor",
+        "content_en": "supplier",
+        "hint": "Supply = fornecer; supplier = quem fornece",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "supplier",
+              "customer",
+              "dealer",
+              "vendor"
+            ],
+            "correct_answer": "supplier"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "supplier"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "encaminhar um e-mail",
+        "content_en": "forward an email",
+        "hint": "Forward = para frente; enviar adiante",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "forward an email",
+              "send an email",
+              "reply an email",
+              "delete an email"
+            ],
+            "correct_answer": "forward an email"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "forward an email"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "meta / objetivo",
+        "content_en": "goal",
+        "hint": "Mesmo que \"gol\" no futebol — o alvo",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "goal",
+              "dream",
+              "wish",
+              "hope"
+            ],
+            "correct_answer": "goal"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "goal"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "acordo / contrato",
+        "content_en": "agreement",
+        "hint": "Agree = concordar; agreement = concordância formal",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "agreement",
+              "promise",
+              "deal",
+              "treaty"
+            ],
+            "correct_answer": "agreement"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "agreement"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "cumprir um prazo",
+        "content_en": "meet a deadline",
+        "hint": "Meet = encontrar/cumprir; meet a deadline = alcançar o limite",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "meet a deadline",
+              "reach a deadline",
+              "hit a deadline",
+              "catch a deadline"
+            ],
+            "correct_answer": "meet a deadline"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "meet a deadline"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "fazer hora extra",
+        "content_en": "work overtime",
+        "hint": "Over + time = além do tempo normal",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "work overtime",
+              "work extra",
+              "do overtime",
+              "make overtime"
+            ],
+            "correct_answer": "work overtime"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "work overtime"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "faturamento",
+        "content_en": "revenue",
+        "hint": "Revenue = toda entrada de dinheiro (antes de descontar custos)",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "revenue",
+              "profit",
+              "income",
+              "salary"
+            ],
+            "correct_answer": "revenue"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "revenue"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Travel & Airport",
+    "type": "VOCAB",
+    "order": 2,
+    "level": "intermediate",
+    "intro_card": {
+      "title": "Viagens e Aeroporto",
+      "explanation": "Aprenda o vocabulário necessário para viajar de avião, fazer check-in, passar pela imigração e se comunicar no aeroporto.",
+      "examples": [
+        "Where is the boarding gate?",
+        "I need to check in.",
+        "My flight is delayed."
+      ]
+    },
+    "unlock_after": null,
+    "items": [
+      {
+        "type": "WORD",
+        "content_pt": "embarque",
+        "content_en": "boarding",
+        "hint": "Board = embarcar (entrar no avião/navio)",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "boarding",
+              "landing",
+              "departing",
+              "arriving"
+            ],
+            "correct_answer": "boarding"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "boarding"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "portão de embarque",
+        "content_en": "boarding gate",
+        "hint": "Gate = portão; boarding gate = onde você entra no avião",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "boarding gate",
+              "exit door",
+              "check-in counter",
+              "luggage claim"
+            ],
+            "correct_answer": "boarding gate"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "boarding gate"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "bagagem",
+        "content_en": "luggage",
+        "hint": "Luggage é incontável — nunca use \"luggages\"",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "luggage",
+              "package",
+              "cargo",
+              "container"
+            ],
+            "correct_answer": "luggage"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "luggage"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "fazer check-in",
+        "content_en": "check in",
+        "hint": "Check in = registrar-se na chegada",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "check in",
+              "sign in",
+              "log in",
+              "register"
+            ],
+            "correct_answer": "check in"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "check in"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "passaporte",
+        "content_en": "passport",
+        "hint": "Pass + port = passagem pelo porto",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "passport",
+              "ticket",
+              "visa",
+              "ID card"
+            ],
+            "correct_answer": "passport"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "passport"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "voo atrasado",
+        "content_en": "delayed flight",
+        "hint": "Delay = atraso; delayed = atrasado",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "delayed flight",
+              "late plane",
+              "slow flight",
+              "missed flight"
+            ],
+            "correct_answer": "delayed flight"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "delayed flight"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "escala",
+        "content_en": "layover",
+        "hint": "Lay over = parar e esperar durante a viagem",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "layover",
+              "stopover",
+              "transfer",
+              "connection"
+            ],
+            "correct_answer": "layover"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "layover"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "declarar na alfândega",
+        "content_en": "declare at customs",
+        "hint": "Customs = alfândega; declare = declarar itens",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "declare at customs",
+              "report to police",
+              "show at security",
+              "present at gate"
+            ],
+            "correct_answer": "declare at customs"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "declare at customs"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "corredor (do avião)",
+        "content_en": "aisle",
+        "hint": "Pronuncia-se \"ail\" (o s é mudo)",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "aisle",
+              "hallway",
+              "corridor",
+              "path"
+            ],
+            "correct_answer": "aisle"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "aisle"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "cinto de segurança",
+        "content_en": "seat belt",
+        "hint": "Seat = assento; belt = cinto",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "seat belt",
+              "safety belt",
+              "car belt",
+              "waist belt"
+            ],
+            "correct_answer": "seat belt"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "seat belt"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "cartão de embarque",
+        "content_en": "boarding pass",
+        "hint": "Pass = passe/permissão para embarcar",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "boarding pass",
+              "flight ticket",
+              "entry card",
+              "travel pass"
+            ],
+            "correct_answer": "boarding pass"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "boarding pass"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "retirar a bagagem",
+        "content_en": "pick up luggage",
+        "hint": "Pick up = pegar/retirar de algum lugar",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "pick up luggage",
+              "get bags",
+              "take luggage",
+              "grab suitcase"
+            ],
+            "correct_answer": "pick up luggage"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "pick up luggage"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "turbulência",
+        "content_en": "turbulence",
+        "hint": "Mesmo em inglês! Só muda a pronúncia: TUR-byu-lens",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "turbulence",
+              "tremor",
+              "shaking",
+              "earthquake"
+            ],
+            "correct_answer": "turbulence"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "turbulence"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "imigração / controle de passaporte",
+        "content_en": "passport control",
+        "hint": "É onde verificam seu passaporte na chegada",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "passport control",
+              "border check",
+              "security gate",
+              "entry point"
+            ],
+            "correct_answer": "passport control"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "passport control"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "bagagem de mão",
+        "content_en": "carry-on bag",
+        "hint": "Carry on = levar consigo; a bolsa que vai com você na cabine",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "carry-on bag",
+              "hand bag",
+              "shoulder bag",
+              "personal bag"
+            ],
+            "correct_answer": "carry-on bag"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "carry-on bag"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Entertainment & Media",
+    "type": "VOCAB",
+    "order": 3,
+    "level": "intermediate",
+    "intro_card": {
+      "title": "Entretenimento e Mídia",
+      "explanation": "Vocabulário sobre filmes, séries, música e redes sociais em inglês.",
+      "examples": [
+        "Have you watched the latest episode?",
+        "This movie got great reviews.",
+        "She went viral on social media."
+      ]
+    },
+    "unlock_after": null,
+    "items": [
+      {
+        "type": "WORD",
+        "content_pt": "episódio",
+        "content_en": "episode",
+        "hint": "Quase igual ao português, só a pronúncia muda: EH-pih-soud",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "episode",
+              "chapter",
+              "scene",
+              "act"
+            ],
+            "correct_answer": "episode"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "episode"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "temporada",
+        "content_en": "season",
+        "hint": "Season = estação do ano E temporada de série",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "season",
+              "series",
+              "volume",
+              "edition"
+            ],
+            "correct_answer": "season"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "season"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "assistir a um filme",
+        "content_en": "watch a movie",
+        "hint": "Watch = assistir; See a movie também funciona",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "watch a movie",
+              "look a movie",
+              "view a movie",
+              "see a movie"
+            ],
+            "correct_answer": "watch a movie"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "watch a movie"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "elenco",
+        "content_en": "cast",
+        "hint": "Cast = grupo de atores de um filme/série",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "cast",
+              "crew",
+              "team",
+              "group"
+            ],
+            "correct_answer": "cast"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "cast"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "legenda",
+        "content_en": "subtitle",
+        "hint": "Sub = abaixo; title = título; texto abaixo da tela",
+        "difficulty": 1,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "subtitle",
+              "caption",
+              "legend",
+              "text"
+            ],
+            "correct_answer": "subtitle"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "subtitle"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "viralizar",
+        "content_en": "go viral",
+        "hint": "Viral = se espalha como um vírus",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "go viral",
+              "get famous",
+              "become popular",
+              "spread fast"
+            ],
+            "correct_answer": "go viral"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "go viral"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "transmissão ao vivo",
+        "content_en": "live stream",
+        "hint": "Live = ao vivo; stream = fluxo/transmissão",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "live stream",
+              "broadcast",
+              "live show",
+              "webcast"
+            ],
+            "correct_answer": "live stream"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "live stream"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "trilha sonora",
+        "content_en": "soundtrack",
+        "hint": "Sound = som; track = faixa; a música do filme",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "soundtrack",
+              "playlist",
+              "background music",
+              "score"
+            ],
+            "correct_answer": "soundtrack"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "soundtrack"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "dar spoiler",
+        "content_en": "give spoilers",
+        "hint": "Spoil = estragar; spoiler = quem estraga a surpresa",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "give spoilers",
+              "tell secrets",
+              "ruin surprise",
+              "reveal plot"
+            ],
+            "correct_answer": "give spoilers"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "give spoilers"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "avaliação / crítica",
+        "content_en": "review",
+        "hint": "Re + view = ver novamente; analisar",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "review",
+              "preview",
+              "opinion",
+              "rating"
+            ],
+            "correct_answer": "review"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "review"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "maratonar uma série",
+        "content_en": "binge-watch",
+        "hint": "Binge = excesso; assistir vários episódios seguidos",
+        "difficulty": 2,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "binge-watch",
+              "marathon-watch",
+              "speed-watch",
+              "over-watch"
+            ],
+            "correct_answer": "binge-watch"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "binge-watch"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "estreia",
+        "content_en": "premiere",
+        "hint": "Premiere = primeira exibição (mesma raiz do francês)",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "premiere",
+              "debut",
+              "opening",
+              "launch"
+            ],
+            "correct_answer": "premiere"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "premiere"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "baseado em fatos reais",
+        "content_en": "based on a true story",
+        "hint": "Based on = baseado em; true story = história verdadeira",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "based on a true story",
+              "made from real life",
+              "inspired by truth",
+              "taken from reality"
+            ],
+            "correct_answer": "based on a true story"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "based on a true story"
+          }
+        ]
+      },
+      {
+        "type": "WORD",
+        "content_pt": "roteiro",
+        "content_en": "screenplay",
+        "hint": "Screen = tela; play = peça; texto para a tela",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "screenplay",
+              "script",
+              "storyboard",
+              "outline"
+            ],
+            "correct_answer": "screenplay"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "screenplay"
+          }
+        ]
+      },
+      {
+        "type": "PHRASE",
+        "content_pt": "indicado ao Oscar",
+        "content_en": "Oscar-nominated",
+        "hint": "Nominated = indicado; recebeu uma indicação",
+        "difficulty": 3,
+        "exercises": [
+          {
+            "type": "MULTIPLE_CHOICE",
+            "options": [
+              "Oscar-nominated",
+              "Oscar-winning",
+              "Oscar-selected",
+              "Oscar-chosen"
+            ],
+            "correct_answer": "Oscar-nominated"
+          },
+          {
+            "type": "TRANSLATE",
+            "correct_answer": "Oscar-nominated"
+          }
+        ]
+      }
+    ]
+  }
+]

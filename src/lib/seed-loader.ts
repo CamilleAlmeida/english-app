@@ -4,7 +4,11 @@
  */
 import vocabSeed from '@/data/seed/vocab-blocks.json';
 import grammarSeed from '@/data/seed/grammar-blocks.json';
-import { ExerciseData, ExerciseType } from '@/types/database';
+import vocabIntSeed from '@/data/seed/vocab-blocks-intermediate.json';
+import grammarIntSeed from '@/data/seed/grammar-blocks-intermediate.json';
+import vocabAdvSeed from '@/data/seed/vocab-blocks-advanced.json';
+import grammarAdvSeed from '@/data/seed/grammar-blocks-advanced.json';
+import { DifficultyLevel, ExerciseData, ExerciseType } from '@/types/database';
 
 interface SeedItem {
   type: string;
@@ -26,6 +30,7 @@ interface SeedBlock {
   name: string;
   type: string;
   order: number;
+  level?: string;
   intro_card: {
     title: string;
     explanation: string;
@@ -52,6 +57,7 @@ export interface LoadedBlock {
   name: string;
   type: string;
   order: number;
+  level: DifficultyLevel;
   intro_card: {
     title: string;
     explanation: string;
@@ -60,7 +66,11 @@ export interface LoadedBlock {
   items: LoadedItem[];
 }
 
-const allSeeds: SeedBlock[] = [...vocabSeed, ...grammarSeed] as SeedBlock[];
+const allSeeds: SeedBlock[] = [
+  ...vocabSeed, ...grammarSeed,
+  ...vocabIntSeed, ...grammarIntSeed,
+  ...vocabAdvSeed, ...grammarAdvSeed,
+] as SeedBlock[];
 
 // Map block names to numeric IDs matching the blocks page
 const blockIdMap: Record<string, string> = {
@@ -72,6 +82,12 @@ const blockIdMap: Record<string, string> = {
   'Looking Back': '14', "What's Next": '15', 'Describing Things': '16',
   'People & Possession': '17', 'Places & Quantities': '18',
   'Abilities & Rules': '19', 'Advanced Structures': '20',
+  // Intermediate
+  'Business & Meetings': '22', 'Travel & Airport': '23', 'Entertainment & Media': '24',
+  'Present Perfect': '25', 'Conditionals': '26',
+  // Advanced
+  'Phrasal Verbs': '27', 'Formal Writing': '28',
+  'Passive Voice': '29',
 };
 
 export function getBlockById(blockId: string): LoadedBlock | null {
@@ -86,6 +102,7 @@ export function getBlockById(blockId: string): LoadedBlock | null {
     name: seed.name,
     type: seed.type,
     order: seed.order,
+    level: (seed.level as DifficultyLevel) || 'beginner',
     intro_card: seed.intro_card,
     items: seed.items.map((item, i) => ({
       id: `${blockId}-${i}`,
@@ -109,4 +126,15 @@ export function getBlockById(blockId: string): LoadedBlock | null {
 
 export function getAllBlockIds(): string[] {
   return Object.values(blockIdMap);
+}
+
+export function getBlocksByLevel(level: DifficultyLevel): LoadedBlock[] {
+  return allSeeds
+    .filter(seed => (seed.level || 'beginner') === level)
+    .map(seed => {
+      const blockId = blockIdMap[seed.name];
+      if (!blockId) return null;
+      return getBlockById(blockId);
+    })
+    .filter((b): b is LoadedBlock => b !== null);
 }

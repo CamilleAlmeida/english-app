@@ -354,7 +354,8 @@
           }
         ]
       }
-    ]
+    ],
+    "level": "beginner"
   },
   {
     "name": "Kitchen",
@@ -718,7 +719,8 @@
           }
         ]
       }
-    ]
+    ],
+    "level": "beginner"
   },
   {
     "name": "Workplace",
@@ -1080,7 +1082,8 @@
           }
         ]
       }
-    ]
+    ],
+    "level": "beginner"
   },
   {
     "name": "Daily Routine",
@@ -1444,7 +1447,8 @@
           }
         ]
       }
-    ]
+    ],
+    "level": "beginner"
   },
   {
     "name": "Shopping",
@@ -1803,7 +1807,8 @@
           }
         ]
       }
-    ]
+    ],
+    "level": "beginner"
   },
   {
     "name": "Health & Body",
@@ -2151,7 +2156,8 @@
           }
         ]
       }
-    ]
+    ],
+    "level": "beginner"
   },
   {
     "name": "Getting Around",
@@ -2501,7 +2507,8 @@
           }
         ]
       }
-    ]
+    ],
+    "level": "beginner"
   },
   {
     "name": "Food & Eating Out",
@@ -2839,7 +2846,8 @@
           }
         ]
       }
-    ]
+    ],
+    "level": "beginner"
   },
   {
     "name": "Feelings & Opinions",
@@ -3176,7 +3184,8 @@
           }
         ]
       }
-    ]
+    ],
+    "level": "beginner"
   },
   {
     "name": "Tech & Online",
@@ -3517,7 +3526,8 @@
           }
         ]
       }
-    ]
+    ],
+    "level": "beginner"
   },
   {
     "name": "Slang & Idioms",
@@ -3879,6 +3889,7 @@
           }
         ]
       }
-    ]
+    ],
+    "level": "beginner"
   }
 ]

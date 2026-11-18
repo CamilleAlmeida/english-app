@@ -3,11 +3,11 @@
 import { useEffect, useState } from 'react';
 import NavBottom from '@/components/ui/NavBottom';
 import BlockCard from '@/components/ui/BlockCard';
-import { BookOpen, Brackets } from 'lucide-react';
-import { BlockType } from '@/types/database';
+import { BookOpen, Brackets, GraduationCap } from 'lucide-react';
+import { BlockType, DifficultyLevel } from '@/types/database';
 import { getBlockProgress } from '@/lib/progress-store';
-import vocabSeed from '@/data/seed/vocab-blocks.json';
-import grammarSeed from '@/data/seed/grammar-blocks.json';
+import { getUserLevel } from '@/lib/level-store';
+import { getBlocksByLevel } from '@/lib/seed-loader';
 
 interface BlockDisplay {
   id: string;
@@ -18,73 +18,73 @@ interface BlockDisplay {
   unlocked: boolean;
 }
 
-// Blocos com seed real
-const seededVocabIds = new Set(vocabSeed.map(b => b.name));
-const seededGrammarIds = new Set(grammarSeed.map(b => b.name));
-
-const vocabNameIds: [string, number][] = [
-  ['Bathroom', 1], ['Kitchen', 2], ['Workplace', 3], ['Daily Routine', 4], ['Shopping', 5],
-  ['Health & Body', 6], ['Getting Around', 7], ['Food & Eating Out', 8], ['Feelings & Opinions', 9], ['Tech & Online', 10],
-  ['Slang & Idioms', 21],
-];
-
-const grammarNameIds: [string, number][] = [
-  ['Foundations', 11], ['Daily Habits', 12], ['Right Now', 13], ['Looking Back', 14], ["What's Next", 15],
-  ['Describing Things', 16], ['People & Possession', 17], ['Places & Quantities', 18], ['Abilities & Rules', 19], ['Advanced Structures', 20],
-];
-
-function buildBlocks(
-  nameIds: [string, number][],
-  type: BlockType,
-  seedData: typeof vocabSeed | typeof grammarSeed,
-  seededNames: Set<string>,
-): BlockDisplay[] {
-  return nameIds.map(([name, id]) => {
-    const seed = seedData.find(b => b.name === name);
-    const hasContent = seededNames.has(name);
-    const blockId = String(id);
-
-    return {
-      id: blockId,
-      name,
-      type,
-      totalItems: seed ? seed.items.length : 15,
-      completedItems: 0, // will be filled from localStorage
-      unlocked: hasContent,
-    };
-  });
-}
-
 type Tab = 'VOCAB' | 'GRAMMAR';
+
+const levelLabels: Record<DifficultyLevel, string> = {
+  beginner: 'Iniciante',
+  intermediate: 'Intermediário',
+  advanced: 'Avançado',
+};
+
+const levelColors: Record<DifficultyLevel, string> = {
+  beginner: 'bg-green-100 text-green-700 border-green-300',
+  intermediate: 'bg-blue-100 text-blue-700 border-blue-300',
+  advanced: 'bg-purple-100 text-purple-700 border-purple-300',
+};
 
 export default function BlocksPage() {
   const [activeTab, setActiveTab] = useState<Tab>('VOCAB');
-  const [vocabBlocks, setVocabBlocks] = useState<BlockDisplay[]>([]);
-  const [grammarBlocks, setGrammarBlocks] = useState<BlockDisplay[]>([]);
+  const [activeLevel, setActiveLevel] = useState<DifficultyLevel>('beginner');
+  const [blocks, setBlocks] = useState<BlockDisplay[]>([]);
 
   useEffect(() => {
-    const vBlocks = buildBlocks(vocabNameIds, 'VOCAB', vocabSeed, seededVocabIds);
-    const gBlocks = buildBlocks(grammarNameIds, 'GRAMMAR', grammarSeed, seededGrammarIds);
-
-    // Load completed counts from localStorage
-    for (const block of [...vBlocks, ...gBlocks]) {
-      const progress = getBlockProgress(block.id);
-      block.completedItems = progress.filter(p => p.state === 'DONE').length;
-    }
-
-    setVocabBlocks(vBlocks);
-    setGrammarBlocks(gBlocks);
+    const userLevel = getUserLevel();
+    setActiveLevel(userLevel);
   }, []);
 
-  const blocks = activeTab === 'VOCAB' ? vocabBlocks : grammarBlocks;
+  useEffect(() => {
+    const levelBlocks = getBlocksByLevel(activeLevel);
+    const displayBlocks: BlockDisplay[] = levelBlocks.map(b => {
+      const progress = getBlockProgress(b.id);
+      return {
+        id: b.id,
+        name: b.name,
+        type: b.type as BlockType,
+        totalItems: b.items.length,
+        completedItems: progress.filter(p => p.state === 'DONE').length,
+        unlocked: true,
+      };
+    });
+    setBlocks(displayBlocks);
+  }, [activeLevel]);
+
+  const filteredBlocks = blocks.filter(b => b.type === activeTab);
 
   return (
     <div className="px-4 pt-6">
       <h1 className="text-2xl font-semibold font-display">Blocos</h1>
       <p className="text-fg-muted mt-1">Escolha um bloco para estudar</p>
 
-      {/* Tabs */}
-      <div className="flex gap-2 mt-4 mb-4">
+      {/* Level tabs */}
+      <div className="flex gap-1.5 mt-4 mb-3">
+        {(['beginner', 'intermediate', 'advanced'] as DifficultyLevel[]).map(level => (
+          <button
+            key={level}
+            onClick={() => setActiveLevel(level)}
+            className={`flex-1 py-1.5 rounded-[var(--radius-pill)] text-xs font-medium transition-colors flex items-center justify-center gap-1 border ${
+              activeLevel === level
+                ? levelColors[level]
+                : 'bg-surface-2 text-fg-muted border-transparent hover:bg-surface-2/80'
+            }`}
+          >
+            <GraduationCap size={13} />
+            {levelLabels[level]}
+          </button>
+        ))}
+      </div>
+
+      {/* Type tabs */}
+      <div className="flex gap-2 mb-4">
         <button
           onClick={() => setActiveTab('VOCAB')}
           className={`flex-1 py-2 rounded-[var(--radius-pill)] text-sm font-medium transition-colors flex items-center justify-center gap-1 ${
@@ -109,21 +109,28 @@ export default function BlocksPage() {
 
       {/* Block list */}
       <div className="flex flex-col gap-3">
-        {blocks.map((block) => (
-          <BlockCard
-            key={block.id}
-            name={block.name}
-            type={block.type}
-            totalItems={block.totalItems}
-            completedItems={block.completedItems}
-            unlocked={block.unlocked}
-            onClick={() => {
-              if (block.unlocked) {
-                window.location.href = `/study/${block.id}`;
-              }
-            }}
-          />
-        ))}
+        {filteredBlocks.length === 0 ? (
+          <div className="text-center py-12 text-fg-muted">
+            <GraduationCap size={40} className="mx-auto mb-3 opacity-40" />
+            <p className="text-sm">Nenhum bloco disponível neste nível ainda.</p>
+          </div>
+        ) : (
+          filteredBlocks.map((block) => (
+            <BlockCard
+              key={block.id}
+              name={block.name}
+              type={block.type}
+              totalItems={block.totalItems}
+              completedItems={block.completedItems}
+              unlocked={block.unlocked}
+              onClick={() => {
+                if (block.unlocked) {
+                  window.location.href = `/study/${block.id}`;
+                }
+              }}
+            />
+          ))
+        )}
       </div>
 
       <NavBottom />
