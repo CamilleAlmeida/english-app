@@ -181,7 +181,7 @@ export default function ReviewSession({
   if (!current) return null;
 
   return (
-    <div className="px-4 pt-6 pb-10">
+    <div className="flex min-h-[100dvh] flex-col px-4 pt-6 pb-8">
       <div className="flex items-center justify-between">
         <h1 className="text-lg font-semibold font-display">Revisão</h1>
         <button onClick={onFinish} className="text-2xl leading-none text-fg-muted" aria-label="Sair">
@@ -205,7 +205,8 @@ export default function ReviewSession({
         Bloco: {current.item.blockName}
       </p>
 
-      <div className="mt-4">
+      {/* Conteúdo ancorado embaixo: o que se toca fica na zona do polegar */}
+      <div className="flex flex-1 flex-col justify-end gap-5 pt-6">
         <ExerciseRenderer
           key={current.key}
           item={current.item}
@@ -213,7 +214,6 @@ export default function ReviewSession({
           disabled={result !== null}
           onSubmit={handleSubmit}
         />
-      </div>
 
       {result?.correct && (
         <div className="mt-6 rounded-[var(--radius-lg)] border border-success bg-success-soft p-4">
@@ -239,6 +239,7 @@ export default function ReviewSession({
           />
         </div>
       )}
+      </div>
     </div>
   );
 }

@@ -5,10 +5,10 @@ import { useRouter } from 'next/navigation';
 import NavBottom from '@/components/ui/NavBottom';
 import Link from 'next/link';
 import { getDueItems, getProgressStats } from '@/lib/progress-store';
-import { getStreakInfo } from '@/lib/streak-store';
+import { getWeekActivity, type WeekActivity } from '@/lib/streak-store';
 import {
-  Flame, Play, BookOpen, Target, Lightbulb, Trophy,
-  CheckCircle2, Clock, AlertTriangle, GraduationCap,
+  Play, BookOpen, Target, Lightbulb, Check,
+  FileSearch, GraduationCap, RefreshCw,
 } from 'lucide-react';
 
 interface HomeStats {
@@ -16,12 +16,6 @@ interface HomeStats {
   inReview: number;
   withErrors: number;
   pendingReviews: number;
-}
-
-interface StreakInfo {
-  current: number;
-  longest: number;
-  studiedToday: boolean;
 }
 
 export default function HomePage() {
@@ -34,7 +28,7 @@ export default function HomePage() {
     pendingReviews: 0,
   });
   const [greeting, setGreeting] = useState('Olá');
-  const [streak, setStreak] = useState<StreakInfo>({ current: 0, longest: 0, studiedToday: false });
+  const [week, setWeek] = useState<WeekActivity | null>(null);
 
   useEffect(() => {
     try {
@@ -57,7 +51,7 @@ export default function HomePage() {
       pendingReviews: dueItems.length,
     });
 
-    setStreak(getStreakInfo());
+    setWeek(getWeekActivity());
 
     const hour = new Date().getHours();
     if (hour < 12) setGreeting('Bom dia');
@@ -84,52 +78,64 @@ export default function HomePage() {
         <p className="text-fg-muted mt-1">Tudo em dia! Que tal estudar um bloco novo?</p>
       )}
 
-      {/* Streak */}
-      <div className="mt-5 bg-warning-soft rounded-[var(--radius-lg)] border border-warning/30 p-4 flex items-center gap-4">
-        <div className="w-12 h-12 rounded-full bg-warning/15 flex items-center justify-center">
-          <Flame size={26} className="text-warning" />
-        </div>
-        <div className="flex-1">
-          <div className="flex items-baseline gap-2">
-            <span className="text-2xl font-bold text-warning">{streak.current}</span>
-            <span className="text-sm text-fg-muted">{streak.current === 1 ? 'dia seguido' : 'dias seguidos'}</span>
+      {/* Atividade da semana — acumula, nunca zera */}
+      {week && (
+        <section className="mt-5 rounded-[var(--radius-lg)] border border-border bg-surface p-4">
+          <div className="flex items-baseline justify-between">
+            <h2 className="text-sm font-semibold text-fg">Sua semana</h2>
+            <span className="text-xs text-fg-muted">
+              {week.studiedThisWeek} de 7 dias
+            </span>
           </div>
-          <p className="text-xs text-fg-muted mt-0.5 flex items-center gap-1">
-            {streak.studiedToday ? (
-              <><CheckCircle2 size={13} className="text-success" /> Você já estudou hoje!</>
-            ) : streak.current > 0 ? (
-              <><Clock size={13} className="text-warning" /> Estude hoje para manter seu streak!</>
-            ) : (
-              'Comece a estudar para iniciar seu streak!'
-            )}
-          </p>
-        </div>
-        {streak.longest > 0 && (
-          <div className="text-center">
-            <Trophy size={16} className="text-warning mx-auto mb-0.5" />
-            <p className="text-lg font-semibold text-warning">{streak.longest}</p>
-          </div>
-        )}
-      </div>
 
-      <div className="grid grid-cols-2 gap-3 mt-6">
-        <StatCard value={stats.learned} label="Aprendidas" color="text-success" Icon={GraduationCap} />
-        <StatCard value={stats.inReview} label="Em revisão" color="text-primary" Icon={Clock} />
-        <StatCard value={stats.withErrors} label="Com erro" color="text-danger" Icon={AlertTriangle} />
-        <StatCard value={stats.pendingReviews} label="Para revisar" color="text-warning" Icon={Target} />
+          <ul className="mt-3 flex justify-between gap-1.5">
+            {week.days.map((d) => (
+              <li key={d.date} className="flex flex-1 flex-col items-center gap-1.5">
+                <span
+                  aria-label={`${d.label}${d.studied ? ': estudou' : d.isToday ? ': hoje' : ''}`}
+                  className={`flex h-9 w-9 items-center justify-center rounded-full border text-xs transition-colors ${
+                    d.studied
+                      ? 'border-primary bg-primary text-primary-fg'
+                      : d.isToday
+                        ? 'border-primary border-dashed bg-primary-soft text-primary'
+                        : d.isFuture
+                          ? 'border-border bg-surface-2 opacity-50'
+                          : 'border-border bg-surface-2'
+                  }`}
+                >
+                  {d.studied && <Check size={16} strokeWidth={3} />}
+                </span>
+                <span className={`text-[10px] ${d.isToday ? 'font-semibold text-fg' : 'text-fg-muted'}`}>
+                  {d.label}
+                </span>
+              </li>
+            ))}
+          </ul>
+
+          <p className="mt-3 text-xs text-fg-muted">
+            {week.totalDays === 0
+              ? 'Seu primeiro dia começa quando você quiser.'
+              : `${week.totalDays} ${week.totalDays === 1 ? 'dia' : 'dias'} de estudo no total.`}
+          </p>
+        </section>
+      )}
+
+      <div className="grid grid-cols-2 gap-3 mt-5">
+        <StatCard value={stats.pendingReviews} label="Para revisar hoje" color="text-primary" Icon={RefreshCw} />
+        <StatCard value={stats.learned} label="Já aprendidas" color="text-success" Icon={GraduationCap} />
       </div>
 
       {stats.pendingReviews > 0 ? (
         <Link
           href="/review"
-          className="flex items-center justify-center gap-2 w-full bg-primary text-primary-fg font-medium py-3 rounded-[var(--radius-pill)] mt-6 hover:opacity-90 active:scale-[0.98] transition-all"
+          className="flex min-h-[52px] items-center justify-center gap-2 w-full bg-primary text-primary-fg font-semibold py-3 rounded-[var(--radius-pill)] mt-6 hover:opacity-90 active:scale-[0.98] transition-all"
         >
           <Play size={18} fill="currentColor" /> Começar revisão do dia
         </Link>
       ) : (
         <Link
           href="/blocks"
-          className="flex items-center justify-center gap-2 w-full bg-success text-primary-fg font-medium py-3 rounded-[var(--radius-pill)] mt-6 hover:opacity-90 active:scale-[0.98] transition-all"
+          className="flex min-h-[52px] items-center justify-center gap-2 w-full bg-primary text-primary-fg font-semibold py-3 rounded-[var(--radius-pill)] mt-6 hover:opacity-90 active:scale-[0.98] transition-all"
         >
           <BookOpen size={18} /> Estudar novos blocos
         </Link>
@@ -137,12 +143,19 @@ export default function HomePage() {
 
       <Link
         href="/simulation"
-        className="flex items-center justify-center gap-2 w-full bg-info text-primary-fg font-medium py-3 rounded-[var(--radius-pill)] mt-3 hover:opacity-90 active:scale-[0.98] transition-all"
+        className="flex min-h-[48px] items-center justify-center gap-2 w-full border border-primary bg-surface text-fg-brand font-medium py-3 rounded-[var(--radius-pill)] mt-3 hover:bg-primary-soft active:scale-[0.98] transition-all"
       >
         <Target size={18} /> Fazer simulado
       </Link>
 
-      <div className="mt-6">
+      <Link
+        href="/reference"
+        className="mt-3 flex min-h-[48px] w-full items-center justify-center gap-2 rounded-[var(--radius-pill)] border border-border bg-surface py-3 font-medium text-fg transition-all hover:bg-surface-2 active:scale-[0.98]"
+      >
+        <FileSearch size={18} /> Consultar material
+      </Link>
+
+      <div className="mt-6 mb-2">
         <h2 className="text-sm font-semibold text-fg-muted mb-2">Dica</h2>
         <div className="bg-surface rounded-[var(--radius-lg)] border border-border p-4">
           <p className="text-sm text-fg-muted flex items-start gap-2">

@@ -1,28 +1,35 @@
 const STREAK_KEY = 'english-app-streak';
 
 interface StreakData {
-  currentStreak: number;
-  lastStudyDate: string; // YYYY-MM-DD
-  longestStreak: number;
+  /** Datas YYYY-MM-DD em que houve estudo. Guardamos os últimos 120 dias. */
+  days: string[];
+  /** Mantidos por compatibilidade com dados já salvos no aparelho. */
+  currentStreak?: number;
+  lastStudyDate?: string;
+  longestStreak?: number;
+}
+
+function iso(d: Date): string {
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 }
 
 function getToday(): string {
-  const d = new Date();
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-}
-
-function getYesterday(): string {
-  const d = new Date();
-  d.setDate(d.getDate() - 1);
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  return iso(new Date());
 }
 
 function loadStreak(): StreakData {
   try {
     const raw = localStorage.getItem(STREAK_KEY);
-    if (raw) return JSON.parse(raw);
+    if (raw) {
+      const parsed = JSON.parse(raw) as StreakData;
+      // Migração: dados antigos só tinham lastStudyDate.
+      if (!Array.isArray(parsed.days)) {
+        parsed.days = parsed.lastStudyDate ? [parsed.lastStudyDate] : [];
+      }
+      return parsed;
+    }
   } catch {}
-  return { currentStreak: 0, lastStudyDate: '', longestStreak: 0 };
+  return { days: [] };
 }
 
 function saveStreak(data: StreakData): void {
@@ -31,47 +38,111 @@ function saveStreak(data: StreakData): void {
   } catch {}
 }
 
-/** Call this whenever the user completes a study or review session */
+/** Chamado quando o usuário conclui uma sessão de estudo ou revisão. */
 export function recordStudyDay(): void {
   const data = loadStreak();
   const today = getToday();
+  if (data.days.includes(today)) return;
 
-  if (data.lastStudyDate === today) return; // already recorded today
-
-  const yesterday = getYesterday();
-
-  if (data.lastStudyDate === yesterday) {
-    data.currentStreak += 1;
-  } else {
-    data.currentStreak = 1;
-  }
-
+  data.days.push(today);
+  data.days.sort();
+  if (data.days.length > 120) data.days = data.days.slice(-120);
   data.lastStudyDate = today;
-  if (data.currentStreak > data.longestStreak) {
-    data.longestStreak = data.currentStreak;
-  }
-
   saveStreak(data);
 }
 
-/** Get current streak info for display */
-export function getStreakInfo(): { current: number; longest: number; studiedToday: boolean } {
+export interface WeekActivity {
+  /** Segunda a domingo da semana corrente. */
+  days: { label: string; date: string; studied: boolean; isToday: boolean; isFuture: boolean }[];
+  /** Quantos dias desta semana tiveram estudo. */
+  studiedThisWeek: number;
+  /** Total acumulado de dias estudados — só cresce, nunca zera. */
+  totalDays: number;
+  studiedToday: boolean;
+}
+
+const LABELS = ['S', 'T', 'Q', 'Q', 'S', 'S', 'D'];
+
+/**
+ * Atividade da semana corrente, de segunda a domingo.
+ * Não existe "perder o progresso": um dia sem estudar fica apenas vazio.
+ */
+export function getWeekActivity(): WeekActivity {
   const data = loadStreak();
-  const today = getToday();
-  const yesterday = getYesterday();
+  const set = new Set(data.days);
+  const today = new Date();
+  const todayStr = iso(today);
 
-  const studiedToday = data.lastStudyDate === today;
+  // Segunda-feira desta semana (getDay: 0=domingo).
+  const monday = new Date(today);
+  const offset = (today.getDay() + 6) % 7;
+  monday.setDate(today.getDate() - offset);
 
-  // If last study was before yesterday, streak is broken
-  if (!studiedToday && data.lastStudyDate !== yesterday) {
-    return { current: 0, longest: data.longestStreak, studiedToday: false };
-  }
+  const days = LABELS.map((label, i) => {
+    const d = new Date(monday);
+    d.setDate(monday.getDate() + i);
+    const date = iso(d);
+    return {
+      label,
+      date,
+      studied: set.has(date),
+      isToday: date === todayStr,
+      isFuture: date > todayStr,
+    };
+  });
 
-  return { current: data.currentStreak, longest: data.longestStreak, studiedToday };
+  return {
+    days,
+    studiedThisWeek: days.filter((d) => d.studied).length,
+    totalDays: data.days.length,
+    studiedToday: set.has(todayStr),
+  };
 }
 
 export function resetStreak(): void {
   try {
     localStorage.removeItem(STREAK_KEY);
   } catch {}
+}
+
+/**
+ * Sequência corrente de dias, derivada de `days`.
+ * Mantido porque a sincronização com o Supabase grava esse número no perfil.
+ * A interface não mostra mais esse contador — ver getWeekActivity().
+ */
+export function getStreakInfo(): { current: number; longest: number; studiedToday: boolean } {
+  const data = loadStreak();
+  const set = new Set(data.days);
+  const todayStr = getToday();
+  const studiedToday = set.has(todayStr);
+
+  const countBack = (from: Date): number => {
+    let n = 0;
+    const d = new Date(from);
+    while (set.has(iso(d))) {
+      n += 1;
+      d.setDate(d.getDate() - 1);
+    }
+    return n;
+  };
+
+  const today = new Date();
+  const yesterday = new Date();
+  yesterday.setDate(today.getDate() - 1);
+  const current = studiedToday ? countBack(today) : countBack(yesterday);
+
+  // Maior sequência já registrada, varrendo o histórico.
+  const sorted = [...data.days].sort();
+  let longest = 0;
+  let run = 0;
+  let prev: Date | null = null;
+  for (const day of sorted) {
+    const d = new Date(day + 'T00:00:00');
+    if (prev && (d.getTime() - prev.getTime()) / 86400000 === 1) run += 1;
+    else run = 1;
+    if (run > longest) longest = run;
+    prev = d;
+  }
+
+  return { current, longest: Math.max(longest, data.longestStreak ?? 0), studiedToday };
 }

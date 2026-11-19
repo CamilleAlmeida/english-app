@@ -75,9 +75,9 @@ const levelLabels: Record<DifficultyLevel, string> = {
 };
 
 const levelColors: Record<DifficultyLevel, string> = {
-  beginner: 'bg-green-100 text-green-700 border-green-300',
-  intermediate: 'bg-blue-100 text-blue-700 border-blue-300',
-  advanced: 'bg-purple-100 text-purple-700 border-purple-300',
+  beginner: 'bg-level-beginner text-level-beginner-fg border-level-beginner',
+  intermediate: 'bg-level-intermediate text-level-intermediate-fg border-level-intermediate',
+  advanced: 'bg-level-advanced text-level-advanced-fg border-level-advanced',
 };
 
 export default function PlacementTestPage() {
@@ -124,12 +124,12 @@ export default function PlacementTestPage() {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center px-6 bg-gradient-splash">
         <div className="max-w-md w-full text-center">
-          <div className="w-20 h-20 rounded-full bg-primary-soft mx-auto mb-4 flex items-center justify-center">
-            <Trophy size={40} className="text-primary" />
+          <div className="w-20 h-20 rounded-full bg-white/15 mx-auto mb-4 flex items-center justify-center">
+            <Trophy size={40} className="text-accent" />
           </div>
-          <h1 className="text-2xl font-bold font-display text-fg">Resultado do Teste</h1>
-          <p className="text-fg-muted mt-2">
-            Você acertou <span className="font-bold text-fg">{totalCorrect}</span> de {totalQuestions} questões
+          <h1 className="text-2xl font-bold font-display text-white">Resultado do Teste</h1>
+          <p className="text-white/90 mt-2">
+            Você acertou <span className="font-bold text-white">{totalCorrect}</span> de {totalQuestions} questões
           </p>
 
           <div className={`mt-6 inline-flex items-center gap-2 px-6 py-3 rounded-[var(--radius-pill)] border text-lg font-bold ${levelColors[result]}`}>
@@ -137,14 +137,14 @@ export default function PlacementTestPage() {
             {levelLabels[result]}
           </div>
 
-          <p className="text-fg-muted text-sm mt-4">
+          <p className="text-white/90 text-sm mt-4">
             Recomendamos que você comece pelo nível <strong>{levelLabels[result]}</strong>.
             Você pode mudar o nível a qualquer momento.
           </p>
 
           <button
             onClick={() => handleFinish(result)}
-            className="flex items-center justify-center gap-2 w-full mt-6 bg-primary text-primary-fg font-semibold py-4 rounded-[var(--radius-pill)] text-lg hover:opacity-90 active:scale-[0.98] transition-all shadow-ds-md"
+            className="flex items-center justify-center gap-2 w-full mt-6 bg-accent text-accent-fg font-semibold py-4 rounded-[var(--radius-pill)] text-lg hover:opacity-90 active:scale-[0.98] transition-all shadow-ds-md"
           >
             Começar como {levelLabels[result]} <ArrowRight size={20} />
           </button>
@@ -157,7 +157,7 @@ export default function PlacementTestPage() {
                 <button
                   key={l}
                   onClick={() => handleFinish(l)}
-                  className="block w-full text-sm text-fg-muted hover:text-fg py-2 transition-colors"
+                  className="block w-full text-sm text-white/90 hover:text-white py-2 transition-colors"
                 >
                   Prefiro começar como {levelLabels[l]}
                 </button>
@@ -173,13 +173,13 @@ export default function PlacementTestPage() {
       <div className="max-w-md w-full">
         {/* Progress */}
         <div className="mb-6">
-          <div className="flex justify-between text-xs text-fg-muted mb-1">
+          <div className="flex justify-between text-xs text-white/90 mb-1">
             <span>Questão {currentQ + 1} de {totalQuestions}</span>
             <span>{Math.round(progress)}%</span>
           </div>
-          <div className="w-full h-2 bg-surface-alt rounded-full overflow-hidden">
+          <div className="w-full h-2 bg-white/25 rounded-full overflow-hidden">
             <div
-              className="h-full bg-primary rounded-full transition-all duration-300"
+              className="h-full bg-accent rounded-full transition-all duration-300"
               style={{ width: `${progress}%` }}
             />
           </div>
@@ -189,9 +189,9 @@ export default function PlacementTestPage() {
         <div className="bg-surface rounded-[var(--radius-lg)] border border-border p-6 shadow-ds-md">
           <div className="mb-1">
             <span className={`text-xs px-2 py-0.5 rounded-full border ${
-              question.weight === 1 ? 'bg-green-50 text-green-600 border-green-200' :
-              question.weight === 2 ? 'bg-blue-50 text-blue-600 border-blue-200' :
-              'bg-purple-50 text-purple-600 border-purple-200'
+              question.weight === 1 ? 'bg-level-beginner text-level-beginner-fg border-level-beginner' :
+              question.weight === 2 ? 'bg-level-intermediate text-level-intermediate-fg border-level-intermediate' :
+              'bg-level-advanced text-level-advanced-fg border-level-advanced'
             }`}>
               {question.weight === 1 ? 'Básico' : question.weight === 2 ? 'Intermediário' : 'Avançado'}
             </span>
@@ -202,15 +202,15 @@ export default function PlacementTestPage() {
             {question.options.map((option, i) => {
               const isSelected = selectedOption === i;
               const isCorrect = i === question.correctIndex;
-              let optionClass = 'bg-surface-alt border-border hover:border-primary';
+              let optionClass = 'bg-surface-2 border-border hover:border-primary';
 
               if (selectedOption !== null) {
                 if (isCorrect) {
-                  optionClass = 'bg-green-50 border-green-400 text-green-800';
+                  optionClass = 'bg-success-soft border-success text-fg';
                 } else if (isSelected && !isCorrect) {
-                  optionClass = 'bg-red-50 border-red-400 text-red-800';
+                  optionClass = 'bg-danger-soft border-danger text-fg';
                 } else {
-                  optionClass = 'bg-surface-alt border-border opacity-50';
+                  optionClass = 'bg-surface-2 border-border opacity-50';
                 }
               }
 
@@ -226,7 +226,7 @@ export default function PlacementTestPage() {
                   </span>
                   <span className="text-sm">{option}</span>
                   {selectedOption !== null && isCorrect && (
-                    <CheckCircle2 size={18} className="ml-auto text-green-600" />
+                    <CheckCircle2 size={18} className="ml-auto text-success" />
                   )}
                 </button>
               );

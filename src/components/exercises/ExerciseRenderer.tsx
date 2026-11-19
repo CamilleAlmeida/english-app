@@ -34,9 +34,9 @@ export default function ExerciseRenderer({ item, exercise, disabled, onSubmit }:
         {item.hint && !disabled && (
           <button
             onClick={() => setShowHint(!showHint)}
-            className={`flex items-center gap-1 text-xs px-2.5 py-1 rounded-[var(--radius-pill)] transition-colors ${
+            className={`flex min-h-[36px] items-center gap-1 text-xs px-3 rounded-[var(--radius-pill)] transition-colors ${
               showHint
-                ? 'bg-amber-100 text-amber-700 border border-amber-300'
+                ? 'bg-accent-soft text-fg border border-accent'
                 : 'bg-surface-2 text-fg-muted hover:text-fg border border-transparent'
             }`}
           >
@@ -47,9 +47,9 @@ export default function ExerciseRenderer({ item, exercise, disabled, onSubmit }:
       </div>
 
       {showHint && item.hint && (
-        <div className="mt-2 flex items-start gap-2 rounded-[var(--radius-md)] bg-amber-50 border border-amber-200 px-3 py-2">
-          <Lightbulb size={16} className="text-amber-500 flex-shrink-0 mt-0.5" />
-          <p className="text-sm text-amber-800">{item.hint}</p>
+        <div className="mt-2 flex items-start gap-2 rounded-[var(--radius-md)] bg-accent-soft border border-accent px-3 py-2">
+          <Lightbulb size={16} className="text-warning flex-shrink-0 mt-0.5" />
+          <p className="text-sm text-fg">{item.hint}</p>
         </div>
       )}
 
@@ -163,7 +163,7 @@ function OrderSentence({ item, exercise, disabled, onSubmit }: Props) {
             key={idx}
             disabled={disabled}
             onClick={() => setPicked(picked.filter((p) => p !== idx))}
-            className="rounded-[var(--radius-md)] bg-primary-soft px-3 py-1.5 text-fg-brand font-medium"
+            className="flex min-h-[44px] items-center rounded-[var(--radius-md)] bg-primary-soft px-3.5 text-fg-brand font-medium"
           >
             {pool.find((p) => p.idx === idx)!.word}
           </button>
@@ -179,7 +179,7 @@ function OrderSentence({ item, exercise, disabled, onSubmit }: Props) {
               key={idx}
               disabled={disabled || used}
               onClick={() => setPicked([...picked, idx])}
-              className={`rounded-[var(--radius-md)] border px-3 py-1.5 transition ${
+              className={`flex min-h-[44px] items-center rounded-[var(--radius-md)] border px-3.5 transition ${
                 used ? 'border-surface-2 bg-surface-2 text-transparent' : 'border-border bg-surface hover:bg-surface-2'
               }`}
             >
@@ -193,7 +193,7 @@ function OrderSentence({ item, exercise, disabled, onSubmit }: Props) {
         <button
           disabled={!allPicked}
           onClick={() => onSubmit(pickedWords.join(' '))}
-          className="mt-6 w-full rounded-[var(--radius-pill)] bg-primary py-3 font-medium text-primary-fg disabled:opacity-40"
+          className="mt-6 min-h-[52px] w-full rounded-[var(--radius-pill)] bg-primary py-3 font-semibold text-primary-fg disabled:opacity-40"
         >
           Verificar
         </button>
@@ -240,13 +240,13 @@ function TextAnswer({
           autoComplete="off"
           spellCheck={false}
           placeholder="Digite em inglês..."
-          className="w-full rounded-[var(--radius-lg)] border border-border bg-surface px-4 py-3 text-lg outline-none focus:border-primary disabled:bg-surface-2 text-fg"
+          className="min-h-[52px] w-full rounded-[var(--radius-lg)] border border-border bg-surface px-4 py-3 text-lg outline-none focus:border-primary disabled:bg-surface-2 text-fg"
         />
         {!disabled && (
           <button
             type="submit"
             disabled={!value.trim()}
-            className="mt-4 w-full rounded-[var(--radius-pill)] bg-primary py-3 font-medium text-primary-fg disabled:opacity-40"
+            className="mt-4 min-h-[52px] w-full rounded-[var(--radius-pill)] bg-primary py-3 font-semibold text-primary-fg disabled:opacity-40"
           >
             Verificar
           </button>
@@ -276,7 +276,7 @@ function OptionList({
           key={opt}
           disabled={disabled}
           onClick={() => onPick(opt)}
-          className={`rounded-[var(--radius-lg)] border px-4 py-3 text-left transition ${
+          className={`flex min-h-[56px] items-center rounded-[var(--radius-lg)] border px-4 py-3 text-left transition ${
             selected === opt ? 'border-primary bg-primary-soft' : 'border-border bg-surface hover:bg-surface-2'
           }`}
         >

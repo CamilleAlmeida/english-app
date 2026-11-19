@@ -118,10 +118,10 @@ export default function ReferenceTopicClient({ slug }: { slug: string }) {
 
               {/* Tip */}
               {section.tip && (
-                <div className="mt-3 flex gap-2 rounded-xl bg-[var(--color-warning-soft,#FFF8E1)] p-3">
+                <div className="mt-3 flex gap-2 rounded-xl bg-[var(--color-warning-soft,#FDF4D6)] p-3">
                   <Lightbulb
                     size={16}
-                    className="mt-0.5 shrink-0 text-[var(--color-warning,#F59E0B)]"
+                    className="mt-0.5 shrink-0 text-[var(--color-warning,#8A5C00)]"
                   />
                   <p className="text-xs leading-relaxed text-fg">
                     <span className="font-semibold">Dica: </span>

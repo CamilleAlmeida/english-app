@@ -27,9 +27,9 @@ const levelLabels: Record<DifficultyLevel, string> = {
 };
 
 const levelColors: Record<DifficultyLevel, string> = {
-  beginner: 'bg-green-100 text-green-700 border-green-300',
-  intermediate: 'bg-blue-100 text-blue-700 border-blue-300',
-  advanced: 'bg-purple-100 text-purple-700 border-purple-300',
+  beginner: 'bg-level-beginner text-level-beginner-fg border-level-beginner',
+  intermediate: 'bg-level-intermediate text-level-intermediate-fg border-level-intermediate',
+  advanced: 'bg-level-advanced text-level-advanced-fg border-level-advanced',
 };
 
 export default function BlocksPage() {

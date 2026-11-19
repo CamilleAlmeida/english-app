@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState  } from 'react';
 import Link from 'next/link';
 import { ErrorType, ExerciseData } from '@/types/database';
 import { LoadedBlock, LoadedItem } from '@/lib/seed-loader';
@@ -10,7 +10,7 @@ import { recordStudyDay } from '@/lib/streak-store';
 import ExerciseRenderer from './ExerciseRenderer';
 import ErrorFeedback from '@/components/feedback/ErrorFeedback';
 import ProgressBar from '@/components/ui/ProgressBar';
-import { Trophy, Dumbbell, BookOpen, CheckCircle2, XCircle, RefreshCw, type LucideIcon } from 'lucide-react';
+import { Trophy, Dumbbell, BookOpen, CheckCircle2, XCircle, RefreshCw, type LucideIcon, Clock, Play } from 'lucide-react';
 
 interface QueueEntry {
   key: string;
@@ -57,6 +57,11 @@ export default function StudySession({ block }: { block: LoadedBlock }) {
   const [phase, setPhase] = useState<Phase>('loading');
   const [queue, setQueue] = useState<QueueEntry[]>([]);
   const [index, setIndex] = useState(0);
+  const startedAtRef = useRef(0);
+
+  useEffect(() => {
+    startedAtRef.current = Date.now();
+  }, []);
   const [result, setResult] = useState<AnswerResult | null>(null);
   const [stats, setStats] = useState({ correct: 0, wrong: 0, content: 0, attention: 0 });
   const startRef = useRef(0);
@@ -164,8 +169,12 @@ export default function StudySession({ block }: { block: LoadedBlock }) {
     const total = stats.correct + stats.wrong;
     const pct = total > 0 ? Math.round((stats.correct / total) * 100) : 0;
     const DoneIcon = getDoneIcon(pct);
+    const elapsed = startedAtRef.current
+      ? Math.max(1, Math.round((Date.now() - startedAtRef.current) / 60000))
+      : 1;
+    const minutes = `${elapsed}min`;
     return (
-      <div className="px-4 pt-6">
+      <div className="flex min-h-[100dvh] flex-col px-4 pt-6 pb-8">
         <Header blockName={block.name} />
         <div className="mt-8 text-center">
           <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary-soft">
@@ -176,20 +185,26 @@ export default function StudySession({ block }: { block: LoadedBlock }) {
           <p className="mt-6 text-5xl font-bold text-primary">{pct}%</p>
           <p className="text-sm text-fg-muted">de acerto na primeira tentativa</p>
         </div>
-        <div className="mt-6 grid grid-cols-2 gap-3">
+        <div className="mt-6 grid grid-cols-3 gap-3">
           <Stat label="Acertos" value={stats.correct} color="text-success" Icon={CheckCircle2} />
           <Stat label="Erros" value={stats.wrong} color="text-danger" Icon={XCircle} />
-          <Stat label="Conteúdo" value={stats.content} color="text-fg" Icon={BookOpen} />
-          <Stat label="Atenção" value={stats.attention} color="text-fg" Icon={RefreshCw} />
+          <Stat label="Tempo" value={minutes} color="text-fg" Icon={Clock} />
         </div>
         <p className="mt-4 text-center text-xs text-fg-muted flex items-center justify-center gap-1">
-          <CheckCircle2 size={12} className="text-success" /> Progresso salvo! Os itens entrarão na sua fila de revisão.
+          <CheckCircle2 size={12} className="text-success" /> Progresso salvo. Os itens entraram na sua fila de revisão.
         </p>
-        <div className="mt-6 flex flex-col gap-2">
-          <button onClick={restart} className="w-full rounded-[var(--radius-pill)] bg-primary py-3 font-medium text-primary-fg">
-            Estudar de novo
+
+        <div className="mt-auto flex flex-col gap-2 pt-8">
+          <Link
+            href="/review"
+            className="flex min-h-[52px] w-full items-center justify-center gap-2 rounded-[var(--radius-pill)] bg-primary font-semibold text-primary-fg"
+          >
+            <Play size={18} fill="currentColor" /> Próxima sessão
+          </Link>
+          <button onClick={restart} className="min-h-[48px] w-full rounded-[var(--radius-pill)] border border-border bg-surface font-medium">
+            Estudar este bloco de novo
           </button>
-          <Link href="/blocks" className="w-full rounded-[var(--radius-pill)] border border-border bg-surface py-3 text-center font-medium">
+          <Link href="/blocks" className="min-h-[48px] w-full rounded-[var(--radius-pill)] py-3 text-center text-sm font-medium text-fg-muted">
             Voltar aos blocos
           </Link>
         </div>
@@ -200,7 +215,7 @@ export default function StudySession({ block }: { block: LoadedBlock }) {
   if (!current) return null;
 
   return (
-    <div className="px-4 pt-6 pb-10">
+    <div className="flex min-h-[100dvh] flex-col px-4 pt-6 pb-8">
       <Header blockName={block.name} />
       <div className="mt-3 flex items-center gap-3">
         <div className="flex-1">
@@ -216,7 +231,8 @@ export default function StudySession({ block }: { block: LoadedBlock }) {
         </p>
       )}
 
-      <div className="mt-6">
+      {/* Conteúdo ancorado embaixo: o que se toca fica na zona do polegar */}
+      <div className="flex flex-1 flex-col justify-end gap-5 pt-6">
         <ExerciseRenderer
           key={current.key}
           item={current.item}
@@ -224,7 +240,6 @@ export default function StudySession({ block }: { block: LoadedBlock }) {
           disabled={result !== null}
           onSubmit={handleSubmit}
         />
-      </div>
 
       {result?.correct && (
         <div className="mt-6 rounded-[var(--radius-lg)] border border-success bg-success-soft p-4">
@@ -250,6 +265,7 @@ export default function StudySession({ block }: { block: LoadedBlock }) {
           />
         </div>
       )}
+      </div>
     </div>
   );
 }
@@ -265,7 +281,7 @@ function Header({ blockName }: { blockName: string }) {
   );
 }
 
-function Stat({ label, value, color, Icon }: { label: string; value: number; color: string; Icon: LucideIcon }) {
+function Stat({ label, value, color, Icon }: { label: string; value: number | string; color: string; Icon: LucideIcon }) {
   return (
     <div className="rounded-[var(--radius-lg)] bg-surface p-4 text-center shadow-ds-sm">
       <p className={`text-2xl font-bold ${color} flex items-center justify-center gap-1`}>

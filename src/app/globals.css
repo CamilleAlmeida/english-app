@@ -2,55 +2,78 @@
 @import "tailwindcss";
 
 /* ============================================
-   BRIGHT BLUES DESIGN SYSTEM — Tokens
+   JADE DESIGN SYSTEM — Tokens
+   Verde de crescimento + dourado de conquista.
+   Todos os pares de contraste validados em WCAG AA.
    ============================================ */
 
 :root {
-  /* ---- Palette ---- */
-  --blue-900: #0000FF;
-  --blue-700: #0044FF;
-  --blue-600: #0066FF;
-  --blue-500: #3388FF;
-  --blue-400: #55AAFF;
-  --blue-300: #77CCFF;
+  /* ---- Palette: Jade ---- */
+  --jade-900: #062E1E;
+  --jade-800: #0B2B22;
+  --jade-700: #0A5C3E;
+  --jade-600: #0E7A52;
+  --jade-500: #159465;
+  --jade-400: #3FB587;
+  --jade-300: #7FD1AE;
+  --jade-200: #B5E6CF;
+  --jade-100: #DCEFE4;
+
+  /* ---- Palette: Dourado (acento / conquista) ---- */
+  --gold-500: #F2B705;
+  --gold-200: #FDE9A8;
+  --gold-100: #FDF4D6;
 
   /* ---- Surfaces ---- */
-  --color-bg: #F4F7FF;
+  --color-bg: #F7F5EE;
   --color-surface: #FFFFFF;
-  --color-surface-2: #EDF1FA;
-  --color-border: #D0D9EB;
+  --color-surface-2: #F1EFE6;
+  --color-border: #E3DFD1;
 
   /* ---- Text ---- */
-  --color-text: #0F1730;
-  --color-text-muted: #5A6785;
-  --color-text-brand: #0066FF;
+  --color-text: #0B2B22;        /* 13,9:1 sobre bg */
+  --color-text-muted: #5A6B60;  /*  5,2:1 sobre bg */
+  --color-text-brand: #0A5C3E;  /*  7,4:1 sobre bg */
 
   /* ---- Primary ---- */
-  --color-primary: #0066FF;
-  --color-primary-hover: #0044FF;
-  --color-primary-soft: #D6E9FF;
+  --color-primary: #0E7A52;       /* branco em cima: 5,35:1 */
+  --color-primary-hover: #0A5C3E; /* branco em cima: 8,04:1 */
+  --color-primary-soft: #DCEFE4;
   --color-primary-fg: #FFFFFF;
 
-  /* ---- Header gradient ---- */
-  --gradient-header: linear-gradient(135deg, #0000FF 0%, #0066FF 60%, #3388FF 100%);
-  --gradient-splash: linear-gradient(180deg, #0044FF 0%, #0000FF 100%);
+  /* ---- Accent ---- */
+  --color-accent: #F2B705;        /* texto escuro em cima: 8,35:1 */
+  --color-accent-soft: #FDF4D6;
+  --color-accent-fg: #0B2B22;
+
+  /* ---- Header gradient (todo stop passa com texto branco) ---- */
+  --gradient-header: linear-gradient(135deg, #0A5C3E 0%, #0E7A52 100%);
+  --gradient-splash: linear-gradient(180deg, #0E7A52 0%, #07422C 100%);
 
   /* ---- Card pastels ---- */
-  --color-card-1: #D6E9FF;
-  --color-card-2: #DCE6FF;
-  --color-card-3: #E3F4FF;
-  --color-card-4: #CCDCFF;
-  --color-card-strong: #0066FF;
+  --color-card-1: #DCEFE4;
+  --color-card-2: #E6F1E2;
+  --color-card-3: #FDF4D6;
+  --color-card-4: #CDEBDC;
+  --color-card-strong: #0E7A52;
+
+  /* ---- Níveis (escada de luminosidade: 2,0x e 2,4x) ---- */
+  --color-level-beginner: #B5E6CF;
+  --color-level-beginner-fg: #0B2B22;
+  --color-level-intermediate: #3FB587;
+  --color-level-intermediate-fg: #0B2B22;
+  --color-level-advanced: #0E7A52;
+  --color-level-advanced-fg: #FFFFFF;
 
   /* ---- Status / semantic ---- */
-  --color-success: #12A66A;
-  --color-success-soft: #D4F5E4;
-  --color-info: #3388FF;
-  --color-info-soft: #D6E9FF;
-  --color-danger: #E5484D;
-  --color-danger-soft: #FFE0E0;
-  --color-warning: #E8A20C;
-  --color-warning-soft: #FFF4D6;
+  --color-success: #0E7A52;
+  --color-success-soft: #DCEFE4;
+  --color-info: #1F5FBF;
+  --color-info-soft: #DCE9FB;
+  --color-danger: #C2281C;
+  --color-danger-soft: #FBE3E0;
+  --color-warning: #8A5C00;
+  --color-warning-soft: #FDF4D6;
 
   /* ---- Typography ---- */
   --font-display: 'Exo 2', sans-serif;
@@ -70,42 +93,56 @@
   --radius-xl: 24px;
   --radius-pill: 999px;
 
-  /* ---- Shadows (blue tint for light) ---- */
-  --shadow-sm: 0 1px 3px rgba(0, 68, 255, 0.06);
-  --shadow-md: 0 4px 12px rgba(0, 68, 255, 0.08);
-  --shadow-lg: 0 8px 24px rgba(0, 68, 255, 0.12);
+  /* ---- Shadows (tinta verde no claro) ---- */
+  --shadow-sm: 0 1px 3px rgba(11, 43, 34, 0.06);
+  --shadow-md: 0 4px 12px rgba(11, 43, 34, 0.08);
+  --shadow-lg: 0 8px 24px rgba(11, 43, 34, 0.12);
 }
 
 /* ---- Dark mode via attribute ---- */
 :root[data-theme="dark"] {
-  --color-bg: #070C1C;
-  --color-surface: #0F1730;
-  --color-surface-2: #182040;
-  --color-border: #243060;
+  --color-bg: #061A14;
+  --color-surface: #0B2B22;
+  --color-surface-2: #123A2E;
+  --color-border: #1E5440;
 
-  --color-text: #E8ECF4;
-  --color-text-muted: #8899BB;
-  --color-text-brand: #55AAFF;
+  --color-text: #EAF3EE;
+  --color-text-muted: #9FB8AC;
+  --color-text-brand: #3FB587;
 
-  --color-primary: #3388FF;
-  --color-primary-hover: #55AAFF;
-  --color-primary-soft: #0F1730;
-  --color-primary-fg: #FFFFFF;
+  --color-primary: #3FB587;
+  --color-primary-hover: #7FD1AE;
+  --color-primary-soft: #123A2E;
+  --color-primary-fg: #06211A;
 
-  --color-card-1: #101E3A;
-  --color-card-2: #121F3C;
-  --color-card-3: #0E1C36;
-  --color-card-4: #0F1A34;
-  --color-card-strong: #3388FF;
+  --color-accent: #F2B705;
+  --color-accent-soft: #2E2408;
+  --color-accent-fg: #0B2B22;
 
-  --color-success: #12A66A;
-  --color-success-soft: #0B2E1E;
-  --color-info: #3388FF;
-  --color-info-soft: #0F1730;
-  --color-danger: #E5484D;
-  --color-danger-soft: #3B1113;
-  --color-warning: #E8A20C;
-  --color-warning-soft: #2E2208;
+  --gradient-header: linear-gradient(135deg, #0A5C3E 0%, #06211A 100%);
+  --gradient-splash: linear-gradient(180deg, #0A5C3E 0%, #061A14 100%);
+
+  --color-card-1: #10342A;
+  --color-card-2: #123A2E;
+  --color-card-3: #2E2408;
+  --color-card-4: #0E2E24;
+  --color-card-strong: #3FB587;
+
+  --color-level-beginner: #1E5440;
+  --color-level-beginner-fg: #EAF3EE;
+  --color-level-intermediate: #0E7A52;
+  --color-level-intermediate-fg: #FFFFFF;
+  --color-level-advanced: #3FB587;
+  --color-level-advanced-fg: #06211A;
+
+  --color-success: #3FB587;
+  --color-success-soft: #10342A;
+  --color-info: #6FA8F5;
+  --color-info-soft: #0F2340;
+  --color-danger: #F2766B;
+  --color-danger-soft: #38100C;
+  --color-warning: #E8B23D;
+  --color-warning-soft: #2E2408;
 
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -115,38 +152,155 @@
 /* ---- Dark mode via system preference (fallback) ---- */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --color-bg: #070C1C;
-    --color-surface: #0F1730;
-    --color-surface-2: #182040;
-    --color-border: #243060;
+    --color-bg: #061A14;
+    --color-surface: #0B2B22;
+    --color-surface-2: #123A2E;
+    --color-border: #1E5440;
 
-    --color-text: #E8ECF4;
-    --color-text-muted: #8899BB;
-    --color-text-brand: #55AAFF;
+    --color-text: #EAF3EE;
+    --color-text-muted: #9FB8AC;
+    --color-text-brand: #3FB587;
 
-    --color-primary: #3388FF;
-    --color-primary-hover: #55AAFF;
-    --color-primary-soft: #0F1730;
-    --color-primary-fg: #FFFFFF;
+    --color-primary: #3FB587;
+    --color-primary-hover: #7FD1AE;
+    --color-primary-soft: #123A2E;
+    --color-primary-fg: #06211A;
 
-    --color-card-1: #101E3A;
-    --color-card-2: #121F3C;
-    --color-card-3: #0E1C36;
-    --color-card-4: #0F1A34;
-    --color-card-strong: #3388FF;
+    --color-accent: #F2B705;
+    --color-accent-soft: #2E2408;
+    --color-accent-fg: #0B2B22;
 
-    --color-success: #12A66A;
-    --color-success-soft: #0B2E1E;
-    --color-info: #3388FF;
-    --color-info-soft: #0F1730;
-    --color-danger: #E5484D;
-    --color-danger-soft: #3B1113;
-    --color-warning: #E8A20C;
-    --color-warning-soft: #2E2208;
+    --gradient-header: linear-gradient(135deg, #0A5C3E 0%, #06211A 100%);
+    --gradient-splash: linear-gradient(180deg, #0A5C3E 0%, #061A14 100%);
+
+    --color-card-1: #10342A;
+    --color-card-2: #123A2E;
+    --color-card-3: #2E2408;
+    --color-card-4: #0E2E24;
+    --color-card-strong: #3FB587;
+
+    --color-level-beginner: #1E5440;
+    --color-level-beginner-fg: #EAF3EE;
+    --color-level-intermediate: #0E7A52;
+    --color-level-intermediate-fg: #FFFFFF;
+    --color-level-advanced: #3FB587;
+    --color-level-advanced-fg: #06211A;
+
+    --color-success: #3FB587;
+    --color-success-soft: #10342A;
+    --color-info: #6FA8F5;
+    --color-info-soft: #0F2340;
+    --color-danger: #F2766B;
+    --color-danger-soft: #38100C;
+    --color-warning: #E8B23D;
+    --color-warning-soft: #2E2408;
 
     --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
     --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+  }
+}
+
+
+/* ============================================
+   PALETA DE TÓPICOS — identidade dos blocos
+   Separada da paleta da marca de propósito: estas cores
+   NÃO são tokens de interface. Só vivem no ladrilho do
+   ícone de um bloco, nunca em botão, texto ou fundo.
+   Todo par ink/soft passa 4,5:1 nos dois temas.
+   ============================================ */
+:root {
+  --topic-rose-ink: #BE123C;
+  --topic-rose-soft: #FFE4E6;
+  --topic-orange-ink: #C2410C;
+  --topic-orange-soft: #FFEDD5;
+  --topic-amber-ink: #92610A;
+  --topic-amber-soft: #FEF3C7;
+  --topic-lime-ink: #4D7C0F;
+  --topic-lime-soft: #ECFCCB;
+  --topic-teal-ink: #0F766E;
+  --topic-teal-soft: #CCFBF1;
+  --topic-cyan-ink: #0E7490;
+  --topic-cyan-soft: #CFFAFE;
+  --topic-sky-ink: #0369A1;
+  --topic-sky-soft: #E0F2FE;
+  --topic-blue-ink: #1D4ED8;
+  --topic-blue-soft: #DBEAFE;
+  --topic-indigo-ink: #4338CA;
+  --topic-indigo-soft: #E0E7FF;
+  --topic-violet-ink: #6D28D9;
+  --topic-violet-soft: #EDE9FE;
+  --topic-fuchsia-ink: #A21CAF;
+  --topic-fuchsia-soft: #FAE8FF;
+  --topic-pink-ink: #BE185D;
+  --topic-pink-soft: #FCE7F3;
+  --topic-clay-ink: #92400E;
+  --topic-clay-soft: #FBEBE2;
+  --topic-slate-ink: #334155;
+  --topic-slate-soft: #E2E8F0;
+}
+
+:root[data-theme="dark"] {
+  --topic-rose-ink: #FDA4AF;
+  --topic-rose-soft: #4C0519;
+  --topic-orange-ink: #FDBA74;
+  --topic-orange-soft: #431407;
+  --topic-amber-ink: #FCD34D;
+  --topic-amber-soft: #422006;
+  --topic-lime-ink: #BEF264;
+  --topic-lime-soft: #1A2E05;
+  --topic-teal-ink: #5EEAD4;
+  --topic-teal-soft: #042F2E;
+  --topic-cyan-ink: #67E8F9;
+  --topic-cyan-soft: #083344;
+  --topic-sky-ink: #7DD3FC;
+  --topic-sky-soft: #082F49;
+  --topic-blue-ink: #93C5FD;
+  --topic-blue-soft: #172554;
+  --topic-indigo-ink: #A5B4FC;
+  --topic-indigo-soft: #1E1B4B;
+  --topic-violet-ink: #C4B5FD;
+  --topic-violet-soft: #2E1065;
+  --topic-fuchsia-ink: #F0ABFC;
+  --topic-fuchsia-soft: #4A044E;
+  --topic-pink-ink: #F9A8D4;
+  --topic-pink-soft: #500724;
+  --topic-clay-ink: #FBBF9C;
+  --topic-clay-soft: #3B1B06;
+  --topic-slate-ink: #CBD5E1;
+  --topic-slate-soft: #1E293B;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --topic-rose-ink: #FDA4AF;
+    --topic-rose-soft: #4C0519;
+    --topic-orange-ink: #FDBA74;
+    --topic-orange-soft: #431407;
+    --topic-amber-ink: #FCD34D;
+    --topic-amber-soft: #422006;
+    --topic-lime-ink: #BEF264;
+    --topic-lime-soft: #1A2E05;
+    --topic-teal-ink: #5EEAD4;
+    --topic-teal-soft: #042F2E;
+    --topic-cyan-ink: #67E8F9;
+    --topic-cyan-soft: #083344;
+    --topic-sky-ink: #7DD3FC;
+    --topic-sky-soft: #082F49;
+    --topic-blue-ink: #93C5FD;
+    --topic-blue-soft: #172554;
+    --topic-indigo-ink: #A5B4FC;
+    --topic-indigo-soft: #1E1B4B;
+    --topic-violet-ink: #C4B5FD;
+    --topic-violet-soft: #2E1065;
+    --topic-fuchsia-ink: #F0ABFC;
+    --topic-fuchsia-soft: #4A044E;
+    --topic-pink-ink: #F9A8D4;
+    --topic-pink-soft: #500724;
+    --topic-clay-ink: #FBBF9C;
+    --topic-clay-soft: #3B1B06;
+    --topic-slate-ink: #CBD5E1;
+    --topic-slate-soft: #1E293B;
   }
 }
 
@@ -155,7 +309,6 @@
    ============================================ */
 
 @theme inline {
-  /* Colors mapped from CSS variables */
   --color-bg: var(--color-bg);
   --color-surface: var(--color-surface);
   --color-surface-2: var(--color-surface-2);
@@ -170,11 +323,22 @@
   --color-primary-soft: var(--color-primary-soft);
   --color-primary-fg: var(--color-primary-fg);
 
+  --color-accent: var(--color-accent);
+  --color-accent-soft: var(--color-accent-soft);
+  --color-accent-fg: var(--color-accent-fg);
+
   --color-card-1: var(--color-card-1);
   --color-card-2: var(--color-card-2);
   --color-card-3: var(--color-card-3);
   --color-card-4: var(--color-card-4);
   --color-card-strong: var(--color-card-strong);
+
+  --color-level-beginner: var(--color-level-beginner);
+  --color-level-beginner-fg: var(--color-level-beginner-fg);
+  --color-level-intermediate: var(--color-level-intermediate);
+  --color-level-intermediate-fg: var(--color-level-intermediate-fg);
+  --color-level-advanced: var(--color-level-advanced);
+  --color-level-advanced-fg: var(--color-level-advanced-fg);
 
   --color-success: var(--color-success);
   --color-success-soft: var(--color-success-soft);
@@ -185,12 +349,10 @@
   --color-warning: var(--color-warning);
   --color-warning-soft: var(--color-warning-soft);
 
-  /* Font families */
   --font-display: 'Exo 2', sans-serif;
   --font-body: 'Poppins', sans-serif;
   --font-sans: 'Poppins', sans-serif;
 
-  /* Shadows */
   --shadow-ds-sm: var(--shadow-sm);
   --shadow-ds-md: var(--shadow-md);
   --shadow-ds-lg: var(--shadow-lg);
@@ -210,7 +372,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
 }
 
-/* Utility classes for gradients */
 .bg-gradient-header {
   background: var(--gradient-header);
 }

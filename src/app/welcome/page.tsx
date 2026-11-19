@@ -1,7 +1,8 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { Brain, BookOpen, RefreshCw, Target, Flame, Rocket, GraduationCap, type LucideIcon } from 'lucide-react';
+import { BookOpen, RefreshCw, Target, CalendarCheck, Rocket, GraduationCap, type LucideIcon } from 'lucide-react';
+import Logo from '@/components/ui/Logo';
 
 export default function WelcomePage() {
   const router = useRouter();
@@ -22,11 +23,11 @@ export default function WelcomePage() {
     <div className="min-h-screen flex flex-col items-center justify-center px-6 bg-gradient-splash">
       <div className="max-w-md w-full text-center">
         {/* Logo / Hero */}
-        <div className="w-20 h-20 rounded-full bg-primary-soft mx-auto mb-4 flex items-center justify-center">
-          <Brain size={40} className="text-primary" />
+        <div className="w-24 h-24 rounded-[28px] bg-white/15 mx-auto mb-4 flex items-center justify-center">
+          <Logo size={66} body="#FFFFFF" shaft="var(--color-accent)" />
         </div>
-        <h1 className="text-3xl font-bold font-display text-fg">English App</h1>
-        <p className="text-fg-muted mt-1 text-sm">Seu inglês, um passo de cada vez</p>
+        <h1 className="text-3xl font-bold font-display text-white">Easy Idiomas</h1>
+        <p className="text-white/90 mt-1 text-sm">Seu inglês, um passo de cada vez</p>
 
         {/* Explanation cards */}
         <div className="mt-8 space-y-4 text-left">
@@ -46,28 +47,28 @@ export default function WelcomePage() {
             description="Tradução, múltipla escolha, preencher lacunas e ordenar frases — cada item é praticado de formas diferentes."
           />
           <StepCard
-            Icon={Flame}
-            title="Streak diário"
-            description="Estude um pouquinho todo dia e veja seu streak crescer. Consistência é o segredo!"
+            Icon={CalendarCheck}
+            title="Sua semana, sem pressão"
+            description="Cada dia de estudo fica marcado na semana. Faltou um dia? Ele só fica vazio — nada zera, nada se perde."
           />
         </div>
 
         {/* CTA — Placement test */}
         <button
           onClick={handleStart}
-          className="flex items-center justify-center gap-2 w-full mt-8 bg-primary text-primary-fg font-semibold py-4 rounded-[var(--radius-pill)] text-lg hover:opacity-90 active:scale-[0.98] transition-all shadow-ds-md"
+          className="flex items-center justify-center gap-2 w-full mt-8 bg-accent text-accent-fg font-semibold py-4 rounded-[var(--radius-pill)] text-lg hover:opacity-90 active:scale-[0.98] transition-all shadow-ds-md"
         >
           <GraduationCap size={20} /> Fazer teste de nível
         </button>
 
         <button
           onClick={handleSkip}
-          className="block w-full text-sm text-fg-muted hover:text-fg py-3 mt-2 transition-colors"
+          className="block w-full text-sm text-white/90 hover:text-white py-3 mt-2 transition-colors"
         >
           Pular e começar como Iniciante <Rocket size={14} className="inline ml-1" />
         </button>
 
-        <p className="text-xs text-fg-muted mt-2 mb-8">
+        <p className="text-xs text-white/90 mt-2 mb-8">
           Níveis: Iniciante • Intermediário • Avançado
         </p>
       </div>

@@ -3,6 +3,11 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import NavBottom from '@/components/ui/NavBottom';
+import { useAuth } from '@/contexts/AuthContext';
+import { STATE_LABELS, STATE_BG } from '@/lib/review-state-ui';
+import type { BlockType } from '@/types/database';
+import { getBlockIdentity, topicTileStyle } from '@/lib/block-identity';
+import { useRouter } from 'next/navigation';
 import ProgressBar from '@/components/ui/ProgressBar';
 import { getAllProgress, getBlockProgress, getProgressStats, ItemProgress, resetAllProgress } from '@/lib/progress-store';
 import { getAllBlockIds, getBlockById } from '@/lib/seed-loader';
@@ -10,13 +15,12 @@ import { ReviewState } from '@/types/database';
 import { resetStreak } from '@/lib/streak-store';
 import {
   BarChart3, PenLine, CheckCircle2, RefreshCw, XCircle,
-  BookOpen, Brackets, Target, Timer, Trash2, type LucideIcon,
-} from 'lucide-react';
+  Target, Timer, Trash2, type LucideIcon, LogOut } from 'lucide-react';
 
 interface BlockStat {
   id: string;
   name: string;
-  type: string;
+  type: BlockType;
   totalItems: number;
   studied: number;
   done: number;
@@ -31,23 +35,16 @@ interface SimResult {
   elapsed: number;
 }
 
-const STATE_LABELS: Record<ReviewState, string> = {
-  NOVA: 'Nova',
-  '24H': '24h',
-  '7D': '7 dias',
-  '21D': '21 dias',
-  DONE: 'Aprendida',
-};
-
-const STATE_COLORS: Record<ReviewState, string> = {
-  NOVA: 'bg-surface-2',
-  '24H': 'bg-warning',
-  '7D': 'bg-primary',
-  '21D': 'bg-info',
-  DONE: 'bg-success',
-};
 
 export default function DashboardPage() {
+  const { signOut } = useAuth();
+  const router = useRouter();
+
+  async function handleLogout() {
+    await signOut();
+    router.push('/login');
+    router.refresh();
+  }
   const [stats, setStats] = useState({ learned: 0, inReview: 0, withErrors: 0, pendingReviews: 0 });
   const [blockStats, setBlockStats] = useState<BlockStat[]>([]);
   const [stateCounts, setStateCounts] = useState<Record<ReviewState, number>>({
@@ -86,7 +83,7 @@ export default function DashboardPage() {
       bStats.push({
         id,
         name: block.name,
-        type: block.type,
+        type: block.type as BlockType,
         totalItems: blockTotal,
         studied: blockStudied,
         done: blockDone,
@@ -150,10 +147,10 @@ export default function DashboardPage() {
               const pct = totalItems > 0 ? Math.round((count / totalItems) * 100) : 0;
               return (
                 <div key={state} className="flex items-center gap-3">
-                  <div className={`h-3 w-3 rounded-full ${STATE_COLORS[state]}`} />
+                  <div className={`h-3 w-3 rounded-full ${STATE_BG[state]}`} />
                   <span className="text-sm w-20">{STATE_LABELS[state]}</span>
                   <div className="flex-1 bg-surface-2 rounded-full h-2 overflow-hidden">
-                    <div className={`${STATE_COLORS[state]} h-2 rounded-full transition-all`} style={{ width: `${pct}%` }} />
+                    <div className={`${STATE_BG[state]} h-2 rounded-full transition-all`} style={{ width: `${pct}%` }} />
                   </div>
                   <span className="text-xs text-fg-muted w-12 text-right">{count} ({pct}%)</span>
                 </div>
@@ -176,23 +173,26 @@ export default function DashboardPage() {
           <div className="mt-3 flex flex-col gap-2">
             {blockStats.map((bs) => {
               const pct = bs.totalItems > 0 ? Math.round((bs.done / bs.totalItems) * 100) : 0;
-              const isVocab = bs.type === 'VOCAB';
+              const { Icon: BlockIcon, topic } = getBlockIdentity(bs.name, bs.type);
               return (
                 <Link key={bs.id} href={`/study/${bs.id}`} className="rounded-[var(--radius-lg)] bg-surface p-3 shadow-ds-sm block">
                   <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      {isVocab
-                        ? <BookOpen size={14} className="text-success" />
-                        : <Brackets size={14} className="text-primary" />
-                      }
-                      <span className="text-sm font-medium">{bs.name}</span>
+                    <div className="flex min-w-0 items-center gap-2">
+                      <span
+                        aria-hidden="true"
+                        className="flex h-7 w-7 flex-none items-center justify-center rounded-[var(--radius-sm)] border"
+                        style={topicTileStyle(topic)}
+                      >
+                        <BlockIcon size={15} strokeWidth={1.9} />
+                      </span>
+                      <span className="truncate text-sm font-medium">{bs.name}</span>
                     </div>
                     <span className="text-xs font-bold" style={{ color: pct === 100 ? 'var(--color-success)' : pct > 0 ? 'var(--color-primary)' : 'var(--color-fg-muted)' }}>
                       {pct}%
                     </span>
                   </div>
                   <div className="mt-1">
-                    <ProgressBar value={pct} color={pct === 100 ? 'green' : pct > 0 ? 'blue' : 'red'} size="sm" />
+                    <ProgressBar value={pct} color={pct === 100 ? 'green' : 'blue'} size="sm" />
                   </div>
                   <div className="mt-1 flex gap-3 text-[10px] text-fg-muted">
                     <span className="flex items-center gap-0.5"><CheckCircle2 size={10} /> {bs.done}/{bs.totalItems}</span>
@@ -277,6 +277,13 @@ export default function DashboardPage() {
             )}
           </div>
         </div>
+
+        <button
+          onClick={() => { void handleLogout(); }}
+          className="mt-6 flex min-h-[48px] w-full items-center justify-center gap-2 rounded-[var(--radius-pill)] border border-border bg-surface py-3 text-sm font-medium text-fg-muted transition-colors hover:text-danger"
+        >
+          <LogOut size={17} /> Sair da conta
+        </button>
 
         <div className="h-8" />
       </div>
